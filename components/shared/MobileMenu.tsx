@@ -15,12 +15,8 @@ const MobileMenu = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button
-          variant='ghost'
-          size='icon'
-          className='md:hidden'
-        >
-          <MenuIcon className='size-6' />
+        <Button variant='ghost' className='md:hidden p-0'>
+          <MenuIcon className='size-10 translate-x-1' />
           <span className='sr-only'>
             Toggle navigation menu
           </span>
