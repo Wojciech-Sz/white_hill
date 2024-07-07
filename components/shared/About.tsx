@@ -1,12 +1,13 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 import {
-  Card,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-} from '../ui/card';
+  CardBody,
+  CardContainer,
+  CardItem,
+} from '../ui/3d-card';
+import React from 'react';
 
 const About = () => {
   return (
@@ -36,26 +37,76 @@ const About = () => {
             funkcjonalnością.
           </p>
 
-          <Card>
-            <div className='flex '>
-              <Image
-                src='https://utfs.io/f/05dcd7ce-6483-44df-a481-d46c1a527dd4-mv8qnj.jpg'
-                alt='Imie Nazwisko'
-                width={400}
-                height={400}
-              />
-              <CardHeader>Imie Nazwisko</CardHeader>
-              <CardDescription>Stanowisko</CardDescription>
-            </div>
-            <CardFooter>
-              Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Nostrum rem, tenetur sed
-              repudiandae quod ea reprehenderit voluptatum
-              debitis impedit sit totam accusantium vel
-              voluptate corrupti laboriosam nisi. Ex,
-              asperiores praesentium?
-            </CardFooter>
-          </Card>
+          <div className='grid grid-cols-1 xl:grid-cols-2 gap-10'>
+            <CardContainer
+              containerClassName='py-0'
+              className='inter-var cursor-default'
+            >
+              <CardBody className='bg-gray-50 relative group/card  hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-[70vh] rounded-xl p-6 border  '>
+                <div className='flex h-full flex-col w-full gap-6'>
+                  <Image
+                    src='https://utfs.io/f/05dcd7ce-6483-44df-a481-d46c1a527dd4-mv8qnj.jpg'
+                    height='1000'
+                    width='1000'
+                    className='h-[70%] w-full object-cover rounded-xl'
+                    alt='Imie Nazwisko'
+                  />
+                  <div className='flex flex-col gap-4'>
+                    <div className='flex flex-col gap-2'>
+                      <h3 className='text-2xl font-bold'>
+                        Imie Nazwisko
+                      </h3>
+                      <p className='text-xl text-muted-foreground italic'>
+                        Stanowisko
+                      </p>
+                    </div>
+                    <p className='text-lg'>
+                      Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Quo labore sed rerum
+                      dolorum magni eos sint eveniet minus
+                      molestiae, harum adipisci, aspernatur
+                      autem rem consequatur unde sapiente,
+                      similique culpa. Iusto?
+                    </p>
+                  </div>
+                </div>
+              </CardBody>
+            </CardContainer>
+            <CardContainer
+              containerClassName='py-0'
+              className='inter-var cursor-default'
+            >
+              <CardBody className='bg-gray-50 relative group/card  hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-[70vh] rounded-xl p-6 border  '>
+                <div className='flex flex-col h-full w-full gap-6'>
+                  <Image
+                    src='https://utfs.io/f/2e186a62-ad97-4ec3-a4b8-c8835204b807-mv8qnk.jpg'
+                    height='1000'
+                    width='1000'
+                    className='h-[70%] w-full object-cover rounded-xl'
+                    alt='Imie Nazwisko'
+                  />
+                  <div className='flex flex-col gap-4'>
+                    <div className='flex flex-col gap-2'>
+                      <h3 className='text-2xl font-bold'>
+                        Imie Nazwisko
+                      </h3>
+                      <p className='text-xl text-muted-foreground italic'>
+                        Stanowisko
+                      </p>
+                    </div>
+                    <p className='text-lg'>
+                      Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Quo labore sed rerum
+                      dolorum magni eos sint eveniet minus
+                      molestiae, harum adipisci, aspernatur
+                      autem rem consequatur unde sapiente,
+                      similique culpa. Iusto?
+                    </p>
+                  </div>
+                </div>
+              </CardBody>
+            </CardContainer>
+          </div>
         </div>
       </div>
     </section>
