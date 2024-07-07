@@ -26,7 +26,7 @@ const About = () => {
       <h2 className="text-5xl lg:text-7xl font-bold">
         O Nas
       </h2>
-      <div className="flex flex-col w-full gap-20">
+      <div className="flex flex-col w-full gap-28">
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10">
           <Image
             src="https://utfs.io/f/cdaa3749-c2a3-4fb8-bea3-f14fbe6e2a18-njtigs.jpg"
@@ -52,34 +52,36 @@ const About = () => {
             containerClassName="py-0"
             className="inter-var cursor-default"
           >
-            <CardBody className="bg-gray-50 relative group/card  hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto lg:h-[80vh] rounded-xl p-6 border  ">
+            <CardBody className="bg-gray-50 relative group/card  hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto lg:h-[85vh] rounded-xl p-6 border  ">
               <div className="flex h-full flex-col w-full gap-6">
                 <Image
                   src="https://utfs.io/f/05dcd7ce-6483-44df-a481-d46c1a527dd4-mv8qnj.jpg"
                   height="1000"
                   width="1000"
-                  className="h-[70%] w-full object-cover rounded-xl"
+                  className="h-[70%] lg:h-[60%] w-full object-cover rounded-xl"
                   alt="Imie Nazwisko"
                 />
-                <div className="flex flex-col gap-4">
-                  <div className="flex flex-col gap-2">
-                    <h3 className="text-2xl font-bold">
-                      Imie Nazwisko
-                    </h3>
-                    <p className="text-xl text-muted-foreground italic">
-                      Stanowisko
+                <div className="flex flex-col h-full justify-between">
+                  <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-2">
+                      <h3 className="text-2xl font-bold">
+                        Imie Nazwisko
+                      </h3>
+                      <p className="text-xl text-muted-foreground italic">
+                        Stanowisko
+                      </p>
+                    </div>
+                    <p className="text-lg">
+                      Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Quo labore sed rerum
+                      dolorum magni eos sint eveniet minus
+                      molestiae, harum adipisci, aspernatur
+                      autem rem consequatur unde sapiente,
+                      similique culpa. Iusto?
                     </p>
                   </div>
-                  <p className="text-lg">
-                    Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Quo labore sed rerum
-                    dolorum magni eos sint eveniet minus
-                    molestiae, harum adipisci, aspernatur
-                    autem rem consequatur unde sapiente,
-                    similique culpa. Iusto?
-                  </p>
                   <Dialog>
-                    <DialogTrigger>
+                    <DialogTrigger className="self-end">
                       <div className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                         Dowiedz się więcej
                       </div>
@@ -135,35 +137,37 @@ const About = () => {
             containerClassName="py-0"
             className="inter-var cursor-default"
           >
-            <CardBody className="bg-gray-50 relative group/card  hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto lg:h-[80vh] rounded-xl p-6 border  ">
+            <CardBody className="bg-gray-50 relative group/card  hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto lg:h-[85vh] rounded-xl p-6 border  ">
               <div className="flex flex-col h-full w-full gap-6">
                 <Image
                   src="https://utfs.io/f/2e186a62-ad97-4ec3-a4b8-c8835204b807-mv8qnk.jpg"
                   height="1000"
                   width="1000"
-                  className="h-[70%] w-full object-cover rounded-xl"
+                  className="h-[70%] lg:h-[60%] w-full object-cover rounded-xl"
                   alt="Imie Nazwisko"
                 />
-                <div className="flex flex-col gap-4">
-                  <div className="flex flex-col gap-2">
-                    <h3 className="text-2xl font-bold">
-                      Imie Nazwisko
-                    </h3>
-                    <p className="text-xl text-muted-foreground italic">
-                      Stanowisko
+                <div className="flex flex-col h-full justify-between">
+                  <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-2">
+                      <h3 className="text-2xl font-bold">
+                        Imie Nazwisko
+                      </h3>
+                      <p className="text-xl text-muted-foreground italic">
+                        Stanowisko
+                      </p>
+                    </div>
+                    <p className="text-lg">
+                      Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Quo labore sed rerum
+                      dolorum magni eos sint eveniet minus
+                      molestiae, harum adipisci, aspernatur
+                      autem rem consequatur unde sapiente,
+                      similique culpa. Iusto?
                     </p>
                   </div>
-                  <p className="text-lg">
-                    Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Quo labore sed rerum
-                    dolorum magni eos sint eveniet minus
-                    molestiae, harum adipisci, aspernatur
-                    autem rem consequatur unde sapiente,
-                    similique culpa. Iusto?
-                  </p>
                   <Dialog>
-                    <DialogTrigger>
-                      <div className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                    <DialogTrigger className="self-end">
+                      <div className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 ">
                         Dowiedz się więcej
                       </div>
                     </DialogTrigger>

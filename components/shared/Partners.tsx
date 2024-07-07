@@ -13,7 +13,7 @@ const Partners = () => {
   return (
     <section
       id="coop"
-      className="w-full lg:max-w-[80vw] px-5 md:px-10 xl:px-0 flex flex-col gap-16 pt-12 pb-[100rem] md:pt-24 items-center"
+      className="w-full lg:max-w-[80vw] px-5 md:px-10 xl:px-0 flex flex-col gap-16 pt-12 md:pt-24 items-center"
     >
       <h2 className="text-4xl md:text-5xl font-bold text-center">
         Współracujemy z
