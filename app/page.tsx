@@ -1,16 +1,15 @@
-import About from '@/components/shared/About';
-import Hero from '@/components/shared/Hero';
-import Partners from '@/components/shared/Partners';
-import Projects from '@/components/shared/Projects';
-import Image from 'next/image';
+import About from "@/components/shared/About";
+import Hero from "@/components/shared/Hero";
+import Office from "@/components/shared/Office";
+import Projects from "@/components/shared/Projects";
 
 export default function Home() {
   return (
-    <div className='flex flex-col items-center w-full'>
+    <div className="flex w-full flex-col items-center">
       <Hero />
+      <Office />
       <Projects />
       <About />
-      <Partners />
     </div>
   );
 }

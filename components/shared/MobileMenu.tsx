@@ -1,62 +1,72 @@
-import React from 'react';
+import React from "react";
 import {
   Sheet,
   SheetTrigger,
   SheetContent,
   SheetClose,
-} from '@/components/ui/sheet';
+} from "@/components/ui/sheet";
 
-import Link from 'next/link';
-import { headerLinks } from '@/constans';
-import { Button } from '../ui/button';
-import { MenuIcon } from '../icons';
+import Link from "next/link";
+import { footerLinks, headerLinks } from "@/constans";
+import { Button } from "../ui/button";
+import { MenuIcon } from "../icons";
 
 const MobileMenu = () => {
   return (
     <Sheet>
-      <SheetTrigger asChild>
-        <Button variant='ghost' className='md:hidden p-0'>
-          <MenuIcon className='size-10 translate-x-1' />
-          <span className='sr-only'>
+      <SheetTrigger
+        className="absolute left-[0.75rem] md:left-[2rem] xl:left-[4.5rem] 2xl:left-[9.5rem]"
+        asChild
+      >
+        <Button variant="ghost" className="p-0">
+          <MenuIcon className="size-10 translate-x-1" />
+          <span className="sr-only">
             Toggle navigation menu
           </span>
         </Button>
       </SheetTrigger>
       <SheetContent
-        side='left'
-        className='flex w-[300px] flex-col items-center bg-white p-4 dark:bg-gray-950'
+        side="left"
+        className="flex flex-col items-center bg-white p-4 dark:bg-gray-950"
       >
-        <div className='mb-4 flex items-center justify-between'>
+        <div className="mb-4 flex items-center justify-between">
           <Link
-            href='/'
-            className='flex items-center'
+            href="/"
+            className="flex items-center"
             prefetch={false}
           >
-            <span className='ml-2 text-lg font-semibold'>
+            <span className="ml-2 text-lg font-semibold">
               Acme Inc
             </span>
           </Link>
           <SheetClose />
         </div>
-        <nav className='grid gap-4'>
+        <nav className="grid gap-4">
           {headerLinks.map((link, i) => (
             <Link
               key={i}
               href={link.route}
-              className='text-center text-lg font-medium transition-colors hover:text-gray-900 dark:hover:text-gray-50'
+              className="text-center text-lg font-medium transition-colors hover:text-gray-900 dark:hover:text-gray-50"
               prefetch={false}
             >
               {link.label}
             </Link>
           ))}
 
-          <Link
-            className='text-center text-lg font-medium transition-colors hover:text-gray-900 dark:hover:text-gray-50'
-            prefetch={false}
-            href='/#contact'
-          >
-            Kontakt
-          </Link>
+          <div className="flex ">
+            {footerLinks.map((link, i) => (
+              <Link
+                key={i}
+                href={link.href}
+                className="text-gray-500 md:hidden flex size-10 items-center justify-center hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-50"
+                prefetch={false}
+                target="_blank"
+              >
+                {link.icon}
+                <span className="sr-only">{link.name}</span>
+              </Link>
+            ))}
+          </div>
         </nav>
       </SheetContent>
     </Sheet>

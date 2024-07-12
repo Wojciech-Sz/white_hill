@@ -72,80 +72,101 @@ export const coop = [
   { name: "firma 9", logo: "/assets/icons/yourlogo.svg" },
 ];
 
-export const projects = [
+export const heroImages = [
   {
-    type: "Wnętrza",
-    images: [
-      {
-        url: "https://utfs.io/f/acb2f00f-f2c6-4afc-91a3-258babe869d1-4opkkl.jpg",
-        title: "Tytuł",
-        description: "Opis",
-      },
-      {
-        url: "https://utfs.io/f/cfe48f1c-62e9-4ca1-8518-b458fbb0c7b4-4oplba.jpg",
-        title: "Tytuł",
-        description: "Opis",
-      },
-      {
-        url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-        title: "Tytuł",
-        description: "Opis",
-      },
-      {
-        url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-        title: "Tytuł",
-        description: "Opis",
-      },
-      {
-        url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-        title: "Tytuł",
-        description: "Opis",
-      },
-      {
-        url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-        title: "Tytuł",
-        description: "Opis",
-      },
-    ],
+    url: "https://utfs.io/f/4356d7f3-9ca1-4f93-9622-c77f3a9113e2-yacw7c.jpg",
+    id: "hero-image-1",
   },
   {
-    type: "Budynki",
-    images: [
-      {
-        url: "https://utfs.io/f/8d7a8a53-bafd-4339-9f03-54a982816bd1-4154ax.jpg",
-        title: "Tytuł",
-        description: "Opis",
-      },
-      {
-        url: "https://utfs.io/f/1672debd-f57c-42b9-982b-f8432c314ebd-41551m.jpg",
-        title: "Tytuł",
-        description: "Opis",
-      },
-      {
-        url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-        title: "Tytuł",
-        description: "Opis",
-      },
-      {
-        url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-        title: "Tytuł",
-        description: "Opis",
-      },
-      {
-        url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-        title: "Tytuł",
-        description: "Opis",
-      },
-      {
-        url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-        title: "Tytuł",
-        description: "Opis",
-      },
-    ],
+    url: "https://utfs.io/f/8438138d-f388-48ec-83df-9c06f9a4320d-41551j.jpg",
+    id: "hero-image-2",
+  },
+  {
+    url: "https://utfs.io/f/c3401ea6-986a-449e-a6e7-1f9bd6d537c7-4opkki.jpg",
+    id: "hero-image-3",
   },
 ];
 
-export const interiors = [];
+export const projects = [
+  {
+    url: "https://utfs.io/f/8d7a8a53-bafd-4339-9f03-54a982816bd1-4154ax.jpg",
+    title: "Tytuł 1",
+  },
+  {
+    url: "https://utfs.io/f/1672debd-f57c-42b9-982b-f8432c314ebd-41551m.jpg",
+    title: "Tytuł 2",
+  },
+  {
+    url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+    title: "Tytuł 3",
+  },
+  {
+    url: "https://utfs.io/f/acb2f00f-f2c6-4afc-91a3-258babe869d1-4opkkl.jpg",
+    title: "Tytuł 4",
+  },
+  {
+    url: "https://utfs.io/f/cfe48f1c-62e9-4ca1-8518-b458fbb0c7b4-4oplba.jpg",
+    title: "Tytuł 5",
+  },
+  {
+    url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+    title: "Tytuł 6",
+  },
+];
+
+export const buildings = [
+  {
+    url: "https://utfs.io/f/8d7a8a53-bafd-4339-9f03-54a982816bd1-4154ax.jpg",
+    title: "Tytuł 1",
+  },
+  {
+    url: "https://utfs.io/f/1672debd-f57c-42b9-982b-f8432c314ebd-41551m.jpg",
+    title: "Tytuł 2",
+  },
+  {
+    url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+    title: "Tytuł 3",
+  },
+  {
+    url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+    title: "Tytuł 4",
+  },
+  {
+    url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+    title: "Tytuł 5",
+  },
+  {
+    url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+    title: "Tytuł 6",
+  },
+];
+
+export const interiors = [
+  {
+    url: "https://utfs.io/f/acb2f00f-f2c6-4afc-91a3-258babe869d1-4opkkl.jpg",
+    title: "Tytuł 1",
+  },
+  {
+    url: "https://utfs.io/f/cfe48f1c-62e9-4ca1-8518-b458fbb0c7b4-4oplba.jpg",
+    title: "Tytuł 2",
+  },
+  {
+    url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+    title: "Tytuł 3",
+  },
+  {
+    url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+    title: "Tytuł 4",
+  },
+  {
+    url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+    title: "Tytuł 5",
+  },
+  {
+    url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+    title: "Tytuł 6",
+  },
+];
 
 export const testimonials = [
   {

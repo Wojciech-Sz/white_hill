@@ -1,12 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import {
-  CardBody,
-  CardContainer,
-  CardItem,
-} from "../ui/3d-card";
+import { CardBody, CardContainer } from "../ui/3d-card";
 import React from "react";
 import {
   Dialog,
@@ -21,204 +16,76 @@ const About = () => {
   return (
     <section
       id="about"
-      className="w-full px-5 md:px-10 xl:px-40 flex flex-col gap-16 pt-12 md:pt-24 items-center"
+      className="flex w-full flex-col items-center gap-16 wrapper pt-12  md:pt-24 "
     >
-      <h2 className="text-5xl lg:text-7xl font-bold">
+      <h2 className="text-5xl font-bold lg:text-7xl">
         O Nas
       </h2>
-      <div className="flex flex-col w-full gap-28">
-        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+      <div className="grid w-full grid-cols-1 gap-10 xl:grid-cols-2 2xl:grid-cols-3">
+        <figure className="flex h-max flex-col gap-4">
           <Image
-            src="https://utfs.io/f/cdaa3749-c2a3-4fb8-bea3-f14fbe6e2a18-njtigs.jpg"
-            className="w-full lg:order-last object-cover h-[60vh] lg:h-[70vh] rounded-sm object-bottom"
-            alt="O Nas"
-            width={840}
-            height={840}
+            src="https://utfs.io/f/05dcd7ce-6483-44df-a481-d46c1a527dd4-mv8qnj.jpg"
+            height="500"
+            width="500"
+            className="w-full h-[70%] object-cover"
+            alt="Imie Nazwisko"
           />
-          <p className="text-2xl lg:text-4xl">
-            Jesteśmy zespołem doświadczonych architektów z
-            pasją do tworzenia wyjątkowych przestrzeni.
-            Każdy projekt jest dla nas unikalnym wyzwaniem,
-            które realizujemy z pełnym zaangażowaniem i
-            dbałością o każdy detal. Wierzymy, że dobrze
-            zaprojektowana przestrzeń może znacząco poprawić
-            jakość życia, dlatego staramy się tworzyć
-            projekty, które łączą estetykę z
-            funkcjonalnością.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
-          <CardContainer
-            containerClassName="py-0"
-            className="inter-var cursor-default"
-          >
-            <CardBody className="bg-gray-50 relative group/card  hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto lg:h-[85vh] rounded-xl p-6 border  ">
-              <div className="flex h-full flex-col w-full gap-6">
-                <Image
-                  src="https://utfs.io/f/05dcd7ce-6483-44df-a481-d46c1a527dd4-mv8qnj.jpg"
-                  height="1000"
-                  width="1000"
-                  className="h-[70%] lg:h-[60%] w-full object-cover rounded-xl"
-                  alt="Imie Nazwisko"
-                />
-                <div className="flex flex-col h-full justify-between">
-                  <div className="flex flex-col gap-4">
-                    <div className="flex flex-col gap-2">
-                      <h3 className="text-2xl font-bold">
-                        Imie Nazwisko
-                      </h3>
-                      <p className="text-xl text-muted-foreground italic">
-                        Stanowisko
-                      </p>
-                    </div>
-                    <p className="text-lg">
-                      Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Quo labore sed rerum
-                      dolorum magni eos sint eveniet minus
-                      molestiae, harum adipisci, aspernatur
-                      autem rem consequatur unde sapiente,
-                      similique culpa. Iusto?
-                    </p>
-                  </div>
-                  <Dialog>
-                    <DialogTrigger className="self-end">
-                      <div className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                        Dowiedz się więcej
-                      </div>
-                    </DialogTrigger>
-                    <DialogContent>
-                      <DialogHeader>
-                        <DialogTitle className="text-2xl font-bold">
-                          Imie Nazwisko
-                        </DialogTitle>
-                        <DialogDescription className="text-xl text-muted-foreground italic">
-                          Stanowisko
-                        </DialogDescription>
-                      </DialogHeader>
-                      <div className="flex flex-col gap-4">
-                        <p>
-                          Lorem ipsum, dolor sit amet
-                          consectetur adipisicing elit.
-                          Asperiores itaque nostrum
-                          voluptates esse odio amet,
-                          perspiciatis obcaecati similique,
-                          expedita cum sunt rem atque
-                          officiis unde cupiditate ab
-                          officia, non ad.
-                        </p>
-                        <p>
-                          Lorem ipsum, dolor sit amet
-                          consectetur adipisicing elit.
-                          Asperiores itaque nostrum
-                          voluptates esse odio amet,
-                          perspiciatis obcaecati similique,
-                          expedita cum sunt rem atque
-                          officiis unde cupiditate ab
-                          officia, non ad.
-                        </p>
-                        <p>
-                          Lorem ipsum, dolor sit amet
-                          consectetur adipisicing elit.
-                          Asperiores itaque nostrum
-                          voluptates esse odio amet,
-                          perspiciatis obcaecati similique,
-                          expedita cum sunt rem atque
-                          officiis unde cupiditate ab
-                          officia, non ad.
-                        </p>
-                      </div>
-                    </DialogContent>
-                  </Dialog>
-                </div>
+          <figcaption>
+            <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-2">
+                <h3 className="text-2xl font-bold">
+                  Imie Nazwisko
+                </h3>
+                <p className="text-xl italic text-muted-foreground">
+                  Stanowisko
+                </p>
               </div>
-            </CardBody>
-          </CardContainer>
-          <CardContainer
-            containerClassName="py-0"
-            className="inter-var cursor-default"
-          >
-            <CardBody className="bg-gray-50 relative group/card  hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto lg:h-[85vh] rounded-xl p-6 border  ">
-              <div className="flex flex-col h-full w-full gap-6">
-                <Image
-                  src="https://utfs.io/f/2e186a62-ad97-4ec3-a4b8-c8835204b807-mv8qnk.jpg"
-                  height="1000"
-                  width="1000"
-                  className="h-[70%] lg:h-[60%] w-full object-cover rounded-xl"
-                  alt="Imie Nazwisko"
-                />
-                <div className="flex flex-col h-full justify-between">
-                  <div className="flex flex-col gap-4">
-                    <div className="flex flex-col gap-2">
-                      <h3 className="text-2xl font-bold">
-                        Imie Nazwisko
-                      </h3>
-                      <p className="text-xl text-muted-foreground italic">
-                        Stanowisko
-                      </p>
-                    </div>
-                    <p className="text-lg">
-                      Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Quo labore sed rerum
-                      dolorum magni eos sint eveniet minus
-                      molestiae, harum adipisci, aspernatur
-                      autem rem consequatur unde sapiente,
-                      similique culpa. Iusto?
-                    </p>
-                  </div>
-                  <Dialog>
-                    <DialogTrigger className="self-end">
-                      <div className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 ">
-                        Dowiedz się więcej
-                      </div>
-                    </DialogTrigger>
-                    <DialogContent>
-                      <DialogHeader>
-                        <DialogTitle className="text-2xl font-bold">
-                          Imie Nazwisko
-                        </DialogTitle>
-                        <DialogDescription className="text-xl text-muted-foreground italic">
-                          Stanowisko
-                        </DialogDescription>
-                      </DialogHeader>
-                      <div className="flex flex-col gap-4">
-                        <p>
-                          Lorem ipsum, dolor sit amet
-                          consectetur adipisicing elit.
-                          Asperiores itaque nostrum
-                          voluptates esse odio amet,
-                          perspiciatis obcaecati similique,
-                          expedita cum sunt rem atque
-                          officiis unde cupiditate ab
-                          officia, non ad.
-                        </p>
-                        <p>
-                          Lorem ipsum, dolor sit amet
-                          consectetur adipisicing elit.
-                          Asperiores itaque nostrum
-                          voluptates esse odio amet,
-                          perspiciatis obcaecati similique,
-                          expedita cum sunt rem atque
-                          officiis unde cupiditate ab
-                          officia, non ad.
-                        </p>
-                        <p>
-                          Lorem ipsum, dolor sit amet
-                          consectetur adipisicing elit.
-                          Asperiores itaque nostrum
-                          voluptates esse odio amet,
-                          perspiciatis obcaecati similique,
-                          expedita cum sunt rem atque
-                          officiis unde cupiditate ab
-                          officia, non ad.
-                        </p>
-                      </div>
-                    </DialogContent>
-                  </Dialog>
-                </div>
+            </div>
+          </figcaption>
+        </figure>
+        <figure className="flex h-max flex-col gap-4">
+          <Image
+            src="https://utfs.io/f/2e186a62-ad97-4ec3-a4b8-c8835204b807-mv8qnk.jpg"
+            height="500"
+            width="500"
+            className="w-full h-[70%] object-cover "
+            alt="Imie Nazwisko"
+          />
+          <figcaption>
+            <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-2">
+                <h3 className="text-2xl font-bold">
+                  Imie Nazwisko
+                </h3>
+                <p className="text-xl italic text-muted-foreground">
+                  Stanowisko
+                </p>
               </div>
-            </CardBody>
-          </CardContainer>
-        </div>
+            </div>
+          </figcaption>
+        </figure>
+        <figure className="flex xl:col-span-2 h-full 2xl:col-span-1 flex-col gap-4">
+          <Image
+            src="https://utfs.io/f/92ff00ed-c586-4f9a-9bce-1d183664d176-24vw.jpg"
+            height="500"
+            width="500"
+            className="w-full h-[70%] 2xl:h-full object-cover "
+            alt="Imie Nazwisko"
+          />
+          <figcaption>
+            <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-2">
+                <h3 className="text-2xl font-bold">
+                  Imie Nazwisko
+                </h3>
+                <p className="text-xl italic text-muted-foreground">
+                  Stanowisko
+                </p>
+              </div>
+            </div>
+          </figcaption>
+        </figure>
       </div>
     </section>
   );
