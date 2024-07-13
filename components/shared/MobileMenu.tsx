@@ -14,15 +14,13 @@ import { MenuIcon } from "../icons";
 const MobileMenu = () => {
   return (
     <Sheet>
-      <SheetTrigger
-        className="absolute left-[0.75rem] md:left-[2rem] xl:left-[4.5rem] 2xl:left-[9.5rem]"
-        asChild
-      >
-        <Button variant="ghost" className="p-0">
-          <MenuIcon className="size-10 translate-x-1" />
-          <span className="sr-only">
-            Toggle navigation menu
-          </span>
+      <SheetTrigger asChild>
+        <Button
+          variant="ghost"
+          className="p-0 absolute z-10 translate-x-1 left-[0.75rem] md:left-[2rem] xl:left-[4.5rem] 2xl:left-[9.5rem]"
+        >
+          <MenuIcon className="size-10 " />
+          <span className="sr-only">Włacz menu</span>
         </Button>
       </SheetTrigger>
       <SheetContent

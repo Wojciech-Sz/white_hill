@@ -42,7 +42,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="h-screen flex  overflow-hidden relative w-full lg:h-[90vh]">
+    <section className="h-screen flex overflow-hidden relative w-full lg:h-[90vh]">
       {heroImages.map((image, i) => (
         <Image
           key={image.id}

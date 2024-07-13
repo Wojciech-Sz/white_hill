@@ -2,18 +2,24 @@ import { projects } from "@/constans";
 import { Separator } from "@radix-ui/react-separator";
 import Image from "next/image";
 import React from "react";
+import { Button } from "../ui/button";
 
 const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex w-full flex-col  items-center gap-10 wrapper pt-12  md:pt-24 "
+      className="flex w-full flex-col  items-center gap-10 md:gap-5 lg:gap-7 2xl:gap-10 wrapper pt-12  md:pt-24 "
     >
-      <h2 className="text-5xl font-bold lg:text-7xl">
-        Nasze realizacje
-      </h2>
+      <div className="flex justify-between items-center w-full">
+        <h2 className="text-5xl leading-none font-bold lg:text-7xl">
+          Nasze realizacje
+        </h2>
+        <Button className="text-base xl:text-xl py-6">
+          Wszystkie realizacje
+        </Button>
+      </div>
       <Separator className="w-full border-b-2 border-black" />
-      <div className="grid w-full grid-cols-1 gap-20 md:gap-5 lg:gap-7 2xl:gap-10 md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid w-full grid-cols-1 gap-10 md:gap-5 lg:gap-7 2xl:gap-10 md:grid-cols-2 xl:grid-cols-3">
         {projects.map((project) => (
           <figure
             key={project.title}

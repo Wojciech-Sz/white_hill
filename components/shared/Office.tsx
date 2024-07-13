@@ -10,12 +10,12 @@ const Office = () => {
       <figure className="grid w-full grid-cols-1 gap-10 lg:grid-cols-2">
         <Image
           src="https://utfs.io/f/cdaa3749-c2a3-4fb8-bea3-f14fbe6e2a18-njtigs.jpg"
-          className="h-[60vh] w-full  object-cover object-bottom lg:order-last lg:h-[70vh]"
+          className="h-[60vh] w-full  object-cover object-center lg:h-[70vh]"
           alt="O Nas"
           width={840}
           height={840}
         />
-        <figcaption className="text-2xl md:text-3xl lg:text-4xl">
+        <figcaption className="text-2xl md:text-3xl xl:text-4xl">
           <p>
             Jesteśmy zespołem doświadczonych architektów z
             pasją do tworzenia wyjątkowych przestrzeni.

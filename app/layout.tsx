@@ -28,9 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans ${montserrat.variable}`}>
-        <div className="flex font-montserrat flex-col w-screen h-screen">
+        <div className="flex font-montserrat flex-col min-h-screen">
           <Header />
-          <main className="flex-1 w-full">{children}</main>
+          <main className="flex-1">{children}</main>
           <Footer />
         </div>
         <Toaster />

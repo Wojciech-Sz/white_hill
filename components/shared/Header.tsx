@@ -12,19 +12,19 @@ import { footerLinks } from "@/constans";
 
 export default function Header() {
   return (
-    <header className="fixed w-screen inset-x-0 top-0 z-10 flex items-center justify-center bg-white/90  wrapper py-3 shadow-sm dark:bg-gray-950  md:py-4">
+    <header className="sticky top-0 inset-0 z-20 flex items-center justify-center bg-white/90  wrapper py-3 shadow-sm dark:bg-gray-950  md:py-4">
       <MobileMenu />
       <Link href="/" prefetch={false}>
         <span className="text-2xl font-bold">
           Architekt
         </span>
       </Link>
-      <div className="flex absolute right-5 md:right-10 gap-2 xl:right-20 2xl:right-40 items-center 2xl:gap-5">
+      <div className="flex absolute right-5 md:right-10 xl:right-20 2xl:right-40 items-center gap-5">
         {footerLinks.map((link, i) => (
           <Link
             key={i}
             href={link.href}
-            className="text-gray-500 hidden xl:flex size-10 items-center justify-center hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-50"
+            className="text-gray-500 hidden md:flex size-full hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-50"
             prefetch={false}
             target="_blank"
           >
@@ -34,7 +34,7 @@ export default function Header() {
         ))}
         <Button
           variant="default"
-          className="text-base md:text-xl flex"
+          className="text-base md:text-xl"
         >
           <Link href="/#contact">Kontakt</Link>
         </Button>

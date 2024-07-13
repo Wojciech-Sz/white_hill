@@ -93,7 +93,7 @@ export const projects = [
     title: "Tytuł 1",
   },
   {
-    url: "https://utfs.io/f/1672debd-f57c-42b9-982b-f8432c314ebd-41551m.jpg",
+    url: "https://utfs.io/f/72fc5eea-bd11-4037-a268-fd769903c373-4155sa.jpg",
     title: "Tytuł 2",
   },
   {
@@ -111,6 +111,18 @@ export const projects = [
   {
     url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
     title: "Tytuł 6",
+  },
+  {
+    url: "https://utfs.io/f/1672debd-f57c-42b9-982b-f8432c314ebd-41551m.jpg",
+    title: "Tytuł 7",
+  },
+  {
+    url: "https://utfs.io/f/9d529a3c-d86d-45ef-b5e1-f6879ed052d3-41551k.jpg",
+    title: "Tytuł 8",
+  },
+  {
+    url: "https://utfs.io/f/a176b9ac-cbc0-4e6c-92e6-9aeec1bfdd5c-41551l.jpg",
+    title: "Tytuł 9",
   },
 ];
 
@@ -196,16 +208,16 @@ export const footerLinks = [
   {
     href: "https://www.facebook.com/",
     name: "Facebook",
-    icon: <FacebookIcon className="size-6" />,
+    icon: <FacebookIcon className="w-7 h-7" />,
   },
   {
     href: "https://x.com/home?lang=pl",
     name: "X",
-    icon: <TwitterIcon className="size-6" />,
+    icon: <TwitterIcon className="w-7 h-7" />,
   },
   {
     href: "https://www.instagram.com/",
     name: "Instagram",
-    icon: <InstagramIcon className="size-6" />,
+    icon: <InstagramIcon className="w-7 h-7" />,
   },
 ];

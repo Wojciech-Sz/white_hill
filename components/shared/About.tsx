@@ -1,16 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { CardBody, CardContainer } from "../ui/3d-card";
 import React from "react";
-import {
-  Dialog,
-  DialogHeader,
-  DialogContent,
-  DialogTitle,
-  DialogTrigger,
-  DialogDescription,
-} from "../ui/dialog";
 
 const About = () => {
   return (
@@ -22,7 +13,7 @@ const About = () => {
         O Nas
       </h2>
 
-      <div className="grid w-full grid-cols-1 gap-10 xl:grid-cols-2 2xl:grid-cols-3">
+      <div className="grid w-full grid-cols-1 gap-10 md:grid-cols-2 2xl:grid-cols-3">
         <figure className="flex h-max flex-col gap-4">
           <Image
             src="https://utfs.io/f/05dcd7ce-6483-44df-a481-d46c1a527dd4-mv8qnj.jpg"
@@ -65,7 +56,7 @@ const About = () => {
             </div>
           </figcaption>
         </figure>
-        <figure className="flex xl:col-span-2 h-full 2xl:col-span-1 flex-col gap-4">
+        <figure className="flex md:col-span-2 h-full 2xl:col-span-1 flex-col gap-4">
           <Image
             src="https://utfs.io/f/92ff00ed-c586-4f9a-9bce-1d183664d176-24vw.jpg"
             height="500"

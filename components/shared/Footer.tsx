@@ -4,7 +4,7 @@ import { footerLinks } from "@/constans";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-black py-10 text-white">
+    <footer className="w-full bg-black py-10 wrapper text-white">
       <div className="flex items-center justify-center gap-10 max-sm:flex-col sm:justify-between">
         <Link
           href="/"
