@@ -18,7 +18,10 @@ export const formSchema = z
       .max(50, {
         message: "Nazwisko nie może przekraczać 50 znaków.",
       }),
-    phoneNumber: z.string().optional(),
+    phoneNumber: z.string().min(9, {
+      message:
+        "Numer telefonu musi mieć co najmniej 9 znaków.",
+    }),
     subject: z
       .string()
       .min(2, {
@@ -30,6 +33,9 @@ export const formSchema = z
     email: z
       .string()
       .email({ message: "Niepoprawny adres E-mail" }),
+    date: z.date({
+      required_error: "Data jest wymagana",
+    }),
     message: z
       .string()
       .min(2, {

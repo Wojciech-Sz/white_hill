@@ -4,33 +4,33 @@
 
 @layer base {
   :root {
-    --background: 0 2% 89%;
-    --foreground: 0 0% 3.9%;
+    --background: 36 39% 88%;
+    --foreground: 36 45% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
+    --card: 36 46% 82%;
+    --card-foreground: 36 45% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
+    --popover-foreground: 240 10% 3.9%;
 
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 36 45% 70%;
+    --primary-foreground: 36 45% 11%;
 
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
+    --secondary: 40 35% 77%;
+    --secondary-foreground: 36 45% 25%;
 
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
+    --muted: 36 33% 75%;
+    --muted-foreground: 36 45% 25%;
 
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+    --accent: 36 64% 57%;
+    --accent-foreground: 36 72% 17%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 37%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
+    --border: 36 45% 60%;
+    --input: 36 45% 60%;
+    --ring: 36 45% 30%;
 
     --radius: 0.5rem;
   }
@@ -78,10 +78,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
-  }
-  p {
-    @apply text-[#333333];
+    @apply bg-background text-primary-foreground;
   }
 }
 
@@ -92,4 +89,33 @@
     xl:px-20
     2xl:px-40;
   }
+  .section {
+    @apply flex w-full flex-col items-center pt-12  md:pt-24;
+  }
+  .section-gap {
+    @apply gap-5 lg:gap-7 2xl:gap-10;
+  }
+  .section-title {
+    @apply text-5xl leading-none font-bold lg:text-7xl;
+  }
+}
+
+.datePicker {
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+}
+
+.react-datepicker__day--selected {
+  background-color: hsl(36 45% 15%) !important;
+  color: #ffffff !important;
+  border-radius: 4px;
+}
+
+.react-datepicker__time-list-item--selected {
+  background-color: hsl(36 45% 15%) !important;
 }

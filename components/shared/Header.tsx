@@ -12,7 +12,7 @@ import { footerLinks } from "@/constans";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 inset-0 z-20 flex items-center justify-center bg-white/90  wrapper py-3 shadow-sm dark:bg-gray-950  md:py-4">
+    <header className="sticky top-0 w-full z-20 flex items-center justify-center bg-white/90  wrapper py-3 shadow-sm dark:bg-gray-950  md:py-4">
       <MobileMenu />
       <Link href="/" prefetch={false}>
         <span className="text-2xl font-bold">
@@ -24,7 +24,7 @@ export default function Header() {
           <Link
             key={i}
             href={link.href}
-            className="text-gray-500 hidden md:flex size-full hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-50"
+            className="text-primary-foreground hidden md:flex size-full hover:text-primary "
             prefetch={false}
             target="_blank"
           >
@@ -34,7 +34,7 @@ export default function Header() {
         ))}
         <Button
           variant="default"
-          className="text-base md:text-xl"
+          className="text-base font-semibold text-primary-foreground md:text-xl"
         >
           <Link href="/#contact">Kontakt</Link>
         </Button>

@@ -16,10 +16,10 @@ const MobileMenu = () => {
     <Sheet>
       <SheetTrigger asChild>
         <Button
-          variant="ghost"
+          variant="link"
           className="p-0 absolute z-10 translate-x-1 left-[0.75rem] md:left-[2rem] xl:left-[4.5rem] 2xl:left-[9.5rem]"
         >
-          <MenuIcon className="size-10 " />
+          <MenuIcon className="size-10 text-primary-foreground" />
           <span className="sr-only">Włacz menu</span>
         </Button>
       </SheetTrigger>

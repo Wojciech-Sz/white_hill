@@ -4,7 +4,7 @@ import { footerLinks } from "@/constans";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-black py-10 wrapper text-white">
+    <footer className="w-full bg-primary-foreground py-10 wrapper text-white">
       <div className="flex items-center justify-center gap-10 max-sm:flex-col sm:justify-between">
         <Link
           href="/"
@@ -16,7 +16,8 @@ const Footer = () => {
           </span>
         </Link>
         <p className="lg:block">
-          © {new Date().getFullYear()}. All rights reserved.
+          © {new Date().getFullYear()}. All rights
+          reserved.
         </p>
 
         <ul className="flex flex-wrap gap-5">
@@ -27,7 +28,7 @@ const Footer = () => {
             >
               <Link
                 href={link.href}
-                className="text-gray-500 hover:text-white dark:text-gray-400 dark:hover:text-gray-50"
+                className="text-white hover:text-primary"
                 prefetch={false}
                 target="_blank"
               >

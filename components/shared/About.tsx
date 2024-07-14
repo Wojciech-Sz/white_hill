@@ -7,13 +7,13 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex w-full flex-col items-center gap-16 wrapper pt-12  md:pt-24 "
+      className="wrapper section section-gap"
     >
       <h2 className="text-5xl font-bold lg:text-7xl">
         O Nas
       </h2>
 
-      <div className="grid w-full grid-cols-1 gap-10 md:grid-cols-2 2xl:grid-cols-3">
+      <div className="grid w-full grid-cols-1 section-gap md:grid-cols-2 2xl:grid-cols-3">
         <figure className="flex h-max flex-col gap-4">
           <Image
             src="https://utfs.io/f/05dcd7ce-6483-44df-a481-d46c1a527dd4-mv8qnj.jpg"
@@ -61,7 +61,7 @@ const About = () => {
             src="https://utfs.io/f/92ff00ed-c586-4f9a-9bce-1d183664d176-24vw.jpg"
             height="500"
             width="500"
-            className="w-full h-[70%] 2xl:h-full object-cover "
+            className="w-full h-full object-cover "
             alt="Imie Nazwisko"
           />
           <figcaption>

@@ -3,75 +3,27 @@ import {
   InstagramIcon,
   TwitterIcon,
 } from "@/components/icons";
+import { title } from "process";
 
 export const headerLinks = [
   {
-    label: "O Nas",
-    route: "/#about",
-  },
-  {
-    label: "Usługi",
-    route: "/#services",
+    label: "Pracownia",
+    route: "/#office",
   },
   {
     label: "Projekty",
     route: "/#projects",
   },
   {
-    label: "Współprace",
-    route: "/#partners",
+    label: "O Nas",
+    route: "/#about",
   },
+
   {
     label: "Opinie",
     route: "/#testimonials",
   },
 ];
-
-export const team = [
-  {
-    firstName: "Imię",
-    lastName: "Nazwisko",
-    role: "Stanowisko",
-  },
-  {
-    firstName: "Imię",
-    lastName: "Nazwisko",
-    role: "Stanowisko",
-  },
-  {
-    firstName: "Imię",
-    lastName: "Nazwisko",
-    role: "Stanowisko",
-  },
-  {
-    firstName: "Imię",
-    lastName: "Nazwisko",
-    role: "Stanowisko",
-  },
-  {
-    firstName: "Imię",
-    lastName: "Nazwisko",
-    role: "Stanowisko",
-  },
-  {
-    firstName: "Imię",
-    lastName: "Nazwisko",
-    role: "Stanowisko",
-  },
-];
-
-export const coop = [
-  { name: "firma 1", logo: "/assets/icons/yourlogo.svg" },
-  { name: "firma 2", logo: "/assets/icons/yourlogo.svg" },
-  { name: "firma 3", logo: "/assets/icons/yourlogo.svg" },
-  { name: "firma 4", logo: "/assets/icons/yourlogo.svg" },
-  { name: "firma 5", logo: "/assets/icons/yourlogo.svg" },
-  { name: "firma 6", logo: "/assets/icons/yourlogo.svg" },
-  { name: "firma 7", logo: "/assets/icons/yourlogo.svg" },
-  { name: "firma 8", logo: "/assets/icons/yourlogo.svg" },
-  { name: "firma 9", logo: "/assets/icons/yourlogo.svg" },
-];
-
 export const heroImages = [
   {
     url: "https://utfs.io/f/4356d7f3-9ca1-4f93-9622-c77f3a9113e2-yacw7c.jpg",
@@ -84,6 +36,25 @@ export const heroImages = [
   {
     url: "https://utfs.io/f/c3401ea6-986a-449e-a6e7-1f9bd6d537c7-4opkki.jpg",
     id: "hero-image-3",
+  },
+];
+
+export const office = [
+  {
+    title: "Lorem ipsum dolor sit.",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quam blanditiis obcaecati enim quasi aut sequi iusto tempore, eius et.",
+  },
+  {
+    title: "Lorem ipsum dolor sit.",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quam blanditiis obcaecati enim quasi aut sequi iusto tempore, eius et.",
+  },
+  {
+    title:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quam blanditiis obcaecati enim quasi aut sequi iusto tempore, eius et.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quam blanditiis obcaecati enim quasi aut sequi iusto tempore, eius et.",
   },
 ];
 

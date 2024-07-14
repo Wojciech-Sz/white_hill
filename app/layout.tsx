@@ -30,7 +30,9 @@ export default function RootLayout({
       <body className={`font-sans ${montserrat.variable}`}>
         <div className="flex font-montserrat flex-col min-h-screen">
           <Header />
-          <main className="flex-1">{children}</main>
+          <main className="flex-1 pb-12 md:pb-24">
+            {children}
+          </main>
           <Footer />
         </div>
         <Toaster />
