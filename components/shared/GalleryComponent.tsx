@@ -13,7 +13,7 @@ const GalleryComponent = ({
           gallery[name].map((project) => (
             <figure
               key={project.title}
-              className="flex flex-col w-full  relative group overflow-hidden md:last:aspect-video md:last:col-span-2 xl:last:col-span-1 xl:last:aspect-square items-center"
+              className="flex flex-col w-full  relative group overflow-hidden items-center"
             >
               <Image
                 className="w-full object-cover transition-all duration-500 group-hover:scale-110 "

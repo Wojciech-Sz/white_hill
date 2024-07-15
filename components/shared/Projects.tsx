@@ -25,10 +25,14 @@ const Projects = () => {
       </div>
       <div className="w-full relative flex flex-col gap-4">
         <div
-          className={`justify-center ${visible ? "flex" : "hidden"} section-gap text-xl md:text-2xl xl:text-3xl font-semibold justify-items-center section-gap w-full`}
+          className={`justify-center ${visible ? "flex" : "hidden"} section-gap text-base sm:text-lg md:text-xl xl:text-3xl font-semibold  section-gap w-auto`}
         >
           {projectLinks.map((link) => (
-            <Link href={link.href} key={link.label}>
+            <Link
+              href={link.href}
+              key={link.label}
+              className="flex justify-center w-min sm:w-auto text-center md:w-auto"
+            >
               {link.label}
             </Link>
           ))}
