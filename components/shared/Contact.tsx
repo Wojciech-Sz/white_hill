@@ -19,7 +19,7 @@ const Contact = () => {
           <h3 className="text-xl font-bold md:text-2xl">
             Informacje Kontaktowe
           </h3>
-          <div className="flex flex-col gap-1 space-y-1 text-lg ">
+          <div className="flex flex-col gap-2 text-lg ">
             <a
               href={`tel:${process.env.NEXT_PUBLIC_PHONE}`}
             >
@@ -36,11 +36,11 @@ const Contact = () => {
                 info@acme.com
               </a>
             </div>
-            <div className="flex items-center gap-2  dark:">
+            <div className="flex items-center gap-2">
               <MapPinIcon className="size-5 shrink-0 " />
               <p className="">123 Main St, Anytown USA</p>
             </div>
-            <div className="flex items-center gap-2  dark:">
+            <div className="flex items-center gap-2">
               <ClockIcon className="size-5 shrink-0 " />
               <div className="flex gap-2">
                 <p className="">pon - pt:</p>

@@ -1,17 +1,14 @@
-import { projects } from "@/constans";
+"use client";
+import { projectLinks, projects } from "@/constans";
 import { Separator } from "@radix-ui/react-separator";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "../ui/button";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuTrigger,
-} from "../ui/navigation-menu";
+import Link from "next/link";
 
 const Projects = () => {
+  const [visible, setVisible] = useState(false);
+
   return (
     <section
       id="projects"
@@ -19,22 +16,25 @@ const Projects = () => {
     >
       <div className="flex justify-between items-center w-full">
         <h2 className="section-title">Nasze realizacje</h2>
-        <NavigationMenu>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger className="text-base py-6 xl:text-xl font-semibold">
-              Wszystkie realizacje
-            </NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <div className="flex w-max p-4 text-lg flex-col ">
-                <p>Wnętrza</p>
-                <p>Domy</p>
-                <p>Budynki usługowe</p>
-              </div>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-        </NavigationMenu>
+        <Button
+          className="btn"
+          onClick={() => setVisible(!visible)}
+        >
+          Wiecej realizacji
+        </Button>
       </div>
-      <Separator className="w-full border-b-2 border-primary-foreground" />
+      <div className="w-full relative flex flex-col gap-4">
+        <div
+          className={`justify-center ${visible ? "flex" : "hidden"} section-gap text-xl md:text-2xl xl:text-3xl font-semibold justify-items-center section-gap w-full`}
+        >
+          {projectLinks.map((link) => (
+            <Link href={link.href} key={link.label}>
+              {link.label}
+            </Link>
+          ))}
+        </div>
+        <Separator className="w-full border-b-2 border-primary-foreground" />
+      </div>
       <div className="grid w-full grid-cols-1 section-gap  md:grid-cols-2 xl:grid-cols-3">
         {projects.map((project) => (
           <figure
@@ -50,7 +50,7 @@ const Projects = () => {
             />
             <div className="absolute inset-0 bg-secondary-foreground/30 z-[1] group-hover:opacity-0 transition-opacity duration-500" />
             <figcaption className="absolute bottom-10 z-[4] group-hover:translate-x-2 left-4 transition-transform duration-500 text-white">
-              <h4 className="text-3xl font-semibold  lg:text-4xl">
+              <h4 className="text-3xl font-semibold lg:text-4xl">
                 {project.title}
               </h4>
             </figcaption>

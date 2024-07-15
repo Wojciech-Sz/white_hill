@@ -16,7 +16,7 @@ export default function Header() {
       <MobileMenu />
       <Link href="/" prefetch={false}>
         <span className="text-2xl font-bold">
-          Architekt
+          White Hill
         </span>
       </Link>
       <div className="flex absolute right-5 md:right-10 xl:right-20 2xl:right-40 items-center gap-5">
@@ -32,10 +32,7 @@ export default function Header() {
             <span className="sr-only">{link.name}</span>
           </Link>
         ))}
-        <Button
-          variant="default"
-          className="text-base font-semibold text-primary-foreground md:text-xl"
-        >
+        <Button variant="default" className="btn">
           <Link href="/#contact">Kontakt</Link>
         </Button>
       </div>

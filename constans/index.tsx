@@ -18,11 +18,6 @@ export const headerLinks = [
     label: "O Nas",
     route: "/#about",
   },
-
-  {
-    label: "Opinie",
-    route: "/#testimonials",
-  },
 ];
 export const heroImages = [
   {
@@ -55,6 +50,25 @@ export const office = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quam blanditiis obcaecati enim quasi aut sequi iusto tempore, eius et.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quam blanditiis obcaecati enim quasi aut sequi iusto tempore, eius et.",
+  },
+];
+
+export const projectLinks = [
+  {
+    href: "/projects/interiors/?type=Wnętrza",
+    label: "Wnętrza",
+  },
+  {
+    href: "/projects/houses/?type=Budynki mieszkalne",
+    label: "Budynki mieszkalne",
+  },
+  {
+    href: "/projects/offices/?type=Budynki usługowe",
+    label: "Budynki usługowe",
+  },
+  {
+    href: "/projects/",
+    label: "Galeria",
   },
 ];
 
@@ -97,59 +111,158 @@ export const projects = [
   },
 ];
 
-export const buildings = [
-  {
-    url: "https://utfs.io/f/8d7a8a53-bafd-4339-9f03-54a982816bd1-4154ax.jpg",
-    title: "Tytuł 1",
-  },
-  {
-    url: "https://utfs.io/f/1672debd-f57c-42b9-982b-f8432c314ebd-41551m.jpg",
-    title: "Tytuł 2",
-  },
-  {
-    url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-    title: "Tytuł 3",
-  },
-  {
-    url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-    title: "Tytuł 4",
-  },
-  {
-    url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-    title: "Tytuł 5",
-  },
-  {
-    url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-    title: "Tytuł 6",
-  },
-];
-
-export const interiors = [
-  {
-    url: "https://utfs.io/f/acb2f00f-f2c6-4afc-91a3-258babe869d1-4opkkl.jpg",
-    title: "Tytuł 1",
-  },
-  {
-    url: "https://utfs.io/f/cfe48f1c-62e9-4ca1-8518-b458fbb0c7b4-4oplba.jpg",
-    title: "Tytuł 2",
-  },
-  {
-    url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-    title: "Tytuł 3",
-  },
-  {
-    url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-    title: "Tytuł 4",
-  },
-  {
-    url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-    title: "Tytuł 5",
-  },
-  {
-    url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-    title: "Tytuł 6",
-  },
-];
+export const gallery = {
+  houses: [
+    {
+      url: "https://utfs.io/f/8d7a8a53-bafd-4339-9f03-54a982816bd1-4154ax.jpg",
+      title: "Tytuł 1",
+    },
+    {
+      url: "https://utfs.io/f/1672debd-f57c-42b9-982b-f8432c314ebd-41551m.jpg",
+      title: "Tytuł 2",
+    },
+    {
+      url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+      title: "Tytuł 3",
+    },
+    {
+      url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+      title: "Tytuł 4",
+    },
+    {
+      url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+      title: "Tytuł 5",
+    },
+    {
+      url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+      title: "Tytuł 6",
+    },
+    {
+      url: "https://utfs.io/f/8d7a8a53-bafd-4339-9f03-54a982816bd1-4154ax.jpg",
+      title: "Tytuł 7",
+    },
+    {
+      url: "https://utfs.io/f/1672debd-f57c-42b9-982b-f8432c314ebd-41551m.jpg",
+      title: "Tytuł 8",
+    },
+    {
+      url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+      title: "Tytuł 9",
+    },
+    {
+      url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+      title: "Tytuł 10",
+    },
+    {
+      url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+      title: "Tytuł 11",
+    },
+    {
+      url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+      title: "Tytuł 12",
+    },
+  ],
+  interiors: [
+    {
+      url: "https://utfs.io/f/acb2f00f-f2c6-4afc-91a3-258babe869d1-4opkkl.jpg",
+      title: "Tytuł 1",
+    },
+    {
+      url: "https://utfs.io/f/cfe48f1c-62e9-4ca1-8518-b458fbb0c7b4-4oplba.jpg",
+      title: "Tytuł 2",
+    },
+    {
+      url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+      title: "Tytuł 3",
+    },
+    {
+      url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+      title: "Tytuł 4",
+    },
+    {
+      url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+      title: "Tytuł 5",
+    },
+    {
+      url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+      title: "Tytuł 6",
+    },
+    {
+      url: "https://utfs.io/f/acb2f00f-f2c6-4afc-91a3-258babe869d1-4opkkl.jpg",
+      title: "Tytuł 7",
+    },
+    {
+      url: "https://utfs.io/f/cfe48f1c-62e9-4ca1-8518-b458fbb0c7b4-4oplba.jpg",
+      title: "Tytuł 8",
+    },
+    {
+      url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+      title: "Tytuł 9",
+    },
+    {
+      url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+      title: "Tytuł 10",
+    },
+    {
+      url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+      title: "Tytuł 11",
+    },
+    {
+      url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+      title: "Tytuł 12",
+    },
+  ],
+  offices: [
+    {
+      url: "https://utfs.io/f/8d7a8a53-bafd-4339-9f03-54a982816bd1-4154ax.jpg",
+      title: "Tytuł 1",
+    },
+    {
+      url: "https://utfs.io/f/1672debd-f57c-42b9-982b-f8432c314ebd-41551m.jpg",
+      title: "Tytuł 2",
+    },
+    {
+      url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+      title: "Tytuł 3",
+    },
+    {
+      url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+      title: "Tytuł 4",
+    },
+    {
+      url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+      title: "Tytuł 5",
+    },
+    {
+      url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+      title: "Tytuł 6",
+    },
+    {
+      url: "https://utfs.io/f/8d7a8a53-bafd-4339-9f03-54a982816bd1-4154ax.jpg",
+      title: "Tytuł 7",
+    },
+    {
+      url: "https://utfs.io/f/1672debd-f57c-42b9-982b-f8432c314ebd-41551m.jpg",
+      title: "Tytuł 8",
+    },
+    {
+      url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
+      title: "Tytuł 9",
+    },
+    {
+      url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+      title: "Tytuł 10",
+    },
+    {
+      url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+      title: "Tytuł 11",
+    },
+    {
+      url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
+      title: "Tytuł 12",
+    },
+  ],
+};
 
 export const testimonials = [
   {
