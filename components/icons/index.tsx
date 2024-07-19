@@ -10,13 +10,13 @@ export function MenuIcon(props: IconProps) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth="2.3"
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <line x1="4" x2="20" y1="12" y2="12" />
-      <line x1="4" x2="20" y1="6" y2="6" />
-      <line x1="4" x2="20" y1="18" y2="18" />
+      <line x1="1.2" x2="22.8" y1="12" y2="12" />
+      <line x1="1.2" x2="22.8" y1="4" y2="4" />
+      <line x1="1.2" x2="22.8" y1="20" y2="20" />
     </svg>
   );
 }

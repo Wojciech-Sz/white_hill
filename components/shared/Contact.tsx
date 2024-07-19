@@ -14,7 +14,7 @@ const Contact = () => {
       className="section wrapper section-gap"
     >
       <h2 className="section-title">Kontakt</h2>
-      <div className="flex flex-col-reverse gap-6 lg:flex-row md:gap-10 lg:gap-20">
+      <div className="flex w-full items-center lg:items-start lg:justify-center flex-col-reverse gap-6 lg:flex-row md:gap-10 lg:gap-20">
         <div className="flex flex-col gap-2 text-center items-center lg:items-start lg:gap-4 lg:text-left">
           <h3 className="text-xl font-bold md:text-2xl">
             Informacje Kontaktowe

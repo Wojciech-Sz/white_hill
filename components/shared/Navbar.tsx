@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="hidden items-center space-x-6 md:flex">
       {headerLinks.map((link, i) => (
         <Link
-          key={i}
+          key={link.label + i}
           href={link.route}
           className="text-lg font-semibold text-gray-900 transition-colors hover:text-gray-600 dark:hover:text-gray-50"
           prefetch={false}

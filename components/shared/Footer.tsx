@@ -21,10 +21,10 @@ const Footer = () => {
         </p>
 
         <ul className="flex flex-wrap gap-5">
-          {footerLinks.map((link, i) => (
+          {footerLinks.map((link) => (
             <li
               className="flex size-10 items-center justify-center"
-              key={i}
+              key={link.name}
             >
               <Link
                 href={link.href}

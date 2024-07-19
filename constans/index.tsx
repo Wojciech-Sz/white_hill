@@ -21,15 +21,15 @@ export const headerLinks = [
 ];
 export const heroImages = [
   {
-    url: "https://utfs.io/f/4356d7f3-9ca1-4f93-9622-c77f3a9113e2-yacw7c.jpg",
+    url: "https://utfs.io/f/2e2b0e69-399d-41db-865d-473f52a4827b-1n1im0.jpg",
     id: "hero-image-1",
   },
   {
-    url: "https://utfs.io/f/8438138d-f388-48ec-83df-9c06f9a4320d-41551j.jpg",
+    url: "https://utfs.io/f/545da73d-fb2f-4db3-b4d7-a6db112d5a46-1n1im1.jpg",
     id: "hero-image-2",
   },
   {
-    url: "https://utfs.io/f/c3401ea6-986a-449e-a6e7-1f9bd6d537c7-4opkki.jpg",
+    url: "https://utfs.io/f/6c97e348-e599-4042-8b81-7494120906b1-1n1ilz.jpg",
     id: "hero-image-3",
   },
 ];
@@ -41,7 +41,7 @@ export const office = [
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quam blanditiis obcaecati enim quasi aut sequi iusto tempore, eius et.",
   },
   {
-    title: "Lorem ipsum dolor sit.",
+    title: "Lorem ipsum dolor sit amet consectetur.",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quam blanditiis obcaecati enim quasi aut sequi iusto tempore, eius et.",
   },
@@ -67,7 +67,7 @@ export const projectLinks = [
     label: "Budynki usługowe",
   },
   {
-    href: "/projects/",
+    href: "/projects/?type=Galeria",
     label: "Galeria",
   },
 ];
@@ -98,15 +98,15 @@ export const projects = [
     title: "Tytuł 6",
   },
   {
-    url: "https://utfs.io/f/1672debd-f57c-42b9-982b-f8432c314ebd-41551m.jpg",
+    url: "https://utfs.io/f/d20ea795-48c3-4d0f-96fc-b0709505fa14-41551m.jpg",
     title: "Tytuł 7",
   },
   {
-    url: "https://utfs.io/f/9d529a3c-d86d-45ef-b5e1-f6879ed052d3-41551k.jpg",
+    url: "https://utfs.io/f/6fdd90e8-bb1c-4217-a18f-8a8977266360-41551k.jpg",
     title: "Tytuł 8",
   },
   {
-    url: "https://utfs.io/f/a176b9ac-cbc0-4e6c-92e6-9aeec1bfdd5c-41551l.jpg",
+    url: "https://utfs.io/f/5ceb4a7f-9f8c-45e7-98e3-946129e3a65d-41551l.jpg",
     title: "Tytuł 9",
   },
 ];
@@ -115,151 +115,151 @@ export const gallery = {
   houses: [
     {
       url: "https://utfs.io/f/8d7a8a53-bafd-4339-9f03-54a982816bd1-4154ax.jpg",
-      title: "Tytuł 1",
+      title: "Dom 1",
     },
     {
       url: "https://utfs.io/f/1672debd-f57c-42b9-982b-f8432c314ebd-41551m.jpg",
-      title: "Tytuł 2",
+      title: "Dom 2",
     },
     {
       url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-      title: "Tytuł 3",
+      title: "Dom 3",
     },
     {
       url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-      title: "Tytuł 4",
+      title: "Dom 4",
     },
     {
       url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-      title: "Tytuł 5",
+      title: "Dom 5",
     },
     {
       url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-      title: "Tytuł 6",
+      title: "Dom 6",
     },
     {
       url: "https://utfs.io/f/8d7a8a53-bafd-4339-9f03-54a982816bd1-4154ax.jpg",
-      title: "Tytuł 7",
+      title: "Dom 7",
     },
     {
       url: "https://utfs.io/f/1672debd-f57c-42b9-982b-f8432c314ebd-41551m.jpg",
-      title: "Tytuł 8",
+      title: "Dom 8",
     },
     {
       url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-      title: "Tytuł 9",
+      title: "Dom 9",
     },
     {
       url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-      title: "Tytuł 10",
+      title: "Dom 10",
     },
     {
       url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-      title: "Tytuł 11",
+      title: "Dom 11",
     },
     {
       url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-      title: "Tytuł 12",
+      title: "Dom 12",
     },
   ],
   interiors: [
     {
       url: "https://utfs.io/f/acb2f00f-f2c6-4afc-91a3-258babe869d1-4opkkl.jpg",
-      title: "Tytuł 1",
+      title: "Wnętrze 1",
     },
     {
       url: "https://utfs.io/f/cfe48f1c-62e9-4ca1-8518-b458fbb0c7b4-4oplba.jpg",
-      title: "Tytuł 2",
+      title: "Wnętrze 2",
     },
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-      title: "Tytuł 3",
+      title: "Wnętrze 3",
     },
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-      title: "Tytuł 4",
+      title: "Wnętrze 4",
     },
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-      title: "Tytuł 5",
+      title: "Wnętrze 5",
     },
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-      title: "Tytuł 6",
+      title: "Wnętrze 6",
     },
     {
       url: "https://utfs.io/f/acb2f00f-f2c6-4afc-91a3-258babe869d1-4opkkl.jpg",
-      title: "Tytuł 7",
+      title: "Wnętrze 7",
     },
     {
       url: "https://utfs.io/f/cfe48f1c-62e9-4ca1-8518-b458fbb0c7b4-4oplba.jpg",
-      title: "Tytuł 8",
+      title: "Wnętrze 8",
     },
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-      title: "Tytuł 9",
+      title: "Wnętrze 9",
     },
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-      title: "Tytuł 10",
+      title: "Wnętrze 10",
     },
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-      title: "Tytuł 11",
+      title: "Wnętrze 11",
     },
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-      title: "Tytuł 12",
+      title: "Wnętrze 12",
     },
   ],
   offices: [
     {
       url: "https://utfs.io/f/8d7a8a53-bafd-4339-9f03-54a982816bd1-4154ax.jpg",
-      title: "Tytuł 1",
+      title: "Biuro 1",
     },
     {
       url: "https://utfs.io/f/1672debd-f57c-42b9-982b-f8432c314ebd-41551m.jpg",
-      title: "Tytuł 2",
+      title: "Biuro 2",
     },
     {
       url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-      title: "Tytuł 3",
+      title: "Biuro 3",
     },
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-      title: "Tytuł 4",
+      title: "Biuro 4",
     },
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-      title: "Tytuł 5",
+      title: "Biuro 5",
     },
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-      title: "Tytuł 6",
+      title: "Biuro 6",
     },
     {
       url: "https://utfs.io/f/8d7a8a53-bafd-4339-9f03-54a982816bd1-4154ax.jpg",
-      title: "Tytuł 7",
+      title: "Biuro 7",
     },
     {
       url: "https://utfs.io/f/1672debd-f57c-42b9-982b-f8432c314ebd-41551m.jpg",
-      title: "Tytuł 8",
+      title: "Biuro 8",
     },
     {
       url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-      title: "Tytuł 9",
+      title: "Biuro 9",
     },
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-      title: "Tytuł 10",
+      title: "Biuro 10",
     },
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-      title: "Tytuł 11",
+      title: "Biuro 11",
     },
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-      title: "Tytuł 12",
+      title: "Biuro 12",
     },
   ],
 };
@@ -294,11 +294,7 @@ export const footerLinks = [
     name: "Facebook",
     icon: <FacebookIcon className="w-7 h-7" />,
   },
-  {
-    href: "https://x.com/home?lang=pl",
-    name: "X",
-    icon: <TwitterIcon className="w-7 h-7" />,
-  },
+
   {
     href: "https://www.instagram.com/",
     name: "Instagram",

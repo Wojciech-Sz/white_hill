@@ -18,7 +18,11 @@ const config: import("tailwindcss").Config = {
         "2xl": "1400px",
       },
     },
+
     extend: {
+      screens: {
+        xs: "435px",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -88,6 +92,7 @@ const config: import("tailwindcss").Config = {
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],
+        museoSansCyrl: ["var(--font-museo-sans-cyrl)"],
       },
     },
   },

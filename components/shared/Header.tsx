@@ -12,26 +12,29 @@ import { footerLinks } from "@/constans";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 w-full z-20 flex items-center justify-center bg-white/90  wrapper py-3 shadow-sm dark:bg-gray-950  md:py-4">
+    <header className="sticky h-[4.5rem] top-0 w-full z-[20] flex items-center justify-center bg-white/90 wrapper py-3 shadow-sm dark:bg-gray-950  md:py-4">
       <MobileMenu />
       <Link href="/" prefetch={false}>
-        <span className="text-2xl font-bold">
+        <h2 className="text-2xl font-black font-museoSansCyrl">
           White Hill
-        </span>
+        </h2>
       </Link>
       <div className="flex absolute right-5 md:right-10 xl:right-20 2xl:right-40 items-center gap-5">
-        {footerLinks.map((link, i) => (
-          <Link
-            key={i}
-            href={link.href}
-            className="text-primary-foreground hidden md:flex size-full hover:text-primary "
-            prefetch={false}
-            target="_blank"
-          >
-            {link.icon}
-            <span className="sr-only">{link.name}</span>
-          </Link>
-        ))}
+        <div className="hidden md:flex gap-2">
+          {footerLinks.map((link, i) => (
+            <Link
+              key={link.name + i}
+              href={link.href}
+              className="text-primary-foreground flex size-full hover:text-primary "
+              prefetch={false}
+              target="_blank"
+            >
+              {link.icon}
+              <span className="sr-only">{link.name}</span>
+            </Link>
+          ))}
+        </div>
+
         <Button variant="default" className="btn">
           <Link href="/#contact">Kontakt</Link>
         </Button>

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
+import { Separator } from "../ui/separator";
 
 const About = () => {
   return (
@@ -9,10 +10,8 @@ const About = () => {
       id="about"
       className="wrapper section section-gap"
     >
-      <h2 className="text-5xl font-bold lg:text-7xl">
-        O Nas
-      </h2>
-
+      <h2 className="section-title">O Nas</h2>
+      <Separator className="md:w-full md:border-b-2 border-primary-foreground" />
       <div className="grid w-full grid-cols-1 section-gap md:grid-cols-2 2xl:grid-cols-3">
         <figure className="flex h-max flex-col gap-4">
           <Image
@@ -25,7 +24,7 @@ const About = () => {
           <figcaption>
             <div className="flex flex-col gap-4">
               <div className="flex flex-col gap-2">
-                <h3 className="text-2xl font-bold">
+                <h3 className="text-2xl font-bold first-letter:-ml-[2px]">
                   Imie Nazwisko
                 </h3>
                 <p className="text-xl italic text-muted-foreground">
@@ -46,7 +45,7 @@ const About = () => {
           <figcaption>
             <div className="flex flex-col gap-4">
               <div className="flex flex-col gap-2">
-                <h3 className="text-2xl font-bold">
+                <h3 className="text-2xl font-bold first-letter:-ml-[2px]">
                   Imie Nazwisko
                 </h3>
                 <p className="text-xl italic text-muted-foreground">
@@ -61,13 +60,13 @@ const About = () => {
             src="https://utfs.io/f/92ff00ed-c586-4f9a-9bce-1d183664d176-24vw.jpg"
             height="500"
             width="500"
-            className="w-full h-full object-cover "
+            className="w-full h-full aspect-square md:aspect-video object-cover "
             alt="Imie Nazwisko"
           />
           <figcaption>
             <div className="flex flex-col gap-4">
               <div className="flex flex-col gap-2">
-                <h3 className="text-2xl font-bold">
+                <h3 className="text-2xl font-bold first-letter:-ml-[2px]">
                   Imie Nazwisko
                 </h3>
                 <p className="text-xl italic text-muted-foreground">

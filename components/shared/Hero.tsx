@@ -13,14 +13,18 @@ const Hero = () => {
     heroImages.forEach((image, i) => {
       tl.to(`#${image.id}`, {
         scale: 1.1,
-        duration: 5,
+        duration: 6,
         ease: "linear",
       })
-        .to(`#${image.id}`, {
-          opacity: 0,
-          duration: 2,
-          ease: "linear",
-        })
+        .to(
+          `#${image.id}`,
+          {
+            opacity: 0,
+            duration: 2,
+            ease: "linear",
+          },
+          ">-2"
+        )
         .to(
           `#${
             heroImages[i + 1]
@@ -55,13 +59,17 @@ const Hero = () => {
           }`}
         />
       ))}
-      <div className="flex justify-end h-full inset-0 bg-foreground/30 text-white self-end pb-20 flex-col absolute gap-10 text-left text-pretty pl-10">
-        <h1 className="text-4xl font-bold tracking-tight lg:text-5xl">
-          Architektura / Wnętrza
-        </h1>
-        <p className=" text-4xl font-bold tracking-tight lg:text-5xl max-w-[30ch] ">
-          Pomożemy wam stworzyć waszą niepowtarzalną
-          przestrzeń
+      <div className="h-full inset-0 bg-foreground/30 absolute" />
+      <div className="flex wrapper text-4xl font-bold lg:text-5xl text-white self-end pb-20 flex-col absolute gap-10 text-left text-pretty">
+        <h1>Architektura / Wnętrza</h1>
+        <p className="max-w-[30ch] first-letter:-ml-[2.8px]">
+          Pomożemy wam stworzyć waszą{" "}
+          <span className="first-letter:-ml-[2.3px] inline-block">
+            niepowtarzalną
+          </span>{" "}
+          <span className="first-letter:-ml-[2.3px] block md:first-letter:m-0 md:inline">
+            przestrzeń
+          </span>
         </p>
       </div>
     </section>

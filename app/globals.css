@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 36 39% 88%;
+    --background: 30 3% 89%;
     --foreground: 36 45% 15%;
 
     --card: 36 46% 82%;
@@ -13,7 +13,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
 
-    --primary: 36 45% 70%;
+    --primary: 25 25% 81%;
     --primary-foreground: 36 45% 11%;
 
     --secondary: 40 35% 77%;
@@ -96,14 +96,42 @@
     @apply gap-5 lg:gap-7 2xl:gap-10;
   }
   .section-title {
-    @apply text-4xl md:text-5xl leading-none font-bold lg:text-7xl;
+    @apply text-3xl sm:text-4xl md:text-5xl leading-none font-black lg:text-6xl font-museoSansCyrl;
+  }
+
+  .projects-title {
+    @apply first-letter:-ml-[2.3px] sm:first-letter:-ml-[2.8px] md:first-letter:-ml-[3.6px] lg:first-letter:-ml-[4.5px];
+  }
+
+  .projects-title-span {
+    @apply inline-block first-letter:-ml-[1.8px];
+  }
+
+  .projects-link {
+    @apply flex items-center tracking-tighter leading-none w-min xs:w-auto text-sm sm:text-lg md:text-xl xl:text-3xl font-semibold text-center;
+  }
+
+  .projects-grid {
+    @apply grid w-full grid-cols-1 section-gap  md:grid-cols-2 xl:grid-cols-3;
+  }
+
+  .projects-img {
+    @apply w-full object-cover transition-all duration-500 group-hover:scale-110;
+  }
+
+  .projects-img-filter {
+    @apply absolute inset-0 bg-secondary-foreground/30 z-[1] group-hover:opacity-0 transition-opacity duration-500;
+  }
+
+  .projects-img-title {
+    @apply absolute bottom-10 z-[4] cursor-default group-hover:translate-x-2 left-10 transition-transform duration-500 text-white;
   }
 
   .input {
     @apply flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
   }
   .btn {
-    @apply text-base font-semibold text-primary-foreground md:text-xl;
+    @apply text-base font-bold text-primary-foreground md:text-xl font-museoSansCyrl;
   }
 }
 
