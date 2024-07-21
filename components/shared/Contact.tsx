@@ -6,20 +6,23 @@ import {
   MapPinIcon,
   PhoneIcon,
 } from "../icons";
+import { Separator } from "@radix-ui/react-separator";
+import SvgBackground from "./SvgBackground";
 
 const Contact = () => {
   return (
     <section
       id="contact"
-      className="section wrapper section-gap"
+      className="section min-h-screen relative wrapper section-gap"
     >
       <h2 className="section-title">Kontakt</h2>
-      <div className="flex w-full items-center lg:items-start lg:justify-center flex-col-reverse gap-6 lg:flex-row md:gap-10 lg:gap-20">
+      <SvgBackground />
+      <div className="flex w-auto items-center lg:items-start lg:justify-center flex-col-reverse gap-6 lg:flex-row md:gap-10 lg:gap-20">
         <div className="flex flex-col gap-2 text-center items-center lg:items-start lg:gap-4 lg:text-left">
           <h3 className="text-xl font-bold md:text-2xl">
             Informacje Kontaktowe
           </h3>
-          <div className="flex flex-col gap-2 text-lg ">
+          <div className="flex flex-col gap-2 items-center lg:items-start text-lg ">
             <a
               href={`tel:${process.env.NEXT_PUBLIC_PHONE}`}
             >
@@ -49,7 +52,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-
         <ContactForm />
       </div>
     </section>

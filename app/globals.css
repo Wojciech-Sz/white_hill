@@ -112,11 +112,11 @@
   }
 
   .projects-grid {
-    @apply grid w-full grid-cols-1 section-gap  md:grid-cols-2 xl:grid-cols-3;
+    @apply grid w-full grid-cols-1 section-gap  sm:grid-cols-2 xl:grid-cols-3;
   }
 
   .projects-img {
-    @apply w-full object-cover transition-all duration-500 group-hover:scale-110;
+    @apply h-full w-full object-cover transition-all duration-500 group-hover:scale-110;
   }
 
   .projects-img-filter {
@@ -124,7 +124,11 @@
   }
 
   .projects-img-title {
-    @apply absolute bottom-10 z-[4] cursor-default group-hover:translate-x-2 left-10 transition-transform duration-500 text-white;
+    @apply absolute bottom-10 z-[2] group-hover:translate-x-2 left-10 transition-transform duration-500 text-white;
+  }
+
+  .img-span-2 {
+    @apply last:sm:aspect-video last:sm:col-span-2 last:xl:col-span-1 last:xl:aspect-square;
   }
 
   .input {

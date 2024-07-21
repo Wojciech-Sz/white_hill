@@ -33,6 +33,8 @@ const ContactForm = () => {
   const minDate = new Date();
 
   minDate.setDate(minDate.getDate() + 2);
+  minDate.setHours(8);
+  minDate.setMinutes(0);
   const initialValues = {
     firstName: "",
     lastName: "",
@@ -41,7 +43,6 @@ const ContactForm = () => {
     subject: "",
     message: "",
     agree: false,
-    date: minDate,
   };
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -63,10 +64,19 @@ const ContactForm = () => {
 
     const data = await response.json();
     console.log("fetch response:", data);
+    const message = data.error
+      ? {
+          title: "Wiadomość nie została wysłana",
+          variant: "destructive" as "destructive",
+        }
+      : {
+          title: "Wiadomość została wysłana",
+          variant: "default" as "default",
+        };
 
     form.reset();
     toast({
-      title: "Wiadomość została wysłana pomyślnie!",
+      ...message,
     });
   };
 
@@ -146,42 +156,6 @@ const ContactForm = () => {
                     {...field}
                   />
                 </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-
-          {/* Data */}
-          <FormField
-            control={form.control}
-            name="date"
-            render={({ field }) => (
-              <FormItem className="w-full">
-                <FormControl>
-                  <div className="input">
-                    <DatePicker
-                      locale={"pl"}
-                      className="w-full bg-background cursor-pointer"
-                      selected={field.value}
-                      onChange={(date: Date | null) =>
-                        field.onChange(date)
-                      }
-                      showTimeSelect
-                      minDate={minDate}
-                      dateFormat="dd/MM/yyy HH:mm"
-                      minTime={
-                        new Date("2024-07-14T08:00:00")
-                      }
-                      timeIntervals={15}
-                      maxTime={
-                        new Date("2024-07-14T16:00:00")
-                      }
-                      wrapperClassName="datePicker"
-                    />
-                    <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
-                  </div>
-                </FormControl>
-
                 <FormMessage />
               </FormItem>
             )}

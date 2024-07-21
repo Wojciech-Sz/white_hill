@@ -1,22 +1,29 @@
 import { gallery } from "@/constans";
+import { IProject } from "@/types";
 import Image from "next/image";
+import Link from "next/link";
 
 const GalleryComponent = ({
-  name,
+  images,
+  type,
+  className,
 }: {
-  name: keyof typeof gallery;
+  type?: keyof typeof gallery;
+  images: IProject[];
+  className?: string;
 }) => {
   return (
     <>
       <div className="projects-grid">
-        {Array.isArray(gallery[name]) &&
-          gallery[name].map((project) => (
-            <figure
-              key={project.title}
-              className="w-full relative group overflow-hidden"
-            >
+        {images.map((project) => (
+          <Link
+            key={project.route}
+            href={`/projects/${type ? type : project.type}/${project.route}?title=${project.title}`}
+            className={`${className}`}
+          >
+            <figure className="relative h-full group overflow-hidden">
               <Image
-                className="projects-img"
+                className="projects-img aspect-square"
                 src={project.url}
                 alt="wnetrze 1"
                 width="400"
@@ -29,7 +36,8 @@ const GalleryComponent = ({
                 </h4>
               </figcaption>
             </figure>
-          ))}
+          </Link>
+        ))}
       </div>
     </>
   );

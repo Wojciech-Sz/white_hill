@@ -7,7 +7,7 @@ const Office = () => {
   return (
     <section
       id="office"
-      className="wrapper relative  section section-gap"
+      className="wrapper relative section section-gap"
     >
       <span className="absolute">227; 226; 225</span>
       <h2 className=" section-title">Nasza pracownia</h2>

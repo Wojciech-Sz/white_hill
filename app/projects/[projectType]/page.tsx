@@ -7,19 +7,21 @@ import { Separator } from "@radix-ui/react-separator";
 import Link from "next/link";
 import React, { useState } from "react";
 
-const ProjectsGallery = ({
+const ProjectGallery = ({
   params,
   searchParams,
 }: {
-  params: { name: keyof typeof gallery };
+  params: { projectType: keyof typeof gallery };
   searchParams: { type: string };
 }) => {
   const [visible, setVisible] = useState(false);
   const [title, span] = searchParams.type.split(" ");
   return (
-    <section className="wrapper section section-gap">
+    <section className="wrapper section section-gap ">
       <div className="flex justify-between items-center w-full">
-        <h2 className="section-title projects-title">
+        <h2
+          className={`section-title ${searchParams.type === "Wnętrza" ? "-translate-x-[0.5px]" : "projects-title"}`}
+        >
           {title}{" "}
           {span && (
             <span className="projects-title-span">
@@ -55,9 +57,12 @@ const ProjectsGallery = ({
         </div>
         <Separator className="w-full border-b-2 border-primary-foreground" />
       </div>
-      <GalleryComponent name={params.name} />
+      <GalleryComponent
+        type={params.projectType}
+        images={gallery[params.projectType]}
+      />
     </section>
   );
 };
 
-export default ProjectsGallery;
+export default ProjectGallery;

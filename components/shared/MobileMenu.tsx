@@ -43,7 +43,7 @@ const MobileMenu = () => {
         </h2>
         <nav className="flex flex-col w-full h-full gap-3 justify-between items-center">
           <div className="w-full flex flex-col gap-3">
-            {headerLinks.map((link, i) =>
+            {headerLinks.map((link) =>
               link.label === "Projekty" ? (
                 <div
                   className="flex flex-col gap-3"
@@ -74,6 +74,7 @@ const MobileMenu = () => {
               ) : (
                 <Link
                   href={link.route}
+                  key={link.route}
                   className="text-xl relative w-max md:text-2xl font-museoSansCyrl xl:text-3xl font-bold transition-colors hover:text-gray-900 dark:hover:text-gray-50"
                   prefetch={false}
                   scroll
@@ -112,7 +113,7 @@ const MobileMenu = () => {
           <div className="flex">
             {footerLinks.map((link, i) => (
               <Link
-                key={link.name + i}
+                key={link.name}
                 href={link.href}
                 className=" md:hidden flex size-10 items-center text-primary-foreground hover:text-primary"
                 prefetch={false}

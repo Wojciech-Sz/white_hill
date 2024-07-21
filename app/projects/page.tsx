@@ -2,7 +2,7 @@
 import GalleryComponent from "@/components/shared/GalleryComponent";
 import { Button } from "@/components/ui/button";
 
-import { projectLinks } from "@/constans";
+import { gallery, projectLinks } from "@/constans";
 import { Separator } from "@radix-ui/react-separator";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -12,7 +12,7 @@ const Gallery = () => {
   return (
     <section className="wrapper section section-gap">
       <div className="flex justify-between items-center w-full">
-        <h2 className="section-title projects-title translate-x-[1.2px]">
+        <h2 className="section-title -translate-x-[1.2px]">
           Galeria
         </h2>
         <Button
@@ -42,9 +42,18 @@ const Gallery = () => {
         </div>
         <Separator className="w-full border-b-2 border-primary-foreground" />
       </div>
-      <GalleryComponent name={"houses"} />
-      <GalleryComponent name={"interiors"} />
-      <GalleryComponent name={"offices"} />
+      <GalleryComponent
+        type={"houses"}
+        images={gallery["houses"]}
+      />
+      <GalleryComponent
+        type={"interiors"}
+        images={gallery["interiors"]}
+      />
+      <GalleryComponent
+        type={"offices"}
+        images={gallery["offices"]}
+      />
     </section>
   );
 };

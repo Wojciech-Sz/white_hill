@@ -6,7 +6,7 @@ import Projects from "@/components/shared/Projects";
 
 export default function Home() {
   return (
-    <div className="flex  w-full flex-col items-center">
+    <div className="flex w-full flex-col items-center">
       <Hero />
       <Office />
       <Projects />

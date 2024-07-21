@@ -33,9 +33,6 @@ export const formSchema = z
     email: z
       .string()
       .email({ message: "Niepoprawny adres E-mail" }),
-    date: z.date({
-      required_error: "Data jest wymagana",
-    }),
     message: z
       .string()
       .min(2, {

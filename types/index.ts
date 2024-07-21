@@ -1,3 +1,5 @@
+import { gallery } from "@/constans";
+
 export type IconProps = {
   className: string;
 };
@@ -10,3 +12,10 @@ export type ContactFormProps = {
   subject: string;
   message: string;
 };
+
+export interface IProject {
+  url: string;
+  route: string;
+  title: string;
+  type?: keyof typeof gallery;
+}

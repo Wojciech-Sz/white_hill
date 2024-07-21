@@ -1,13 +1,22 @@
 "use client";
-import { projectLinks, projects } from "@/constans";
+import { gallery, projectLinks } from "@/constans";
 import { Separator } from "@radix-ui/react-separator";
-import Image from "next/image";
 import React, { useState } from "react";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import GalleryComponent from "./GalleryComponent";
 
 const Projects = () => {
   const [visible, setVisible] = useState(false);
+  const projects = Object.entries(gallery).flatMap(
+    ([key, array]) =>
+      array.slice(0, 3).map((project) => ({
+        url: project.url,
+        title: project.title,
+        route: project.route,
+        type: key as keyof typeof gallery,
+      }))
+  );
 
   return (
     <section
@@ -49,28 +58,10 @@ const Projects = () => {
         </div>
         <Separator className="w-full border-b-2 border-primary-foreground" />
       </div>
-      <div className="projects-grid">
-        {projects.map((project) => (
-          <figure
-            key={project.title}
-            className="flex flex-col w-full  relative group overflow-hidden md:last:aspect-video md:last:col-span-2 xl:last:col-span-1 xl:last:aspect-square items-center"
-          >
-            <Image
-              className="projects-img"
-              src={project.url}
-              alt="wnetrze 1"
-              width="400"
-              height="400"
-            />
-            <div className="projects-img-filter" />
-            <figcaption className="projects-img-title">
-              <h4 className="text-3xl font-semibold lg:text-4xl">
-                {project.title}
-              </h4>
-            </figcaption>
-          </figure>
-        ))}
-      </div>
+      <GalleryComponent
+        images={projects}
+        className="img-span-2"
+      />
     </section>
   );
 };
