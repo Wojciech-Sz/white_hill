@@ -28,7 +28,7 @@ const Projects = () => {
           Nasze realizacje
         </h2>
         <Button
-          className="btn h-min w-max"
+          className="btn"
           onClick={() => setVisible(!visible)}
         >
           Wiecej realizacji
