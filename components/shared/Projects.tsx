@@ -23,12 +23,12 @@ const Projects = () => {
       id="projects"
       className="wrapper section section-gap"
     >
-      <div className="flex w-full items-center justify-between">
+      <div className="flex w-full flex-row items-center justify-between">
         <h2 className="section-title projects-title">
           Nasze realizacje
         </h2>
         <Button
-          className="btn"
+          className="btn h-min w-max"
           onClick={() => setVisible(!visible)}
         >
           Wiecej realizacji
@@ -36,7 +36,7 @@ const Projects = () => {
       </div>
       <div className="relative flex w-full flex-col gap-4">
         <div
-          className={`flex justify-center lg:justify-between ${visible ? "h-9 opacity-100" : "h-0 overflow-hidden opacity-0"} gap-2 transition-all duration-500 lg:px-10`}
+          className={`justify-center lg:justify-between ${visible ? "flex" : "hidden"} gap-2 transition-all duration-500 lg:px-10`}
         >
           {projectLinks.map((link, i) => (
             <div

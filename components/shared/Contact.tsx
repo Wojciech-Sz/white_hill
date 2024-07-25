@@ -15,7 +15,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="section section-gap relative"
+      className="section wrapper section-gap relative"
     >
       <h2 className="section-title self-center">Kontakt</h2>
       <SvgBackground />
