@@ -13,14 +13,14 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
 
-    --primary: 25 25% 81%;
+    --primary: 26 5% 74%;
     --primary-foreground: 36 45% 11%;
 
     --secondary: 40 35% 77%;
     --secondary-foreground: 36 45% 25%;
 
-    --muted: 36 33% 75%;
-    --muted-foreground: 36 45% 25%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 45%;
 
     --accent: 36 64% 57%;
     --accent-foreground: 36 72% 17%;
@@ -29,10 +29,8 @@
     --destructive-foreground: 0 0% 98%;
 
     --border: 36 45% 60%;
-    --input: 36 45% 60%;
-    --ring: 36 45% 30%;
-
-    --radius: 0.5rem;
+    --input: 26 5% 74%;
+    --ring: 26 5% 74%;
   }
 
   .dark {
@@ -89,53 +87,60 @@
     xl:px-20
     2xl:px-40;
   }
+  .header {
+    @apply sticky top-0 z-20 flex h-[4.5rem] w-full items-center justify-center bg-white/90 py-3 shadow-sm dark:bg-gray-950  md:py-4;
+  }
   .section {
-    @apply flex w-full flex-col items-center pt-12  md:pt-24;
+    @apply flex w-full flex-col pt-12  md:pt-24;
   }
   .section-gap {
     @apply gap-5 lg:gap-7 2xl:gap-10;
   }
   .section-title {
-    @apply text-3xl sm:text-4xl md:text-5xl leading-none font-black lg:text-6xl font-museoSansCyrl;
+    @apply text-3xl sm:text-4xl md:text-5xl leading-none font-bold lg:text-6xl uppercase;
   }
 
   .projects-title {
-    @apply first-letter:-ml-[2.3px] sm:first-letter:-ml-[2.8px] md:first-letter:-ml-[3.6px] lg:first-letter:-ml-[4.5px];
-  }
-
-  .projects-title-span {
-    @apply inline-block first-letter:-ml-[1.8px];
+    @apply -ml-[2.5px] sm:-ml-[3px] md:-ml-[3.8px] lg:-ml-[4.7px];
   }
 
   .projects-link {
-    @apply flex items-center tracking-tighter leading-none w-min xs:w-auto text-sm sm:text-lg md:text-xl xl:text-3xl font-semibold text-center;
+    @apply flex items-center tracking-tighter leading-none w-min xs:w-auto text-sm sm:text-xl md:text-2xl lg:text-3xl font-semibold text-center;
+  }
+
+  .mobile-link {
+    @apply relative w-max text-xl font-bold tracking-tighter md:text-2xl xl:text-3xl hover:text-primary-foreground/80;
   }
 
   .projects-grid {
-    @apply grid w-full grid-cols-1 section-gap  sm:grid-cols-2 xl:grid-cols-3;
+    @apply grid w-full grid-cols-1 section-gap sm:grid-cols-2 xl:grid-cols-3;
   }
 
   .projects-img {
-    @apply h-full w-full object-cover transition-all duration-500 group-hover:scale-110;
+    @apply size-full object-cover transition-all duration-500 group-hover:scale-110;
   }
 
   .projects-img-filter {
-    @apply absolute inset-0 bg-secondary-foreground/30 z-[1] group-hover:opacity-0 transition-opacity duration-500;
+    @apply absolute inset-0 bg-background/30 z-[1] group-hover:opacity-0 transition-opacity duration-500;
   }
 
   .projects-img-title {
-    @apply absolute bottom-10 z-[2] group-hover:translate-x-2 left-10 transition-transform duration-500 text-white;
+    @apply absolute bottom-10 z-[2] group-hover:translate-x-2 left-8 transition-transform duration-500 text-white;
   }
 
   .img-span-2 {
-    @apply last:sm:aspect-video last:sm:col-span-2 last:xl:col-span-1 last:xl:aspect-square;
+    @apply sm:last:aspect-video sm:last:col-span-2 xl:last:col-span-1 xl:last:aspect-[7/10];
   }
 
-  .input {
-    @apply flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
-  }
   .btn {
-    @apply text-base font-bold text-primary-foreground md:text-xl font-museoSansCyrl;
+    @apply w-full text-base uppercase font-bold font-museoSansCyrl md:text-xl;
+  }
+
+  .svgBg {
+    @apply absolute inset-x-0 -bottom-12 top-2 z-[-1] grid grid-cols-[repeat(10,1fr)] md:grid-cols-[repeat(15,1fr)] lg:grid-cols-[repeat(22,1fr)] md:-bottom-24;
+  }
+  .svgBg-line {
+    @apply w-px bg-[#cac9c9];
   }
 }
 

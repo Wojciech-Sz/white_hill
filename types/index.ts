@@ -1,7 +1,8 @@
 import { gallery } from "@/constans";
 
 export type IconProps = {
-  className: string;
+  className?: string;
+  strokeWidth?: string;
 };
 
 export type ContactFormProps = {

@@ -21,52 +21,51 @@ const MobileMenu = () => {
       <SheetTrigger asChild>
         <Button
           variant="link"
-          className="p-0 absolute left-5 md:left-10 xl:left-20 2xl:left-40"
+          className="absolute left-5 p-0 md:left-10 xl:left-20 2xl:left-40"
         >
-          <MenuIcon className="size-10 text-primary-foreground" />
+          <MenuIcon className="size-8 text-primary-foreground" />
           <span className="sr-only">Włacz menu</span>
         </Button>
       </SheetTrigger>
       <SheetContent
         side="left"
-        className="flex flex-col items-center bg-white p-4 dark:bg-gray-950"
+        className="flex flex-col bg-white p-4 font-museoSansCyrl uppercase"
       >
-        <h2 className="flex items-center justify-between">
-          <Link
-            href="/"
-            className="flex relative font-museoSansCyrl items-center text-xl md:text-2xl xl:text-3xl font-bold"
-            prefetch={false}
-          >
-            White Hill
-            <SheetClose className="absolute w-full h-full " />
-          </Link>
-        </h2>
-        <nav className="flex flex-col w-full h-full gap-3 justify-between items-center">
-          <div className="w-full flex flex-col gap-3">
+        <nav className="flex size-full flex-col justify-between">
+          <div className="flex flex-col gap-2">
+            <Link
+              href="/"
+              scroll
+              className="mobile-link"
+              prefetch={false}
+            >
+              Home
+              <SheetClose className="absolute left-0 size-full" />
+            </Link>
             {headerLinks.map((link) =>
               link.label === "Projekty" ? (
                 <div
-                  className="flex flex-col gap-3"
+                  className="flex flex-col "
                   key={link.label}
                 >
                   <Link
                     href={link.route}
-                    className="text-xl relative w-max font-museoSansCyrl md:text-2xl xl:text-3xl font-bold transition-colors hover:text-gray-900 dark:hover:text-gray-50"
+                    className="mobile-link"
                     prefetch={false}
                     scroll
                   >
                     {link.label}
-                    <SheetClose className="absolute h-full left-0 w-full " />
+                    <SheetClose className="absolute left-0 size-full " />
                   </Link>
-                  <div className="w-full text-lg md:text-xl xl:text-2xl flex flex-col pl-4 gap-2">
+                  <div className="flex flex-col pl-4 text-lg md:text-xl xl:text-2xl">
                     {projectLinks.map((link) => (
                       <Link
-                        className="relative w-max font-montserrat font-medium"
+                        className="relative w-max font-medium hover:text-primary-foreground/80"
                         href={link.href}
                         key={link.label}
                       >
                         {link.label}
-                        <SheetClose className="absolute h-full left-0 w-full  " />
+                        <SheetClose className="absolute left-0 size-full" />
                       </Link>
                     ))}
                   </div>
@@ -75,16 +74,16 @@ const MobileMenu = () => {
                 <Link
                   href={link.route}
                   key={link.route}
-                  className="text-xl relative w-max md:text-2xl font-museoSansCyrl xl:text-3xl font-bold transition-colors hover:text-gray-900 dark:hover:text-gray-50"
+                  className="mobile-link"
                   prefetch={false}
                   scroll
                 >
                   {link.label}
-                  <SheetClose className="absolute h-full left-0 w-full " />
+                  <SheetClose className="absolute left-0 size-full" />
                 </Link>
               )
             )}
-            <div className="w-full flex flex-col gap-2">
+            <div className="flex  w-full flex-col gap-2">
               <Button
                 variant="default"
                 className="btn relative"
@@ -95,7 +94,7 @@ const MobileMenu = () => {
                   prefetch={false}
                 >
                   Kontakt
-                  <SheetClose className="absolute left-0 w-full h-full " />
+                  <SheetClose className="absolute left-0 size-full " />
                 </Link>
               </Button>
               <Button
@@ -104,18 +103,18 @@ const MobileMenu = () => {
               >
                 <Link href="/appointment" prefetch={false}>
                   Umów spotkanie
-                  <SheetClose className="absolute left-0 w-full h-full " />
+                  <SheetClose className="absolute left-0 size-full " />
                 </Link>
               </Button>
             </div>
           </div>
 
-          <div className="flex">
+          <div className="flex self-center md:hidden">
             {footerLinks.map((link, i) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className=" md:hidden flex size-10 items-center text-primary-foreground hover:text-primary"
+                className=" flex size-10 items-center text-primary-foreground hover:text-primary "
                 prefetch={false}
                 target="_blank"
               >

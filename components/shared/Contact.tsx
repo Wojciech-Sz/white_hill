@@ -6,33 +6,38 @@ import {
   MapPinIcon,
   PhoneIcon,
 } from "../icons";
-import { Separator } from "@radix-ui/react-separator";
+
 import SvgBackground from "./SvgBackground";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const Contact = () => {
   return (
     <section
       id="contact"
-      className="section min-h-screen relative wrapper section-gap"
+      className="section section-gap relative"
     >
-      <h2 className="section-title">Kontakt</h2>
+      <h2 className="section-title self-center">Kontakt</h2>
       <SvgBackground />
-      <div className="flex w-auto items-center lg:items-start lg:justify-center flex-col-reverse gap-6 lg:flex-row md:gap-10 lg:gap-20">
-        <div className="flex flex-col gap-2 text-center items-center lg:items-start lg:gap-4 lg:text-left">
+      <div className="flex w-auto flex-col-reverse items-center gap-6 md:gap-10 lg:flex-row lg:items-start lg:justify-center lg:gap-20">
+        <div className="flex flex-col items-center gap-2 text-center lg:items-start lg:gap-4 lg:text-left">
           <h3 className="text-xl font-bold md:text-2xl">
             Informacje Kontaktowe
           </h3>
-          <div className="flex flex-col gap-2 items-center lg:items-start text-lg ">
+          <div className="flex w-full flex-col items-center gap-2 font-montserrat text-lg font-normal lg:items-start ">
             <a
               href={`tel:${process.env.NEXT_PUBLIC_PHONE}`}
             >
-              <div className="flex items-center gap-2  hover:text-primary-foreground ">
+              <div className="flex  items-center gap-2  hover:text-primary-foreground ">
                 <PhoneIcon className="size-5 shrink-0" />
                 +1 (555) 123-4567
               </div>
             </a>
             <div className="flex items-center gap-2  hover:text-primary-foreground ">
-              <MailIcon className="size-5 shrink-0 " />
+              <MailIcon
+                className="size-5 shrink-0 "
+                strokeWidth="2.5"
+              />
               <a
                 href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
               >
@@ -50,6 +55,11 @@ const Contact = () => {
                 <p className="">8:00 - 16:00</p>
               </div>
             </div>
+            <Button variant="default" className="btn">
+              <Link href="/appointment" prefetch={false}>
+                Umów spotkanie
+              </Link>
+            </Button>
           </div>
         </div>
         <ContactForm />

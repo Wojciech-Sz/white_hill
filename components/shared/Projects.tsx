@@ -21,15 +21,11 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="wrapper relative section bg-[#fbfaf7] section-gap"
+      className="wrapper section section-gap"
     >
-      <span className="absolute"> 251; 250; 247</span>
-      <div className="flex justify-between items-center w-full">
+      <div className="flex w-full items-center justify-between">
         <h2 className="section-title projects-title">
-          Nasze{" "}
-          <span className="projects-title-span">
-            realizacje
-          </span>
+          Nasze realizacje
         </h2>
         <Button
           className="btn"
@@ -38,12 +34,15 @@ const Projects = () => {
           Wiecej realizacji
         </Button>
       </div>
-      <div className="w-full relative flex flex-col gap-4">
+      <div className="relative flex w-full flex-col gap-4">
         <div
-          className={`justify-center ${visible ? "flex" : "hidden"} gap-2`}
+          className={`flex justify-center lg:justify-between ${visible ? "h-9 opacity-100" : "h-0 overflow-hidden opacity-0"} gap-2 transition-all duration-500 lg:px-10`}
         >
           {projectLinks.map((link, i) => (
-            <div key={link.label} className="flex gap-2">
+            <div
+              key={link.label}
+              className="flex items-center gap-2"
+            >
               <Link
                 href={link.href}
                 className="projects-link"
@@ -51,7 +50,7 @@ const Projects = () => {
                 {link.label}
               </Link>
               <Separator
-                className={`${projectLinks.length - 1 === i ? "h-0" : "h-full"} border-l-2 border-primary-foreground`}
+                className={`${projectLinks.length - 1 === i ? "h-0" : "h-7 xs:h-5 sm:h-6 md:h-7"} border-l-2 border-primary-foreground/70 lg:hidden`}
               />
             </div>
           ))}

@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Inter, Montserrat } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
 import { Toaster } from "@/components/ui/toaster";
+import React from "react";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
-  weight: ["400", "500", "600", "700"],
+  weight: ["100", "400", "500", "600", "700"],
   style: ["normal", "italic"],
 });
 
@@ -28,6 +29,16 @@ const muesoSansCyrl = localFont({
     {
       path: "./fonts/Museo Sans Cyrl/Museo Sans Cyrl 500.ttf",
       weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Museo Sans Cyrl/Museo Sans Cyrl 500 Italic.ttf",
+      weight: "500",
+      style: "italic",
+    },
+    {
+      path: "./fonts/Museo Sans Cyrl/Museo Sans Cyrl 100.ttf",
+      weight: "100",
       style: "normal",
     },
   ],
@@ -52,7 +63,7 @@ export default function RootLayout({
       <body
         className={`font-sans ${montserrat.variable} ${muesoSansCyrl.variable}`}
       >
-        <div className="flex font-montserrat flex-col min-h-screen">
+        <div className="flex min-h-screen flex-col font-museoSansCyrl font-medium">
           <Header />
 
           <main className="flex-1 pb-12 md:pb-24">

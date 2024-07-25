@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import { Separator } from "../ui/separator";
+import { about } from "@/constans";
 
 const About = () => {
   return (
@@ -10,72 +11,35 @@ const About = () => {
       id="about"
       className="wrapper section section-gap"
     >
-      <h2 className="section-title">O Nas</h2>
-      <Separator className="md:w-full md:border-b-2 border-primary-foreground" />
-      <div className="grid w-full grid-cols-1 section-gap md:grid-cols-2 2xl:grid-cols-3">
-        <figure className="flex h-max flex-col gap-4">
-          <Image
-            src="https://utfs.io/f/05dcd7ce-6483-44df-a481-d46c1a527dd4-mv8qnj.jpg"
-            height="500"
-            width="500"
-            className="w-full h-[70%] object-cover"
-            alt="Imie Nazwisko"
-          />
-          <figcaption>
-            <div className="flex flex-col gap-4">
-              <div className="flex flex-col gap-2">
-                <h3 className="text-2xl font-bold first-letter:-ml-[2px]">
-                  Imie Nazwisko
+      <h2 className="section-title first-letter:ml-[-2px]">
+        O Nas
+      </h2>
+      <Separator className="w-full border-b-2 border-primary-foreground" />
+      <div className="projects-grid">
+        {about.map((item) => (
+          <figure
+            key={item.name}
+            className="img-span-2 flex aspect-[7/10] max-h-[80vh] w-full flex-col gap-2"
+          >
+            <Image
+              src={item.image}
+              height="1000"
+              width="1000"
+              className="size-full object-cover"
+              alt="Imie Nazwisko"
+            />
+            <figcaption>
+              <div className="flex flex-col">
+                <h3 className="text-2xl font-bold first-letter:ml-[-2px]">
+                  {item.name}
                 </h3>
-                <p className="text-xl italic text-muted-foreground">
-                  Stanowisko
+                <p className="text-xl font-medium italic text-muted-foreground">
+                  {item.position}
                 </p>
               </div>
-            </div>
-          </figcaption>
-        </figure>
-        <figure className="flex h-max flex-col gap-4">
-          <Image
-            src="https://utfs.io/f/2e186a62-ad97-4ec3-a4b8-c8835204b807-mv8qnk.jpg"
-            height="500"
-            width="500"
-            className="w-full h-[70%] object-cover "
-            alt="Imie Nazwisko"
-          />
-          <figcaption>
-            <div className="flex flex-col gap-4">
-              <div className="flex flex-col gap-2">
-                <h3 className="text-2xl font-bold first-letter:-ml-[2px]">
-                  Imie Nazwisko
-                </h3>
-                <p className="text-xl italic text-muted-foreground">
-                  Stanowisko
-                </p>
-              </div>
-            </div>
-          </figcaption>
-        </figure>
-        <figure className="flex md:col-span-2 h-full 2xl:col-span-1 flex-col gap-4">
-          <Image
-            src="https://utfs.io/f/92ff00ed-c586-4f9a-9bce-1d183664d176-24vw.jpg"
-            height="500"
-            width="500"
-            className="w-full h-full aspect-square md:aspect-video object-cover "
-            alt="Imie Nazwisko"
-          />
-          <figcaption>
-            <div className="flex flex-col gap-4">
-              <div className="flex flex-col gap-2">
-                <h3 className="text-2xl font-bold first-letter:-ml-[2px]">
-                  Imie Nazwisko
-                </h3>
-                <p className="text-xl italic text-muted-foreground">
-                  Stanowisko
-                </p>
-              </div>
-            </div>
-          </figcaption>
-        </figure>
+            </figcaption>
+          </figure>
+        ))}
       </div>
     </section>
   );

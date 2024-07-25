@@ -46,7 +46,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="h-[95vh] flex overflow-hidden relative w-full lg:h-[85vh]">
+    <section className="relative flex h-[95vh] w-full overflow-hidden lg:h-[85vh]">
       {heroImages.map((image, i) => (
         <Image
           key={image.id}
@@ -59,15 +59,15 @@ const Hero = () => {
           }`}
         />
       ))}
-      <div className="h-full inset-0 bg-foreground/30 absolute" />
-      <div className="flex wrapper text-4xl font-bold lg:text-5xl text-white self-end pb-20 flex-col absolute gap-10 text-left text-pretty">
+      <div className="absolute inset-0 h-full bg-foreground/30" />
+      <div className="wrapper absolute flex flex-col gap-10 self-end text-pretty pb-20 text-left font-montserrat text-4xl font-thin text-white lg:text-5xl">
         <h1>Architektura / Wnętrza</h1>
-        <p className="max-w-[30ch] first-letter:-ml-[2.8px]">
+        <p className="max-w-[30ch] first-letter:ml-[-4.4px]">
           Pomożemy wam stworzyć waszą{" "}
-          <span className="first-letter:-ml-[2.3px] inline-block">
+          <span className="inline-block first-letter:ml-[-3.9px]">
             niepowtarzalną
           </span>{" "}
-          <span className="first-letter:-ml-[2.3px] block md:first-letter:m-0 md:inline">
+          <span className="block first-letter:ml-[-3.9px] md:inline md:first-letter:m-0">
             przestrzeń
           </span>
         </p>

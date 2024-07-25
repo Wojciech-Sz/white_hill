@@ -5,7 +5,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { formSchema } from "@/lib/validators";
-import { Button } from "@/components/ui/button";
+
 import "react-datepicker/dist/react-datepicker.css";
 import {
   Form,
@@ -19,12 +19,12 @@ import { Input } from "@/components/ui/input";
 import { Checkbox } from "../ui/checkbox";
 import { useToast } from "../ui/use-toast";
 
-import { CalendarIcon } from "lucide-react";
-import DatePicker, {
+import {
   registerLocale,
   setDefaultLocale,
 } from "react-datepicker";
 import { pl } from "date-fns/locale"; // Polish locale
+import { Button } from "../ui/button";
 
 registerLocale("pl", pl);
 setDefaultLocale("pl");
@@ -84,7 +84,7 @@ const ContactForm = () => {
     <div className="max-w-md">
       <Form {...form}>
         <form
-          className="flex flex-col gap-3"
+          className="flex flex-col gap-3 font-montserrat"
           onSubmit={form.handleSubmit(onSubmit)}
         >
           {/* Imię */}
@@ -95,7 +95,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormControl>
                   <Input
-                    className="text-base"
+                    className="border-primary bg-transparent text-base"
                     placeholder="Imię"
                     {...field}
                   />
@@ -113,7 +113,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormControl>
                   <Input
-                    className="text-base"
+                    className="border-primary bg-transparent text-base"
                     placeholder="Nazwisko"
                     {...field}
                   />
@@ -132,7 +132,7 @@ const ContactForm = () => {
                 <FormControl>
                   <Input
                     type="tel"
-                    className="text-base"
+                    className="border-primary bg-transparent text-base"
                     placeholder="Numer telefonu"
                     {...field}
                   />
@@ -151,7 +151,7 @@ const ContactForm = () => {
                 <FormControl>
                   <Input
                     type="email"
-                    className="text-base"
+                    className=" bg-transparent text-base"
                     placeholder="E-mail"
                     {...field}
                   />
@@ -169,7 +169,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormControl>
                   <Input
-                    className="text-base"
+                    className="border-primary bg-transparent text-base"
                     placeholder="Temat"
                     {...field}
                   />
@@ -187,7 +187,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormControl>
                   <Textarea
-                    className="text-base"
+                    className="border-primary bg-transparent text-base"
                     placeholder="Treść wiadomości"
                     {...field}
                   />
@@ -202,7 +202,7 @@ const ContactForm = () => {
             control={form.control}
             name="agree"
             render={({ field }) => (
-              <FormItem className="flex flex-col items-start h-auto rounded-md border bg-background p-4">
+              <FormItem className="flex h-auto flex-col items-start  border-2  border-input bg-transparent p-4">
                 <FormControl>
                   <Checkbox
                     checked={field.value}
@@ -225,11 +225,11 @@ const ContactForm = () => {
             type="submit"
             size="lg"
             disabled={form.formState.isSubmitting}
-            className="w-full text-xl font-semibold"
+            className="btn w-full"
           >
             {form.formState.isSubmitting
               ? "Wysyłanie..."
-              : "Wyslij"}
+              : "Wyślij"}
           </Button>
         </form>
       </Form>

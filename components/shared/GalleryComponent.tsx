@@ -18,20 +18,20 @@ const GalleryComponent = ({
         {images.map((project) => (
           <Link
             key={project.route}
-            href={`/projects/${type ? type : project.type}/${project.route}?title=${project.title}`}
-            className={`${className}`}
+            href={`/projects/${type || project.type}/${project.route}?title=${project.title}`}
+            className={`${className} aspect-[7/10] max-h-[80vh] w-full`}
           >
-            <figure className="relative h-full group overflow-hidden">
+            <figure className="group relative h-full overflow-hidden ">
               <Image
-                className="projects-img aspect-square"
+                className="projects-img"
                 src={project.url}
                 alt="wnetrze 1"
-                width="400"
-                height="400"
+                width="1000"
+                height="1000"
               />
               <div className="projects-img-filter" />
               <figcaption className="projects-img-title">
-                <h4 className="text-3xl font-semibold lg:text-4xl">
+                <h4 className="text-3xl font-bold lg:text-4xl">
                   {project.title}
                 </h4>
               </figcaption>

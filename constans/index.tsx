@@ -1,9 +1,7 @@
 import {
   FacebookIcon,
   InstagramIcon,
-  TwitterIcon,
 } from "@/components/icons";
-import { title } from "process";
 
 export const headerLinks = [
   {
@@ -657,16 +655,37 @@ export const gallery = {
   ],
 };
 
+export const about = [
+  {
+    image:
+      "https://utfs.io/f/05dcd7ce-6483-44df-a481-d46c1a527dd4-mv8qnj.jpg",
+    name: "Imie Nazwisko1",
+    position: "Stanowisko",
+  },
+  {
+    image:
+      "https://utfs.io/f/2e186a62-ad97-4ec3-a4b8-c8835204b807-mv8qnk.jpg",
+    name: "Imie Nazwisko2",
+    position: "Stanowisko",
+  },
+  {
+    image:
+      "https://utfs.io/f/92ff00ed-c586-4f9a-9bce-1d183664d176-24vw.jpg",
+    name: "Imie Nazwisko3",
+    position: "Stanowisko",
+  },
+];
+
 export const footerLinks = [
   {
     href: "https://www.facebook.com/",
     name: "Facebook",
-    icon: <FacebookIcon className="w-7 h-7" />,
+    icon: <FacebookIcon className="size-7" />,
   },
 
   {
     href: "https://www.instagram.com/",
     name: "Instagram",
-    icon: <InstagramIcon className="w-7 h-7" />,
+    icon: <InstagramIcon className="size-7" />,
   },
 ];

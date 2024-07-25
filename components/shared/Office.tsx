@@ -7,12 +7,13 @@ const Office = () => {
   return (
     <section
       id="office"
-      className="wrapper relative section section-gap"
+      className="wrapper section section-gap"
     >
-      <span className="absolute">227; 226; 225</span>
-      <h2 className=" section-title">Nasza pracownia</h2>
+      <h2 className="section-title projects-title">
+        Nasza pracownia
+      </h2>
       <Separator className="w-full border-b-2 border-primary-foreground" />
-      <figure className="grid w-full grid-cols-1  section-gap lg:grid-cols-2">
+      <figure className="section-gap grid w-full  grid-cols-1 lg:grid-cols-2">
         <Image
           src="https://utfs.io/f/cdaa3749-c2a3-4fb8-bea3-f14fbe6e2a18-njtigs.jpg"
           className="h-[60vh] w-full object-cover object-center lg:h-[70vh]"
@@ -20,32 +21,29 @@ const Office = () => {
           width={840}
           height={840}
         />
-        <figcaption className="text-2xl md:text-3xl xl:text-4xl">
-          <article>
-            Jesteśmy zespołem doświadczonych architektów z
-            pasją do tworzenia wyjątkowych przestrzeni.
-            Każdy projekt jest dla nas unikalnym wyzwaniem,
-            które realizujemy z pełnym zaangażowaniem i
-            dbałością o każdy detal. Wierzymy, że dobrze
-            zaprojektowana przestrzeń może znacząco poprawić
-            jakość życia, dlatego staramy się tworzyć
-            projekty, które łączą estetykę z
-            funkcjonalnością.
-          </article>
+        <figcaption className="font-montserrat text-2xl/snug tracking-tight md:text-3xl/snug">
+          Jesteśmy zespołem doświadczonych architektów z
+          pasją do tworzenia wyjątkowych przestrzeni. Każdy
+          projekt jest dla nas unikalnym wyzwaniem, które
+          realizujemy z pełnym zaangażowaniem i dbałością o
+          każdy detal. Wierzymy, że dobrze zaprojektowana
+          przestrzeń może znacząco poprawić jakość życia,
+          dlatego staramy się tworzyć projekty, które łączą
+          estetykę z funkcjonalnością.
         </figcaption>
       </figure>
-      <Separator className="md:w-full md:border-b-2 border-primary-foreground" />
+      <Separator className="border-primary-foreground md:w-full md:border-b-2" />
       {office.map((item) => (
         <div
           key={item.title}
-          className="grid w-full  md:gap-0 grid-cols-1 gap-2 md:grid-cols-[35%_1fr]"
+          className="grid w-full  grid-cols-1 gap-2 md:grid-cols-[35%_1fr] md:gap-0"
         >
-          <h3 className="text-lg first-letter:-ml-[1.8px]  text-balance sm:text-xl self-center lg:text-2xl font-semibold">
+          <h3 className="ml-[-1.8px] self-center  text-balance text-lg/none font-bold sm:text-xl/none lg:text-2xl/none">
             {item.title}
           </h3>
-          <div className="flex items-center flex-col md:flex-row md:section-gap">
-            <Separator className="w-full border-t-2 md:h-full md:w-0 md:border-l-2 border-primary-foreground" />
-            <p className="text-base py-4 -ml-[1.8px] md:ml-0 lg:text-lg">
+          <div className="md:section-gap flex flex-col items-center md:flex-row">
+            <Separator className="w-full border-t-2 border-primary-foreground md:h-full md:w-0 md:border-l-2" />
+            <p className="ml-[-1.8px] py-4 font-montserrat text-base/none md:ml-0 lg:text-lg/none">
               {item.description}
             </p>
           </div>
