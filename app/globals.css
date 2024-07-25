@@ -133,7 +133,7 @@
   }
 
   .btn {
-    @apply w-full text-base uppercase font-bold font-museoSansCyrl md:text-xl;
+    @apply text-base uppercase font-bold font-museoSansCyrl md:text-xl;
   }
 
   .svgBg {

@@ -55,7 +55,10 @@ const Contact = () => {
                 <p className="">8:00 - 16:00</p>
               </div>
             </div>
-            <Button variant="default" className="btn">
+            <Button
+              variant="default"
+              className="btn w-full"
+            >
               <Link href="/appointment" prefetch={false}>
                 Umów spotkanie
               </Link>
