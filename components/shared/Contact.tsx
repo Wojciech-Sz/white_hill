@@ -28,26 +28,31 @@ const Contact = () => {
             <a
               href={`tel:${process.env.NEXT_PUBLIC_PHONE}`}
             >
-              <div className="flex  items-center gap-2  hover:text-primary-foreground ">
+              <div className="flex  items-center gap-2  hover:text-primary-foreground/70 ">
                 <PhoneIcon className="size-5 shrink-0" />
                 +1 (555) 123-4567
               </div>
             </a>
-            <div className="flex items-center gap-2  hover:text-primary-foreground ">
-              <MailIcon
-                className="size-5 shrink-0 "
-                strokeWidth="2.5"
-              />
-              <a
-                href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
-              >
+            <a
+              href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
+            >
+              <div className="flex items-center gap-2  hover:text-primary-foreground/70 ">
+                <MailIcon
+                  className="size-5 shrink-0 "
+                  strokeWidth="2.5"
+                />
                 info@acme.com
-              </a>
-            </div>
-            <div className="flex items-center gap-2">
-              <MapPinIcon className="size-5 shrink-0 " />
-              <p className="">123 Main St, Anytown USA</p>
-            </div>
+              </div>
+            </a>
+            <a
+              href="https://maps.google.com/maps?hl=pl&gl=pl&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x471ffff413081853:0x2a68fbc7479fa52f"
+              target="_blank"
+            >
+              <div className="flex items-center gap-2 hover:text-primary-foreground/70">
+                <MapPinIcon className="size-5 shrink-0 " />
+                123 Main St, Anytown USA
+              </div>
+            </a>
             <div className="flex items-center gap-2">
               <ClockIcon className="size-5 shrink-0 " />
               <div className="flex gap-2">

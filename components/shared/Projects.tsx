@@ -23,12 +23,12 @@ const Projects = () => {
       id="projects"
       className="wrapper section section-gap"
     >
-      <div className="flex h-max w-full flex-row items-center justify-between gap-2 overflow-hidden">
+      <div className="projects-container">
         <h2 className="section-title projects-title">
           Nasze realizacje
         </h2>
         <Button
-          className="btn h-8 w-[48%] max-w-max shrink-0 text-wrap py-0 sm:h-auto sm:py-2"
+          className="btn projects-btn"
           onClick={() => setVisible(!visible)}
         >
           Wiecej realizacji
@@ -36,7 +36,7 @@ const Projects = () => {
       </div>
       <div className="relative flex w-full flex-col">
         <div
-          className={`flex justify-center lg:justify-between ${visible ? "mb-2 h-9" : "mb-0 h-0 overflow-hidden"} gap-2 transition-all duration-500 lg:px-10`}
+          className={`projects-links-container ${visible ? "mb-2 h-9 opacity-100" : "mb-0 h-0 overflow-hidden opacity-0"}`}
         >
           {projectLinks.map((link, i) => (
             <div

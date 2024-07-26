@@ -108,6 +108,18 @@
     @apply flex items-center tracking-tighter leading-none w-min xs:w-auto text-sm sm:text-xl md:text-2xl lg:text-3xl font-semibold text-center;
   }
 
+  .projects-container {
+    @apply flex h-max w-full flex-row items-center justify-between gap-2 overflow-hidden;
+  }
+
+  .projects-btn {
+    @apply h-8 w-[48%] max-w-max shrink-0 text-wrap py-0 sm:h-auto sm:py-2;
+  }
+
+  .projects-links-container {
+    @apply flex justify-center lg:justify-between gap-2 transition-all duration-300 lg:px-10;
+  }
+
   .mobile-link {
     @apply relative w-max text-xl font-bold tracking-tighter md:text-2xl xl:text-3xl hover:text-primary-foreground/80;
   }

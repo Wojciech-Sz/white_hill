@@ -15,34 +15,32 @@ const ProjectGallery = ({
   searchParams: { type: string };
 }) => {
   const [visible, setVisible] = useState(false);
-  const [title, span] = searchParams.type.split(" ");
+
   return (
     <section className="wrapper section section-gap ">
-      <div className="flex justify-between items-center w-full">
+      <div className="projects-container">
         <h2
           className={`section-title ${searchParams.type === "Wnętrza" ? "-translate-x-[0.5px]" : "projects-title"}`}
         >
-          {title}{" "}
-          {span && (
-            <span className="projects-title-span">
-              {span}
-            </span>
-          )}
+          {searchParams.type}
         </h2>
 
         <Button
-          className="btn"
+          className="btn projects-btn"
           onClick={() => setVisible(!visible)}
         >
           Wiecej realizacji
         </Button>
       </div>
-      <div className="w-full relative flex flex-col gap-4">
+      <div className="relative flex w-full flex-col">
         <div
-          className={`justify-center ${visible ? "flex" : "hidden"} gap-2`}
+          className={`projects-links-container ${visible ? "mb-2 h-9 opacity-100" : "mb-0 h-0 overflow-hidden opacity-0"}`}
         >
           {projectLinks.map((link, i) => (
-            <div key={link.label} className="flex gap-2">
+            <div
+              key={link.label}
+              className="flex items-center gap-2"
+            >
               <Link
                 href={link.href}
                 className="projects-link"
@@ -50,7 +48,7 @@ const ProjectGallery = ({
                 {link.label}
               </Link>
               <Separator
-                className={`${projectLinks.length - 1 === i ? "h-0" : "h-full"} border-l-2 border-primary-foreground`}
+                className={`${projectLinks.length - 1 === i ? "h-0" : "h-7 xs:h-5 sm:h-6 md:h-7"} border-l-2 border-primary-foreground/70 lg:hidden`}
               />
             </div>
           ))}
