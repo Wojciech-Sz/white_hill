@@ -13,7 +13,7 @@ export const headerLinks = [
     route: "/#office",
   },
   {
-    label: "Projekty",
+    label: "Realizacje",
     route: "/#projects",
   },
   {
