@@ -30,7 +30,7 @@ const MobileMenu = () => {
         <nav className="flex size-full flex-col justify-between">
           <div className="flex flex-col gap-4">
             {headerLinks.map((link) =>
-              link.label === "Projekty" ? (
+              link.label === "Realizacje" ? (
                 <div
                   className="flex flex-col "
                   key={link.label}
