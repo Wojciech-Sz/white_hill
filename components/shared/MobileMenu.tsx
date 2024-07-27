@@ -29,15 +29,6 @@ const MobileMenu = () => {
       >
         <nav className="flex size-full flex-col justify-between">
           <div className="flex flex-col gap-4">
-            <Link
-              href="/"
-              scroll
-              className="mobile-link"
-              prefetch={false}
-            >
-              Home
-              <SheetClose className="absolute left-0 size-full" />
-            </Link>
             {headerLinks.map((link) =>
               link.label === "Projekty" ? (
                 <div

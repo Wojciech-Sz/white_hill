@@ -5,6 +5,10 @@ import {
 
 export const headerLinks = [
   {
+    label: "Home",
+    route: "/",
+  },
+  {
     label: "Pracownia",
     route: "/#office",
   },
