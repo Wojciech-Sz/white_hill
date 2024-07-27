@@ -680,12 +680,12 @@ export const footerLinks = [
   {
     href: "https://www.facebook.com/",
     name: "Facebook",
-    icon: <FacebookIcon className="size-7" />,
+    icon: <FacebookIcon width="28" height="28" />,
   },
 
   {
     href: "https://www.instagram.com/",
     name: "Instagram",
-    icon: <InstagramIcon className="size-7" />,
+    icon: <InstagramIcon width="28" height="28" />,
   },
 ];

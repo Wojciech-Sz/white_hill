@@ -1,4 +1,5 @@
 import About from "@/components/shared/About";
+import Appointment from "@/components/shared/Appointment";
 import Contact from "@/components/shared/Contact";
 import Hero from "@/components/shared/Hero";
 import Office from "@/components/shared/Office";
@@ -11,6 +12,7 @@ export default function Home() {
       <Office />
       <Projects />
       <About />
+      <Appointment />
       <Contact />
     </div>
   );

@@ -20,7 +20,7 @@ const ProjectGallery = ({
     <section className="wrapper section section-gap ">
       <div className="projects-container">
         <h2
-          className={`section-title ${searchParams.type === "Wnętrza" ? "-translate-x-[0.5px]" : "projects-title"}`}
+          className={`section-title ${searchParams.type === "Wnętrza" ? "translate-x-[-0.5px]" : "projects-title"}`}
         >
           {searchParams.type}
         </h2>

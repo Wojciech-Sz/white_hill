@@ -10,7 +10,7 @@ const Office = () => {
       className="wrapper section section-gap"
     >
       <h2 className="section-title projects-title">
-        Nasza pracownia
+        Pracownia
       </h2>
       <Separator className="w-full border-b-2 border-primary-foreground" />
       <figure className="section-gap grid w-full  grid-cols-1 lg:grid-cols-2">
@@ -21,7 +21,7 @@ const Office = () => {
           width={840}
           height={840}
         />
-        <figcaption className="font-montserrat text-2xl/snug tracking-tight md:text-3xl/snug">
+        <figcaption className="font-montserrat text-xl/snug tracking-tight md:text-2xl/snug">
           Jesteśmy zespołem doświadczonych architektów z
           pasją do tworzenia wyjątkowych przestrzeni. Każdy
           projekt jest dla nas unikalnym wyzwaniem, które

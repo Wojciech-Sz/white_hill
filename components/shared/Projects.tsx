@@ -25,13 +25,13 @@ const Projects = () => {
     >
       <div className="projects-container">
         <h2 className="section-title projects-title">
-          Nasze realizacje
+          Realizacje
         </h2>
         <Button
           className="btn projects-btn"
           onClick={() => setVisible(!visible)}
         >
-          Wiecej realizacji
+          Wiecej
         </Button>
       </div>
       <div className="relative flex w-full flex-col">

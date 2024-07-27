@@ -8,8 +8,6 @@ import {
 } from "../icons";
 
 import SvgBackground from "./SvgBackground";
-import { Button } from "../ui/button";
-import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -60,14 +58,6 @@ const Contact = () => {
                 <p className="">8:00 - 16:00</p>
               </div>
             </div>
-            <Button
-              variant="default"
-              className="btn w-full"
-            >
-              <Link href="/appointment" prefetch={false}>
-                Umów spotkanie
-              </Link>
-            </Button>
           </div>
         </div>
         <ContactForm />

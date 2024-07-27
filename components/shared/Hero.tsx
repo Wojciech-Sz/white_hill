@@ -54,7 +54,7 @@ const Hero = () => {
           src={image.url}
           alt={image.id}
           fill
-          className={`size-full object-cover ${
+          className={`absolute size-full object-cover ${
             i !== 0 ? "opacity-0" : ""
           }`}
         />
