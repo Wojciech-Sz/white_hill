@@ -25,15 +25,16 @@ const GalleryComponent = ({
               <Image
                 className="projects-img"
                 src={project.url}
+                title="wnetrze 1"
                 alt="wnetrze 1"
                 width="1000"
                 height="1000"
               />
               <div className="projects-img-filter" />
               <figcaption className="projects-img-title">
-                <h4 className="text-3xl font-bold lg:text-4xl">
+                <h3 className="text-3xl font-bold lg:text-4xl">
                   {project.title}
-                </h4>
+                </h3>
               </figcaption>
             </figure>
           </Link>

@@ -4,6 +4,7 @@ import {
   SheetTrigger,
   SheetContent,
   SheetClose,
+  SheetTitle,
 } from "@/components/ui/sheet";
 
 import Link from "next/link";
@@ -18,15 +19,19 @@ const MobileMenu = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <div className="absolute left-5 cursor-pointer p-0 md:left-10 xl:left-20 2xl:left-40">
+        <button
+          title="Menu"
+          aria-label="Włacz menu"
+          className="absolute left-5 cursor-pointer p-0 md:left-10 xl:left-20 2xl:left-40"
+        >
           <MenuIcon className="size-7 text-primary-foreground" />
-          <span className="sr-only">Włacz menu</span>
-        </div>
+        </button>
       </SheetTrigger>
       <SheetContent
         side="left"
         className="flex flex-col overflow-auto bg-white p-4 font-museoSansCyrl uppercase"
       >
+        <SheetTitle className="sr-only">Menu</SheetTitle>
         <nav className="flex size-full flex-col justify-between">
           <div className="flex flex-col gap-4">
             {headerLinks.map((link) =>

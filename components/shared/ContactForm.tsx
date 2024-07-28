@@ -207,6 +207,7 @@ const ContactForm = () => {
                   <Checkbox
                     checked={field.value}
                     onCheckedChange={field.onChange}
+                    aria-label="Zgoda na przetwarzanie danych osobowych"
                   />
                 </FormControl>
                 <div className="space-y-1 leading-none">

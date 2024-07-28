@@ -22,3 +22,8 @@ export interface IProject {
   title: string;
   type?: keyof typeof gallery;
 }
+
+export interface IHero {
+  url: string;
+  id: string;
+}

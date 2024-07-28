@@ -88,7 +88,7 @@
     2xl:px-40;
   }
   .header {
-    @apply sticky top-0 z-20 flex h-[4.5rem] w-full items-center justify-center bg-white/90 py-3 shadow-sm dark:bg-gray-950  md:py-4;
+    @apply sticky inset-0 z-20 flex h-[4.5rem] w-full items-center justify-center bg-white/90 py-3 shadow-sm dark:bg-gray-950  md:py-4;
   }
   .section {
     @apply flex w-full flex-col pt-12 md:pt-24;

@@ -4,9 +4,9 @@ import Image from "next/image";
 import React from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { heroImages } from "@/constans";
+import { IHero } from "@/types";
 
-const Hero = () => {
+const Hero = ({ heroImages }: { heroImages: IHero[] }) => {
   const tl = gsap.timeline({ repeat: -1 });
 
   useGSAP(() => {
@@ -46,7 +46,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative flex h-[95vh] w-full overflow-hidden lg:h-[85vh]">
+    <section
+      id="hero"
+      className="relative flex h-[95vh] w-full overflow-hidden lg:h-[85vh]"
+    >
       {heroImages.map((image, i) => (
         <Image
           key={image.id}
@@ -61,15 +64,10 @@ const Hero = () => {
       ))}
       <div className="absolute inset-0 h-full bg-foreground/30" />
       <div className="wrapper absolute flex flex-col gap-10 self-end text-pretty pb-20 text-left font-montserrat text-4xl font-thin text-white lg:text-5xl">
-        <h1>Architektura / Wnętrza</h1>
-        <p className="max-w-[30ch] first-letter:ml-[-4.4px]">
-          Pomożemy wam stworzyć waszą{" "}
-          <span className="inline-block first-letter:ml-[-3.9px]">
-            niepowtarzalną
-          </span>{" "}
-          <span className="block first-letter:ml-[-3.9px] md:inline md:first-letter:m-0">
-            przestrzeń
-          </span>
+        <h2>Architektura / Wnętrza</h2>
+        <p className="ml-[-4.4px] max-w-[30ch]">
+          Pomożemy wam stworzyć waszą niepowtarzalną
+          przestrzeń
         </p>
       </div>
     </section>
