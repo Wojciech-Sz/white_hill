@@ -25,10 +25,9 @@ const GalleryComponent = ({
               <Image
                 className="projects-img"
                 src={project.url}
-                title="wnetrze 1"
-                alt="wnetrze 1"
-                width="1000"
-                height="1000"
+                title={project.title}
+                alt={project.title}
+                fill
               />
               <div className="projects-img-filter" />
               <figcaption className="projects-img-title">

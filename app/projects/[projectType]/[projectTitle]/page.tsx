@@ -16,8 +16,9 @@ const Project = ({
   return (
     <section className="wrapper section section-gap ">
       <h2 className="section-title">{title}</h2>
-      <Separator className="md:w-full md:border-b-2 border-primary-foreground" />
+      <Separator className="border-primary-foreground md:w-full md:border-b-2" />
       <ProjectGallery
+        title={title}
         type={projectType}
         route={projectTitle}
       />

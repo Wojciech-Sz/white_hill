@@ -5,9 +5,11 @@ import React from "react";
 const ProjectGallery = ({
   type,
   route,
+  title,
 }: {
   type: keyof typeof gallery;
   route: string;
+  title: string;
 }) => {
   const projectGallery = gallery[type].find(
     (project) => project.route === route
@@ -21,7 +23,7 @@ const ProjectGallery = ({
         >
           <Image
             src={image}
-            alt="wnetrze 1"
+            alt={title}
             fill
             className="object-cover"
           />

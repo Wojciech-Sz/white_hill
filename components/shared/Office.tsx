@@ -13,6 +13,12 @@ const Office = () => {
         Pracownia
       </h2>
       <Separator className="w-full border-b-2 border-primary-foreground" />
+      <h3 className="font-montserrat text-2xl/none font-bold tracking-tighter md:text-3xl/none">
+        WHITEHILL -{" "}
+        <span className="font-medium tracking-wide">
+          Miejsca, które Łączą Emocje i Funkcjonalność
+        </span>
+      </h3>
       <figure className="section-gap grid w-full  grid-cols-1 lg:grid-cols-2">
         <Image
           src="https://utfs.io/f/cdaa3749-c2a3-4fb8-bea3-f14fbe6e2a18-njtigs.jpg"
@@ -21,31 +27,61 @@ const Office = () => {
           width={840}
           height={840}
         />
-        <figcaption className="font-montserrat text-xl/snug tracking-tight md:text-2xl/snug">
-          Jesteśmy zespołem doświadczonych architektów z
-          pasją do tworzenia wyjątkowych przestrzeni. Każdy
-          projekt jest dla nas unikalnym wyzwaniem, które
-          realizujemy z pełnym zaangażowaniem i dbałością o
-          każdy detal. Wierzymy, że dobrze zaprojektowana
-          przestrzeń może znacząco poprawić jakość życia,
-          dlatego staramy się tworzyć projekty, które łączą
-          estetykę z funkcjonalnością.
+        <figcaption className="flex flex-col font-montserrat text-xl/snug md:text-2xl/snug">
+          <h3 className="text-2xl/none font-bold tracking-tighter md:text-3xl/none">
+            WHITEHILL
+          </h3>
+          <p className="mb-4">
+            to biuro projektowe specjalizujące się w
+            kompleksowym projektowaniu domów, obiektów
+            usługowych oraz przemysłowych. Każdy projekt,
+            który realizujemy, jest unikalną odpowiedzią na
+            potrzeby naszych klientów, łącząc estetykę z
+            funkcjonalnością. Projektujemy wnętrza, które
+            nie tylko zachwycają swoim wyglądem, ale także
+            stają się sceną dla życia codziennego i miejscem
+            narodzin marzeń.
+          </p>
+          <p>
+            Podczas współpracy z naszymi klientami stawiamy
+            na zaufanie i budowanie partnerskiej relacji.
+            Wierzymy, że najlepsze efekty osiąga się dzięki
+            bliskiej współpracy i otwartości na potrzeby
+            inwestorów. Naszym celem jest tworzenie
+            przestrzeni, które będą inspirować i odpowiadać
+            na wszystkie oczekiwania użytkowników.
+          </p>
         </figcaption>
       </figure>
       <Separator className="border-primary-foreground md:w-full md:border-b-2" />
-      {office.map((item) => (
+      {office.map((question) => (
         <div
-          key={item.title}
-          className="grid w-full  grid-cols-1 gap-2 md:grid-cols-[35%_1fr] md:gap-0"
+          key={question.title}
+          className="grid w-full grid-cols-1 gap-2 md:grid-cols-[30%_1fr] md:gap-0"
         >
           <h3 className="ml-[-1.8px] self-center  text-balance text-lg/none font-bold sm:text-xl/none lg:text-2xl/none">
-            {item.title}
+            {question.title}
           </h3>
           <div className="md:section-gap flex flex-col items-center md:flex-row">
             <Separator className="w-full border-t-2 border-primary-foreground md:h-full md:w-0 md:border-l-2" />
-            <p className="ml-[-1.8px] py-4 font-montserrat text-base/none md:ml-0 lg:text-lg/none">
-              {item.description}
-            </p>
+
+            <div className="flex flex-col">
+              {question.info.map((info) => (
+                <article
+                  key={info.title}
+                  className="ml-[-1.8px] text-pretty py-4 font-montserrat text-base/none md:ml-0 lg:text-lg/none"
+                >
+                  {info.description && (
+                    <h3 className="inline text-lg/none font-bold lg:text-xl/none">
+                      {info.title}{" "}
+                    </h3>
+                  )}
+                  <p className="inline">
+                    {info.description}
+                  </p>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       ))}

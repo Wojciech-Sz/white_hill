@@ -19,7 +19,7 @@ const About = () => {
         {about.map((item) => (
           <figure
             key={item.name}
-            className="img-span-2 flex aspect-[7/10] max-h-[80vh] w-full flex-col gap-2"
+            className="img-span-2 about-img"
           >
             <Image
               src={item.image}
