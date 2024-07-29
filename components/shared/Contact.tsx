@@ -14,10 +14,10 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="section wrapper section-gap relative items-center"
+      className="section wrapper relative items-center gap-1"
     >
       <h2 className="section-title">Kontakt</h2>
-      <p className="mb-4 max-w-[60ch] text-center text-xl md:text-2xl">
+      <p className="mb-8 max-w-[60ch] text-center text-base/none xs:text-lg/none md:text-xl/none">
         Nasze biuro stacjonarne mieści się w Białymstoku.
         Projektu realizujemy na terenie całego kraju oraz
         poza jego granicami.
