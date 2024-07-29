@@ -17,7 +17,7 @@ const Contact = () => {
       className="section wrapper section-gap relative items-center"
     >
       <h2 className="section-title">Kontakt</h2>
-      <p className="max-w-[60ch] text-center text-xl md:text-2xl">
+      <p className="mb-4 max-w-[60ch] text-center text-xl md:text-2xl">
         Nasze biuro stacjonarne mieści się w Białymstoku.
         Projektu realizujemy na terenie całego kraju oraz
         poza jego granicami.

@@ -226,7 +226,7 @@ const ContactForm = () => {
             type="submit"
             size="lg"
             disabled={form.formState.isSubmitting}
-            className="btn w-full"
+            className="btn w-full text-xl"
           >
             {form.formState.isSubmitting
               ? "Wysyłanie..."

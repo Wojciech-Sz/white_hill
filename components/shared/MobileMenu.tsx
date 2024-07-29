@@ -47,7 +47,7 @@ const MobileMenu = () => {
                     scroll
                   >
                     {link.label}
-                    <SheetClose className="absolute left-0 size-full " />
+                    <SheetClose className="absolute left-0 size-full opacity-0 " />
                   </Link>
                   <div className="flex flex-col text-lg md:text-xl xl:text-2xl">
                     {projectLinks.map((link) => (
@@ -57,7 +57,7 @@ const MobileMenu = () => {
                         key={link.label}
                       >
                         {link.label}
-                        <SheetClose className="absolute left-0 size-full" />
+                        <SheetClose className="absolute left-0 size-full opacity-0" />
                       </Link>
                     ))}
                   </div>
@@ -71,7 +71,7 @@ const MobileMenu = () => {
                   scroll
                 >
                   {link.label}
-                  <SheetClose className="absolute left-0 size-full" />
+                  <SheetClose className="absolute left-0 size-full opacity-0" />
                 </Link>
               )
             )}
@@ -83,7 +83,7 @@ const MobileMenu = () => {
               prefetch={false}
             >
               Kontakt
-              <SheetClose className="absolute left-0 size-full " />
+              <SheetClose className="absolute left-0 size-full opacity-0 " />
             </Link>
 
             <Link
@@ -92,7 +92,7 @@ const MobileMenu = () => {
               prefetch={false}
             >
               Umów spotkanie
-              <SheetClose className="absolute left-0 size-full " />
+              <SheetClose className="absolute left-0 size-full opacity-0 " />
             </Link>
           </div>
 

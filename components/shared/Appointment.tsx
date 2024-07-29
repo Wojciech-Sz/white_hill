@@ -10,7 +10,7 @@ const Appointment = () => {
         backgroundImage:
           "url(https://utfs.io/f/e9343b39-5585-4828-a56e-c5b26f5fbc83-oe69nl.jpg)",
       }}
-      className="appointment section group gap-4 text-center font-montserrat text-xl/none text-white md:text-2xl/none lg:text-3xl/none"
+      className="appointment group mt-12 flex w-full flex-col gap-4 text-center font-montserrat text-xl/none text-white md:mt-24 md:text-2xl/none lg:text-3xl/none"
     >
       <div className="flex max-w-[60ch] cursor-default flex-col items-center px-6">
         <p>

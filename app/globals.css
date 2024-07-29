@@ -91,7 +91,7 @@
     @apply sticky top-0 z-20 flex h-[4.5rem] w-full items-center justify-center bg-white/90 py-3 shadow-sm dark:bg-gray-950  md:py-4;
   }
   .section {
-    @apply flex w-full flex-col mt-12 md:mt-24;
+    @apply flex w-full flex-col pt-12 md:pt-24;
   }
   .section-gap {
     @apply gap-5 lg:gap-7 2xl:gap-10;
@@ -153,7 +153,7 @@
   }
 
   .btn {
-    @apply text-base/none px-1.5 sm:px-3 uppercase font-bold font-museoSansCyrl md:text-xl/none;
+    @apply px-0.5 font-museoSansCyrl text-sm/[1px] font-bold uppercase xs:px-1.5 xs:text-base/[1px] sm:px-2 sm:text-lg/[1px] md:text-xl/[1px];
   }
 
   .svgBg {
@@ -168,7 +168,7 @@
   }
 
   .svgBg-square-lg {
-    @apply absolute w-full top-[21%] bottom-[25%] md:bottom-[29%] md:top-[20%] lg:top-[27%] lg:bottom-[8%] bg-[#d4d3d3];
+    @apply absolute w-full top-[24%] bottom-[25%] md:bottom-[28%] md:top-[26%] lg:top-[34%] lg:bottom-[7%] bg-[#d4d3d3];
   }
 }
 

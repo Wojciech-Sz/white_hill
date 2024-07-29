@@ -27,7 +27,10 @@ export default function Header() {
           ))}
         </div>
 
-        <Button variant="default" className="btn h-8 py-0">
+        <Button
+          variant="default"
+          className="btn h-5 py-0 leading-none xs:h-6 sm:h-7"
+        >
           <Link scroll href="/#contact">
             Kontakt
           </Link>
