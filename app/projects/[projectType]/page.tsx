@@ -45,7 +45,7 @@ const ProjectGallery = ({
             className="btn projects-btn"
             onClick={() => setVisible(!visible)}
           >
-            Wiecej realizacji
+            Wiecej
           </Button>
         </div>
         <div className="relative flex w-full flex-col">
