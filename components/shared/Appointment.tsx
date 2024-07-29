@@ -20,7 +20,10 @@ const Appointment = () => {
         </p>
         <ArrowDown className="size-8 transition-transform duration-300 group-hover:translate-y-4 md:size-10 lg:size-12" />
       </div>
-      <Button variant="default" className="btn">
+      <Button
+        variant="default"
+        className="font-museoSansCyrl text-lg/[1px] font-bold uppercase md:text-xl/[1px]"
+      >
         <Link href="/appointment" prefetch={false}>
           SKONTAKUJ SIĘ Z NAMI
         </Link>
