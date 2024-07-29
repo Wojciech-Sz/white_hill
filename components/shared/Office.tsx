@@ -28,7 +28,7 @@ const Office = () => {
           height={840}
         />
         <figcaption className="flex flex-col font-montserrat text-xl/snug md:text-2xl/snug">
-          <h3 className="text-2xl/none font-bold tracking-tighter md:text-3xl/none">
+          <h3 className="text-2xl/none font-[700] tracking-tighter md:text-3xl/none">
             WHITEHILL
           </h3>
           <p className="mb-4">
@@ -57,9 +57,9 @@ const Office = () => {
       {office.map((question) => (
         <div
           key={question.title}
-          className="grid w-full grid-cols-1 gap-2 md:grid-cols-[30%_1fr] md:gap-0"
+          className="grid w-full grid-cols-1 gap-2 md:grid-cols-[30%_1fr]"
         >
-          <h3 className="ml-[-1.8px] self-center  text-balance text-lg/none font-bold sm:text-xl/none lg:text-2xl/none">
+          <h3 className="ml-[-1.8px] self-center text-balance text-lg/none font-bold sm:text-xl/none lg:text-2xl/none">
             {question.title}
           </h3>
           <div className="md:section-gap flex flex-col items-center md:flex-row">

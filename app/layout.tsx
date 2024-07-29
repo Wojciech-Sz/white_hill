@@ -1,49 +1,11 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
-import { Montserrat } from "next/font/google";
+
 import "./globals.css";
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
 import { Toaster } from "@/components/ui/toaster";
 import React from "react";
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-montserrat",
-  weight: ["100", "400", "500", "600", "700"],
-  style: ["normal", "italic"],
-});
-
-const muesoSansCyrl = localFont({
-  src: [
-    {
-      path: "./fonts/Museo Sans Cyrl/Museo Sans Cyrl 900.ttf",
-      weight: "900",
-      style: "normal",
-    },
-    {
-      path: "./fonts/Museo Sans Cyrl/Museo Sans Cyrl 700.ttf",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "./fonts/Museo Sans Cyrl/Museo Sans Cyrl 500.ttf",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "./fonts/Museo Sans Cyrl/Museo Sans Cyrl 500 Italic.ttf",
-      weight: "500",
-      style: "italic",
-    },
-    {
-      path: "./fonts/Museo Sans Cyrl/Museo Sans Cyrl 100.ttf",
-      weight: "100",
-      style: "normal",
-    },
-  ],
-  variable: "--font-museo-sans-cyrl",
-});
+import { montserrat, muesoSansCyrl } from "./fonts";
 
 export const metadata: Metadata = {
   title:
@@ -59,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pl">
       <body
         className={`font-sans ${montserrat.variable} ${muesoSansCyrl.variable}`}
       >

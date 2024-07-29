@@ -157,18 +157,18 @@
   }
 
   .svgBg {
-    @apply absolute inset-x-0 -bottom-12 top-2 z-[-1] grid grid-cols-[repeat(10,1fr)] md:grid-cols-[repeat(16,1fr)] lg:grid-cols-[repeat(22,1fr)] md:-bottom-24;
+    @apply absolute inset-x-0 -bottom-12 -top-[6rem] z-[-10] grid grid-cols-[repeat(10,1fr)] md:grid-cols-[repeat(16,1fr)] lg:grid-cols-[repeat(22,1fr)] md:-bottom-24;
   }
   .svgBg-line {
-    @apply border-l border-[#cac9c9];
+    @apply border-l border-[#b6b5b5];
   }
 
   .svgBg-square-sm {
-    @apply absolute w-full lg:top-[50%] max-h-[25%] lg:max-h-[40%] aspect-[1/4] lg:bottom-auto lg:h-auto bottom-0 bg-[#d4d3d3];
+    @apply absolute w-full lg:top-[56%] max-h-[25%] lg:max-h-[40%] aspect-[1/4] lg:bottom-auto lg:h-auto bottom-0 bg-[#d4d3d3];
   }
 
   .svgBg-square-lg {
-    @apply absolute w-full top-[11%] bottom-[25%] md:bottom-[32%] md:top-[12%] lg:top-[18%] lg:bottom-[8%] bg-[#d4d3d3];
+    @apply absolute w-full top-[21%] bottom-[25%] md:bottom-[29%] md:top-[20%] lg:top-[27%] lg:bottom-[8%] bg-[#d4d3d3];
   }
 }
 
