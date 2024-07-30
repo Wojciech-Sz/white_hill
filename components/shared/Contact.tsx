@@ -12,11 +12,10 @@ import { Mails } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section
-      id="contact"
-      className="section wrapper relative items-center gap-1"
-    >
-      <h2 className="section-title">Kontakt</h2>
+    <section className="section section-start wrapper relative items-center gap-1">
+      <h2 className="text-2xl font-bold uppercase sm:text-3xl md:text-4xl lg:text-5xl">
+        Kontakt
+      </h2>
       <p className="mb-8 max-w-[60ch] text-center text-base/none xs:text-lg/none md:text-xl/none">
         Nasze biuro stacjonarne mieści się w Białymstoku.
         Projektu realizujemy na terenie całego kraju oraz

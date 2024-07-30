@@ -7,7 +7,7 @@ const Office = () => {
   return (
     <section
       id="office"
-      className="wrapper section section-gap"
+      className="wrapper section-start section section-gap "
     >
       <h2 className="section-title projects-title">
         Pracownia

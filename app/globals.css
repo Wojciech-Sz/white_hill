@@ -93,11 +93,16 @@
   .section {
     @apply flex w-full flex-col pt-12 md:pt-24;
   }
+
+  .section-start {
+    @apply pt-12;
+  }
+
   .section-gap {
-    @apply gap-5 lg:gap-7 2xl:gap-10;
+    @apply gap-5 md:gap-7;
   }
   .section-title {
-    @apply text-3xl sm:text-4xl md:text-5xl leading-none font-bold lg:text-6xl uppercase;
+    @apply text-2xl/3 sm:text-3xl/3 md:text-4xl/3 font-bold lg:text-5xl/3 uppercase;
   }
 
   .projects-title {
@@ -109,7 +114,7 @@
   }
 
   .projects-container {
-    @apply flex h-max w-full flex-row items-center justify-between gap-2 overflow-hidden;
+    @apply flex h-max w-full flex-row items-center justify-between gap-2;
   }
 
   .projects-btn {
@@ -145,7 +150,11 @@
   }
 
   .appointment {
-    @apply flex h-[60vh] w-full items-center justify-center bg-cover bg-fixed bg-center bg-no-repeat bg-gray-400 bg-blend-multiply;
+    @apply flex h-[60vh] w-full flex-col mt-12 gap-6 md:mt-20 items-center justify-center bg-cover bg-fixed bg-center bg-no-repeat bg-gray-400 bg-blend-multiply;
+  }
+
+  .appointment-text {
+    @apply max-w-[60ch] px-6 text-center font-montserrat text-xl/none text-white  md:text-2xl/none lg:text-3xl/none;
   }
 
   .img-span-2 {
@@ -153,7 +162,11 @@
   }
 
   .btn {
-    @apply px-0.5 font-museoSansCyrl text-sm/[1px] font-bold h-5 py-0 xs:h-6 sm:h-7 uppercase xs:px-1.5 xs:text-base/[1px] sm:px-2 sm:text-lg/[1px] md:text-xl/[1px];
+    @apply px-[0.15rem] py-0 font-museoSansCyrl tracking-tighter text-sm/[1px] font-bold h-7 uppercase xs:px-1.5 xs:text-base/[1px] sm:px-2 sm:text-lg/[1px] md:text-xl/[1px];
+  }
+
+  .btn-contact {
+    @apply font-museoSansCyrl text-lg/[1px] font-bold uppercase md:text-xl/[1px];
   }
 
   .svgBg {
@@ -168,7 +181,7 @@
   }
 
   .svgBg-square-lg {
-    @apply absolute w-full top-[21%] bottom-[25%] md:bottom-[28%] md:top-[24%] lg:top-[32%] lg:bottom-[7%] bg-[#d4d3d3];
+    @apply absolute w-full top-[21%] bottom-[25%] md:bottom-[28%] md:top-[20%] lg:top-[27%] lg:bottom-[7%] bg-[#d4d3d3];
   }
 }
 

@@ -31,7 +31,7 @@ const Projects = () => {
           className="btn projects-btn"
           onClick={() => setVisible(!visible)}
         >
-          Wiecej
+          Więcej
         </Button>
       </div>
       <div className="relative flex w-full flex-col">
