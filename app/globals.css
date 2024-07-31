@@ -88,30 +88,26 @@
     2xl:px-40;
   }
   .header {
-    @apply fixed top-0 z-20 flex h-[4.5rem] w-full items-center justify-center bg-white/90 py-3 shadow-sm dark:bg-gray-950  md:py-4;
-  }
-
-  .hero {
-    @apply bg-clip-text;
+    @apply fixed top-0 z-20 flex  h-[3rem] md:h-[4rem] w-full items-center justify-center bg-white/90 py-3 shadow-sm dark:bg-gray-950  md:py-4;
   }
 
   .section {
-    @apply flex w-full flex-col pt-12 md:pt-24;
+    @apply flex w-full flex-col pt-14 md:pt-20;
   }
 
   .section-start {
-    @apply pt-12;
+    @apply -mt-6 md:-mt-12;
   }
 
   .section-gap {
     @apply gap-5 md:gap-7;
   }
   .section-title {
-    @apply text-2xl/3 sm:text-3xl/3 md:text-4xl/3 font-bold lg:text-5xl/3 uppercase;
+    @apply text-2xl sm:text-3xl md:text-4xl font-bold lg:text-5xl uppercase;
   }
 
   .projects-title {
-    @apply -ml-[2.5px] sm:-ml-[3px] md:-ml-[3.8px] lg:-ml-[4.7px];
+    @apply -ml-[1.9px] sm:-ml-[2.5px] md:-ml-[3.1px] lg:-ml-[4px];
   }
 
   .projects-link {
@@ -151,7 +147,11 @@
   }
 
   .about-img {
-    @apply flex aspect-[7/10] max-h-[80vh] w-full flex-col gap-2 transition-all duration-500 hover:-translate-y-3 hover:scale-105 hover:shadow-lg;
+    @apply flex aspect-[7/10] max-h-[80vh] w-full flex-col gap-2 transition-all duration-500 hover:-translate-y-3 hover:scale-[103%] hover:shadow-lg;
+  }
+
+  .img-span-2 {
+    @apply sm:last:aspect-video sm:last:col-span-2 xl:last:col-span-1 xl:last:aspect-[7/10];
   }
 
   .appointment {
@@ -160,10 +160,6 @@
 
   .appointment-text {
     @apply max-w-[60ch] px-6 text-center font-montserrat text-xl/none text-white  md:text-2xl/none lg:text-3xl/none;
-  }
-
-  .img-span-2 {
-    @apply sm:last:aspect-video sm:last:col-span-2 xl:last:col-span-1 xl:last:aspect-[7/10];
   }
 
   .btn {
@@ -182,11 +178,11 @@
   }
 
   .svgBg-square-sm {
-    @apply absolute w-full lg:top-[56%] max-h-[25%] lg:max-h-[40%] aspect-[1/4] lg:bottom-auto lg:h-auto bottom-0 bg-[#d4d3d3];
+    @apply absolute w-full lg:top-[58%] max-h-[25%] lg:max-h-[40%] aspect-[1/4] lg:bottom-auto lg:h-auto bottom-0 bg-[#d4d3d3];
   }
 
   .svgBg-square-lg {
-    @apply absolute w-full top-[21%] bottom-[25%] md:bottom-[28%] md:top-[20%] lg:top-[27%] lg:bottom-[7%] bg-[#d4d3d3];
+    @apply absolute w-full top-[22%] bottom-[25%] md:bottom-[28%] md:top-[22%] lg:top-[29%] lg:bottom-[7%] bg-[#d4d3d3];
   }
 }
 

@@ -17,18 +17,14 @@ const ProjectGallery = ({
   return (
     <div className="section-gap flex w-full flex-col">
       {projectGallery?.images.map((image, i) => (
-        <figure
-          className="relative h-[85vh] w-full"
+        <Image
           key={image + i}
-        >
-          <Image
-            src={image}
-            alt={title}
-            width={1920}
-            height={1080}
-            className="object-cover"
-          />
-        </figure>
+          src={image}
+          alt={title}
+          width={1920}
+          height={1080}
+          className="max-h-[80vh] object-cover"
+        />
       ))}
     </div>
   );

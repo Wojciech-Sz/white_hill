@@ -2,6 +2,7 @@ import { office } from "@/constans";
 import { Separator } from "@radix-ui/react-separator";
 import Image from "next/image";
 import React from "react";
+import SectionTitle from "../shared/SectionTitle";
 
 const Office = () => {
   return (
@@ -9,10 +10,7 @@ const Office = () => {
       id="office"
       className="wrapper section-start section section-gap "
     >
-      <h2 className="section-title projects-title">
-        Pracownia
-      </h2>
-      <Separator className="w-full border-b-2 border-primary-foreground" />
+      <SectionTitle title="Pracownia" />
       <h3 className="font-montserrat text-2xl/none font-bold tracking-tighter md:text-3xl/none">
         WHITEHILL -{" "}
         <span className="font-medium tracking-wide">

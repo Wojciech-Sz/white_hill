@@ -1,15 +1,11 @@
-"use client";
 import GalleryComponent from "@/components/shared/GalleryComponent";
-import Hero from "@/components/shared/Hero";
-import { Button } from "@/components/ui/button";
+import Hero from "@/components/sections/Hero";
+import ProjectsTitle from "@/components/shared/ProjectsTitle";
 
-import { gallery, projectLinks } from "@/constans";
-import { Separator } from "@radix-ui/react-separator";
-import Link from "next/link";
-import React, { useState } from "react";
+import { gallery } from "@/constans";
+import React from "react";
 
 const Gallery = () => {
-  const [visible, setVisible] = useState(false);
   const heroImages = [
     { url: gallery.houses[0].url, id: "gallery-img-1" },
     { url: gallery.interiors[0].url, id: "gallery-img-2" },
@@ -20,42 +16,12 @@ const Gallery = () => {
       <Hero heroImages={heroImages} />
       <section
         id="hero"
-        className="wrapper section section-gap"
+        className="wrapper section section-start section-gap"
       >
-        <div className="projects-container">
-          <h2 className="section-title translate-x-[-1.2px]">
-            Galeria
-          </h2>
-          <Button
-            className="btn projects-btn"
-            onClick={() => setVisible(!visible)}
-          >
-            Więcej
-          </Button>
-        </div>
-        <div className="relative flex w-full flex-col">
-          <div
-            className={`projects-links-container ${visible ? "mb-2 h-9 opacity-100" : "mb-0 h-0 overflow-hidden opacity-0"}`}
-          >
-            {projectLinks.map((link, i) => (
-              <div
-                key={link.label}
-                className="flex items-center gap-2"
-              >
-                <Link
-                  href={link.href}
-                  className="projects-link"
-                >
-                  {link.label}
-                </Link>
-                <Separator
-                  className={`${projectLinks.length - 1 === i ? "h-0" : "h-7 xs:h-5 sm:h-6 md:h-7"} border-l-2 border-primary-foreground/70 lg:hidden`}
-                />
-              </div>
-            ))}
-          </div>
-          <Separator className="w-full border-b-2 border-primary-foreground" />
-        </div>
+        <ProjectsTitle
+          title="Galeria"
+          className="translate-x-[-1.2px]"
+        />
         <GalleryComponent
           type={"houses"}
           images={gallery.houses}

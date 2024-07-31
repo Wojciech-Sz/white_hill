@@ -1,7 +1,7 @@
-import { Separator } from "@radix-ui/react-separator";
 import React from "react";
 import { gallery } from "@/constans";
 import ProjectGallery from "@/components/shared/ProjectGallery";
+import SectionTitle from "@/components/shared/SectionTitle";
 
 const Project = ({
   params: { projectType, projectTitle },
@@ -15,8 +15,7 @@ const Project = ({
 }) => {
   return (
     <section className="wrapper section section-gap ">
-      <h2 className="section-title">{title}</h2>
-      <Separator className="border-primary-foreground md:w-full md:border-b-2" />
+      <SectionTitle title={title} />
       <ProjectGallery
         title={title}
         type={projectType}

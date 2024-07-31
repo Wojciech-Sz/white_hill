@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-
 import "./globals.css";
-import Header from "@/components/shared/Header";
-import Footer from "@/components/shared/Footer";
+import Footer from "@/components/sections/Footer";
 import { Toaster } from "@/components/ui/toaster";
 import React from "react";
 import { montserrat, muesoSansCyrl } from "./fonts";
+import Header from "@/components/sections/Header";
 
 export const metadata: Metadata = {
   title:

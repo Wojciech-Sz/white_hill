@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import React from "react";
-import { Separator } from "../ui/separator";
 import { about } from "@/constans";
+import SectionTitle from "../shared/SectionTitle";
 
 const About = () => {
   return (
@@ -11,10 +11,7 @@ const About = () => {
       id="about"
       className="wrapper section section-gap"
     >
-      <h2 className="section-title first-letter:ml-[-2px]">
-        O Nas
-      </h2>
-      <Separator className="w-full border-b-2 border-primary-foreground" />
+      <SectionTitle title="O nas" />
       <div className="projects-grid">
         {about.map((item) => (
           <figure
@@ -23,8 +20,8 @@ const About = () => {
           >
             <Image
               src={item.image}
-              height="1000"
-              width="1000"
+              height={640}
+              width={1080}
               className="size-full object-cover"
               alt="Imie Nazwisko"
             />

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-import MobileMenu from "./MobileMenu";
 import { footerLinks } from "@/constans";
+import MobileMenu from "../shared/MobileMenu";
 
 export default function Header() {
   return (

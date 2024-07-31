@@ -1,5 +1,4 @@
 import React from "react";
-import ContactForm from "./ContactForm";
 import {
   ClockIcon,
   MailIcon,
@@ -7,8 +6,9 @@ import {
   PhoneIcon,
 } from "../icons";
 
-import SvgBackground from "./SvgBackground";
 import { Mails } from "lucide-react";
+import SvgBackground from "../shared/SvgBackground";
+import ContactForm from "../shared/ContactForm";
 
 const Contact = () => {
   return (
