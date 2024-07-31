@@ -46,10 +46,7 @@ const Hero = ({ heroImages }: { heroImages: IHero[] }) => {
   }, []);
 
   return (
-    <section
-      id="hero"
-      className="relative flex h-[clamp(80vh,90svh,90vh)] w-full overflow-hidden"
-    >
+    <section id="hero" className="hero h-[90vh]">
       {heroImages.map((image, i) => (
         <Image
           key={image.id}

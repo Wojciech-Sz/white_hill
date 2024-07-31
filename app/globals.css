@@ -91,6 +91,10 @@
     @apply fixed top-0 z-20 flex  h-[3rem] md:h-[4rem] w-full items-center justify-center bg-white/90 py-3 shadow-sm dark:bg-gray-950  md:py-4;
   }
 
+  .hero {
+    @apply relative flex h-[clamp(80vh,90svh,90vh)] w-full overflow-hidden;
+  }
+
   .section {
     @apply flex w-full flex-col pt-14 md:pt-20;
   }
