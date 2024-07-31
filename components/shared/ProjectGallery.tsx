@@ -23,7 +23,7 @@ const ProjectGallery = ({
           alt={title}
           width={1920}
           height={1080}
-          className="h-full max-h-[80vh] object-cover [&:nth-child(2)]:col-span-3 [&:nth-child(3)]:col-span-2"
+          className="h-full max-h-[80vh] object-cover odd:col-span-2 [&:nth-child(2)]:col-span-3"
         />
       ))}
     </div>
