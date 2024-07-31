@@ -18,7 +18,7 @@ const Contact = () => {
       </h2>
       <p className="mb-8 max-w-[60ch] text-center text-base/none xs:text-lg/none md:text-xl/none">
         Nasze biuro stacjonarne mieści się w Białymstoku.
-        Projektu realizujemy na terenie całego kraju oraz
+        Projekty realizujemy na terenie całego kraju oraz
         poza jego granicami.
       </p>
       <SvgBackground />

@@ -108,16 +108,6 @@ export const office = [
       },
     ],
   },
-  {
-    title: "Zapraszamy do Współpracy",
-    info: [
-      {
-        title: "",
-        description:
-          "Chcesz stworzyć miejsce, które będzie odzwierciedlać Twoje marzenia i potrzeby? Zapraszamy do kontaktu z naszym zespołem. Razem zrealizujemy projekt, który przekroczy Twoje oczekiwania i stanie się prawdziwym domem dla Twoich emocji i aspiracji.",
-      },
-    ],
-  },
 ];
 
 export const projectLinks = [

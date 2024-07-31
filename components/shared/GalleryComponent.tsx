@@ -32,7 +32,7 @@ const GalleryComponent = ({
               />
               <div className="projects-img-filter" />
               <figcaption className="projects-img-title">
-                <h3 className="text-3xl font-bold lg:text-4xl">
+                <h3 className="font-montserrat text-2xl font-extralight lg:text-3xl">
                   {project.title}
                 </h3>
               </figcaption>

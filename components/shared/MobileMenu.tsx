@@ -31,7 +31,11 @@ const MobileMenu = () => {
         side="left"
         className="flex flex-col overflow-auto bg-white p-4 font-museoSansCyrl uppercase"
       >
-        <SheetTitle className="sr-only">Menu</SheetTitle>
+        <SheetTitle className="self-center text-3xl">
+          <Link scroll href="#hero">
+            White Hill
+          </Link>
+        </SheetTitle>
         <nav className="flex size-full flex-col justify-between">
           <div className="flex flex-col gap-4">
             {headerLinks.map((link) =>

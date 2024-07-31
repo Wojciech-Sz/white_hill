@@ -34,7 +34,7 @@ const ProjectsTitle = ({
         {projectLinks.map((link, i) => (
           <div
             key={link.label}
-            className="flex items-center gap-2"
+            className="flex items-center gap-1 sm:gap-2"
           >
             <Link
               href={link.href}

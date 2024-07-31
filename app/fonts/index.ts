@@ -17,6 +17,11 @@ export const muesoSansCyrl = localFont({
       weight: "500",
       style: "italic",
     },
+    {
+      path: "./Museo Sans Cyrl/Museo Sans Cyrl 300.ttf",
+      weight: "300",
+      style: "normal",
+    },
   ],
   variable: "--font-museo-sans-cyrl",
 });
@@ -36,6 +41,11 @@ export const montserrat = localFont({
     {
       path: "./Montserrat/Montserrat-Regular.ttf",
       weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./Montserrat/Montserrat-ExtraLight.ttf",
+      weight: "200",
       style: "normal",
     },
     {

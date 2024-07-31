@@ -11,12 +11,7 @@ const Office = () => {
       className="wrapper section-start section section-gap "
     >
       <SectionTitle title="Pracownia" />
-      <h3 className="font-montserrat text-2xl/none font-bold tracking-tighter md:text-3xl/none">
-        WHITEHILL -{" "}
-        <span className="font-medium tracking-wide">
-          Miejsca, które Łączą Emocje i Funkcjonalność
-        </span>
-      </h3>
+
       <figure className="section-gap grid w-full  grid-cols-1 lg:grid-cols-2">
         <Image
           src="https://utfs.io/f/cdaa3749-c2a3-4fb8-bea3-f14fbe6e2a18-njtigs.jpg"
@@ -25,8 +20,8 @@ const Office = () => {
           width={840}
           height={840}
         />
-        <figcaption className="flex flex-col font-montserrat text-xl/snug md:text-2xl/snug">
-          <h3 className="text-2xl/none font-[700] tracking-tighter md:text-3xl/none">
+        <figcaption className="flex flex-col font-montserrat text-lg/tight md:text-xl/tight xl:text-2xl/tight">
+          <h3 className="text-xl/none font-bold tracking-tighter md:text-2xl/none xl:text-3xl">
             WHITEHILL
           </h3>
           <p className="mb-4">
@@ -57,7 +52,7 @@ const Office = () => {
           key={question.title}
           className="grid w-full grid-cols-1 gap-2 md:grid-cols-[30%_1fr]"
         >
-          <h3 className="ml-[-1.8px] self-center text-balance text-lg/none font-bold sm:text-xl/none lg:text-2xl/none">
+          <h3 className="ml-[-1.8px] self-center text-balance text-xl/none font-bold lg:text-2xl/none">
             {question.title}
           </h3>
           <div className="md:section-gap flex flex-col items-center md:flex-row">
@@ -74,7 +69,7 @@ const Office = () => {
                       {info.title}{" "}
                     </h3>
                   )}
-                  <p className="inline">
+                  <p className="inline tracking-tight">
                     {info.description}
                   </p>
                 </article>

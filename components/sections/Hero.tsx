@@ -46,7 +46,7 @@ const Hero = ({ heroImages }: { heroImages: IHero[] }) => {
   }, []);
 
   return (
-    <section id="hero" className="hero h-[90vh]">
+    <section id="hero" className="hero h-[83vh]">
       {heroImages.map((image, i) => (
         <Image
           key={image.id}
