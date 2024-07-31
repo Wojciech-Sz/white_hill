@@ -24,7 +24,8 @@ const ProjectGallery = ({
           <Image
             src={image}
             alt={title}
-            fill
+            width={1920}
+            height={1080}
             className="object-cover"
           />
         </figure>
