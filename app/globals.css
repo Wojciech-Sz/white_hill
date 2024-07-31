@@ -178,7 +178,7 @@
   }
 
   .svgBg-square-sm {
-    @apply absolute w-full lg:top-[58%] max-h-[25%] lg:max-h-[40%] aspect-[1/4] lg:bottom-auto lg:h-auto bottom-0 bg-[#d4d3d3];
+    @apply absolute bottom-0 aspect-[1/4] max-h-[25%] w-full bg-[#d4d3d3] lg:bottom-auto lg:top-[58%] lg:h-auto lg:max-h-[40%];
   }
 
   .svgBg-square-lg {
