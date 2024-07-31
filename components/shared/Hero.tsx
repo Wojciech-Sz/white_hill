@@ -48,7 +48,7 @@ const Hero = ({ heroImages }: { heroImages: IHero[] }) => {
   return (
     <section
       id="hero"
-      className="relative flex h-screen w-full overflow-hidden lg:h-[90vh] "
+      className="relative flex h-[clamp(90vh,90svh,90vh)] w-full overflow-hidden"
     >
       {heroImages.map((image, i) => (
         <Image
