@@ -50,9 +50,9 @@ const Office = () => {
       {office.map((question) => (
         <div
           key={question.title}
-          className="grid w-full grid-cols-1 gap-2 md:grid-cols-[30%_1fr]"
+          className="grid w-full grid-cols-1 md:grid-cols-[30%_1fr] md:gap-2"
         >
-          <h3 className="ml-[-1.8px] self-center text-balance text-xl/none font-bold lg:text-2xl/none">
+          <h3 className="ml-[-1.8px] self-center text-balance text-xl font-bold lg:text-2xl">
             {question.title}
           </h3>
           <div className="md:section-gap flex flex-col items-center md:flex-row">

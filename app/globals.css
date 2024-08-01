@@ -107,7 +107,7 @@
     @apply gap-5 md:gap-7;
   }
   .section-title {
-    @apply text-2xl sm:text-3xl md:text-4xl font-bold tracking-tighter lg:text-5xl uppercase;
+    @apply text-3xl md:text-4xl font-bold tracking-tighter lg:text-5xl uppercase;
   }
 
   .projects-title {
@@ -159,7 +159,7 @@
   }
 
   .appointment {
-    @apply flex h-[60vh] w-full flex-col mt-12 gap-6 md:mt-20 items-center justify-center bg-cover bg-fixed bg-center bg-no-repeat bg-gray-400 bg-blend-multiply;
+    @apply flex h-[60vh] w-full flex-col mt-12 gap-6 md:mt-20 items-center justify-center bg-fixed bg-center bg-no-repeat bg-gray-400 bg-blend-multiply;
   }
 
   .appointment-text {
