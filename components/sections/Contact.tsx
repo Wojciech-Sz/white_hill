@@ -24,10 +24,10 @@ const Contact = () => {
       <SvgBackground />
       <div className="flex w-auto flex-col-reverse items-center gap-6 md:gap-10 lg:flex-row lg:items-start lg:justify-center lg:gap-20">
         <div className="flex flex-col items-center gap-2 text-center lg:items-start lg:gap-4 lg:text-left">
-          <h3 className="text-xl font-bold md:text-2xl">
+          <h3 className="text-lg font-bold xs:text-xl ">
             Informacje Kontaktowe
           </h3>
-          <div className="flex w-full flex-col items-center gap-2 font-montserrat text-lg font-normal md:text-xl lg:items-start">
+          <div className="flex w-full flex-col items-center gap-2 font-montserrat text-base font-normal xs:text-lg lg:items-start">
             <a
               aria-label="Zadzwoń"
               href={`tel:${process.env.NEXT_PUBLIC_PHONE}`}
