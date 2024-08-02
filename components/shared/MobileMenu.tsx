@@ -35,7 +35,7 @@ const MobileMenu = () => {
           <Link
             scroll
             href="#hero"
-            className="relative text-lg sm:text-xl md:text-2xl lg:text-3xl"
+            className="relative text-3xl"
           >
             White Hill
             <SheetClose className="mobile-close" />

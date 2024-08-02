@@ -115,19 +115,19 @@
   }
 
   .mobile-links_container {
-    @apply flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-6;
+    @apply flex flex-col gap-6;
   }
 
   .mobile-link {
-    @apply relative w-max text-base/none sm:text-lg/none font-bold tracking-tighter md:text-xl/none lg:text-2xl/none hover:text-primary-foreground/80;
+    @apply relative w-max font-bold tracking-tighter text-2xl/none hover:text-primary-foreground/80;
   }
 
   .mobile-link_projects {
-    @apply relative w-max font-medium hover:text-primary-foreground/80 text-sm/none sm:text-base/none md:text-lg/none lg:text-xl/none;
+    @apply relative w-max font-medium hover:text-primary-foreground/80 text-xl/none;
   }
 
   .mobile-projects_container {
-    @apply gap-2 flex flex-col;
+    @apply gap-3 flex flex-col;
   }
 
   /* Hero */
