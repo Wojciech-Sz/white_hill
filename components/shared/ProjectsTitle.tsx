@@ -48,7 +48,7 @@ const ProjectsTitle = ({
           </div>
         ))}
       </div>
-      <Separator className="w-full border-b-2 border-primary-foreground" />
+      <Separator className="w-full border-b-2" />
     </div>
   );
 };

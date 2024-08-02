@@ -20,10 +20,8 @@ const Office = () => {
           width={840}
           height={840}
         />
-        <figcaption className="flex flex-col font-montserrat text-lg/tight md:text-xl/tight xl:text-2xl/tight">
-          <h3 className="text-xl/none font-bold tracking-tighter md:text-2xl/none xl:text-3xl">
-            WHITEHILL
-          </h3>
+        <figcaption className="office-text">
+          <h3 className="office-text_title">WHITEHILL</h3>
           <p className="mb-4">
             to biuro projektowe specjalizujące się w
             kompleksowym projektowaniu domów, obiektów
@@ -46,30 +44,30 @@ const Office = () => {
           </p>
         </figcaption>
       </figure>
-      <Separator className="border-primary-foreground md:w-full md:border-b-2" />
+      <Separator className="md:w-full md:border-b-2" />
       {office.map((question) => (
         <div
           key={question.title}
-          className="grid w-full grid-cols-1 md:grid-cols-[30%_1fr] md:gap-2"
+          className="office-question"
         >
-          <h3 className="ml-[-1.8px] self-center text-balance text-xl font-bold lg:text-2xl">
+          <h4 className="office-question_title">
             {question.title}
-          </h3>
-          <div className="md:section-gap flex flex-col items-center md:flex-row">
-            <Separator className="w-full border-t-2 border-primary-foreground md:h-full md:w-0 md:border-l-2" />
+          </h4>
+          <div className="office-question_text-container">
+            <Separator className="w-full border-t-2 md:h-full md:w-0 md:border-l-2" />
 
-            <div className="flex flex-col">
+            <div className="section-gap flex flex-col">
               {question.info.map((info) => (
                 <article
                   key={info.title}
-                  className="ml-[-1.8px] text-pretty py-4 font-montserrat text-base/none md:ml-0 lg:text-lg/none"
+                  className="office-question_text"
                 >
-                  {info.description && (
-                    <h3 className="inline text-lg/none font-bold lg:text-xl/none">
+                  {info.title && (
+                    <h5 className="office-question_text-title">
                       {info.title}{" "}
-                    </h3>
+                    </h5>
                   )}
-                  <p className="inline tracking-tight">
+                  <p className="office-question_text-description">
                     {info.description}
                   </p>
                 </article>

@@ -30,11 +30,9 @@ const GalleryComponent = ({
                 width={640}
                 height={1080}
               />
-              <div className="projects-img-filter" />
-              <figcaption className="projects-img-title">
-                <h3 className="font-montserrat text-2xl font-extralight lg:text-3xl">
-                  {project.title}
-                </h3>
+              <div className="projects-img_filter" />
+              <figcaption className="projects-img_title">
+                <h3>{project.title}</h3>
               </figcaption>
             </figure>
           </Link>

@@ -53,7 +53,7 @@ export const office = [
     ],
   },
   {
-    title: "Co zyskasz współpracując z nami",
+    title: "Co zyskasz współpracując z Nami?",
     info: [
       {
         title: "Dedykowane rozwiązania projektowe: ",
@@ -89,7 +89,7 @@ export const office = [
     ],
   },
   {
-    title: "Nasze projekty",
+    title: "Nasze Projekty",
     info: [
       {
         title: "",
@@ -430,18 +430,21 @@ export const about = [
   {
     image:
       "https://utfs.io/f/05dcd7ce-6483-44df-a481-d46c1a527dd4-mv8qnj.jpg",
-    name: "mgr inż. arch. Piotr Domanowski",
+    degree: "mgr inż. arch.",
+    name: "Piotr Domanowski",
     position: "Architekt",
   },
   {
     image:
       "https://utfs.io/f/2e186a62-ad97-4ec3-a4b8-c8835204b807-mv8qnk.jpg",
-    name: "inż. arch. Justyna Domanowska",
+    degree: "inż. arch.",
+    name: "Justyna Domanowska",
     position: "Architekt wnętrz",
   },
   {
     image:
       "https://utfs.io/f/92ff00ed-c586-4f9a-9bce-1d183664d176-24vw.jpg",
+    degree: "",
     name: "Dola",
     position: "Specjalista ds. interakcji społecznych",
   },

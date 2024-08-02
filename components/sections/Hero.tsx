@@ -59,8 +59,8 @@ const Hero = ({ heroImages }: { heroImages: IHero[] }) => {
           }`}
         />
       ))}
-      <div className="absolute inset-0 h-full bg-foreground/30" />
-      <div className="wrapper absolute flex flex-col gap-10 self-end text-pretty pb-20 text-left font-montserrat text-4xl font-thin text-white lg:text-5xl">
+      <div className="absolute inset-0 bg-foreground/30" />
+      <div className="wrapper hero-text">
         <h2>Architektura / Wnętrza</h2>
         <p className="ml-[-4.4px] max-w-[30ch]">
           Pomożemy wam stworzyć waszą niepowtarzalną

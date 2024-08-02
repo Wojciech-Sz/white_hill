@@ -16,7 +16,7 @@ const About = () => {
         {about.map((item) => (
           <figure
             key={item.name}
-            className="img-span-2 about-img"
+            className="img-span-2 about-img "
           >
             <Image
               src={item.image}
@@ -26,11 +26,15 @@ const About = () => {
               alt="Imie Nazwisko"
             />
             <figcaption>
-              <div className="flex flex-col">
-                <h3 className="text-2xl font-bold first-letter:ml-[-2px]">
+              <div className="flex flex-col gap-1">
+                <h3 className="flex flex-wrap gap-1 text-2xl/none font-bold first-letter:ml-[-2px] sm:text-xl/none lg:text-2xl/none">
+                  {item.degree && (
+                    <span>{item.degree}</span>
+                  )}
+
                   {item.name}
                 </h3>
-                <p className="text-xl font-medium italic text-muted-foreground">
+                <p className="text-xl font-medium italic text-muted-foreground sm:text-lg lg:text-xl">
                   {item.position}
                 </p>
               </div>

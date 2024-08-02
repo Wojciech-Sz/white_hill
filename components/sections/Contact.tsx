@@ -16,7 +16,7 @@ const Contact = () => {
       <h2 className="text-2xl font-bold uppercase sm:text-3xl md:text-4xl lg:text-5xl">
         Kontakt
       </h2>
-      <p className="mb-8 max-w-[60ch] text-center text-base/none xs:text-lg/none md:text-xl/none">
+      <p className="mb-8 max-w-[60ch] text-center text-base/none xs:text-lg/none md:text-xl/none lg:text-2xl/none">
         Nasze biuro stacjonarne mieści się w Białymstoku.
         Projekty realizujemy na terenie całego kraju oraz
         poza jego granicami.
@@ -27,7 +27,7 @@ const Contact = () => {
           <h3 className="text-xl font-bold md:text-2xl">
             Informacje Kontaktowe
           </h3>
-          <div className="flex w-full flex-col items-center gap-2 font-montserrat text-lg font-normal lg:items-start ">
+          <div className="flex w-full flex-col items-center gap-2 font-montserrat text-lg font-normal md:text-xl lg:items-start">
             <a
               aria-label="Zadzwoń"
               href={`tel:${process.env.NEXT_PUBLIC_PHONE}`}

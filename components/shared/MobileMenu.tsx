@@ -31,17 +31,22 @@ const MobileMenu = () => {
         side="left"
         className="flex flex-col overflow-auto bg-white p-4 font-museoSansCyrl uppercase"
       >
-        <SheetTitle className="self-center text-3xl">
-          <Link scroll href="#hero">
+        <SheetTitle className="self-center">
+          <Link
+            scroll
+            href="#hero"
+            className="relative text-lg sm:text-xl md:text-2xl lg:text-3xl"
+          >
             White Hill
+            <SheetClose className="mobile-close" />
           </Link>
         </SheetTitle>
         <nav className="flex size-full flex-col justify-between">
-          <div className="flex flex-col gap-4">
+          <div className="mobile-links_container">
             {headerLinks.map((link) =>
               link.label === "Realizacje" ? (
                 <div
-                  className="flex flex-col "
+                  className="mobile-projects_container"
                   key={link.label}
                 >
                   <Link
@@ -51,17 +56,17 @@ const MobileMenu = () => {
                     scroll
                   >
                     {link.label}
-                    <SheetClose className="absolute left-0 size-full opacity-0 " />
+                    <SheetClose className="mobile-close" />
                   </Link>
-                  <div className="flex flex-col text-lg md:text-xl xl:text-2xl">
+                  <div className="mobile-projects_container">
                     {projectLinks.map((link) => (
                       <Link
-                        className="relative w-max font-medium hover:text-primary-foreground/80"
+                        className="mobile-link_projects"
                         href={link.href}
                         key={link.label}
                       >
                         {link.label}
-                        <SheetClose className="absolute left-0 size-full opacity-0" />
+                        <SheetClose className="mobile-close" />
                       </Link>
                     ))}
                   </div>
@@ -75,7 +80,7 @@ const MobileMenu = () => {
                   scroll
                 >
                   {link.label}
-                  <SheetClose className="absolute left-0 size-full opacity-0" />
+                  <SheetClose className="mobile-close" />
                 </Link>
               )
             )}
@@ -87,7 +92,7 @@ const MobileMenu = () => {
               prefetch={false}
             >
               Kontakt
-              <SheetClose className="absolute left-0 size-full opacity-0 " />
+              <SheetClose className="mobile-close " />
             </Link>
 
             <Link
@@ -96,7 +101,7 @@ const MobileMenu = () => {
               prefetch={false}
             >
               Umów spotkanie
-              <SheetClose className="absolute left-0 size-full opacity-0 " />
+              <SheetClose className="mobile-close " />
             </Link>
           </div>
 
