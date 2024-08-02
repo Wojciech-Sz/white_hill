@@ -85,7 +85,8 @@
   .wrapper {
     @apply px-5
     md:px-10
-    xl:px-20
+    lg:px-20
+    xl:px-32
     2xl:px-40;
   }
 
@@ -136,7 +137,7 @@
   }
 
   .hero-text {
-    @apply absolute flex flex-col gap-10 self-end text-pretty pb-20 text-left font-montserrat text-2xl sm:text-3xl md:text-4xl font-thin text-white lg:text-5xl;
+    @apply absolute flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-10 self-end text-pretty pb-5 md:pb-10 lg:pb-12 xl:pb-14 2xl:pb-16 text-left font-montserrat text-2xl sm:text-3xl md:text-4xl font-thin text-white lg:text-5xl;
   }
 
   /* Office */

@@ -11,7 +11,7 @@ export default function Header() {
       <Link href="#hero" prefetch={false} scroll>
         <h1 className="text-2xl font-black">White Hill</h1>
       </Link>
-      <div className="absolute right-5 flex items-center gap-5 md:right-10 xl:right-20 2xl:right-40">
+      <div className="absolute right-5 flex items-center gap-5 md:right-10 lg:right-20 xl:right-32 2xl:right-40">
         <div className="hidden gap-2 md:flex">
           {footerLinks.map((link, i) => (
             <Link

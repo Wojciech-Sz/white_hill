@@ -22,7 +22,7 @@ const MobileMenu = () => {
         <button
           title="Menu"
           aria-label="Włacz menu"
-          className="absolute left-5 cursor-pointer p-0 md:left-10 xl:left-20 2xl:left-40"
+          className="absolute left-5 cursor-pointer p-0 md:left-10 lg:left-20 xl:left-32 2xl:left-40"
         >
           <MenuIcon className="size-7 text-primary-foreground" />
         </button>
