@@ -1,10 +1,11 @@
 "use client";
 import GalleryComponent from "@/components/shared/GalleryComponent";
-import Hero from "@/components/sections/Hero";
+// import Hero from "@/components/sections/Hero";
 import ProjectsTitle from "@/components/shared/ProjectsTitle";
 
 import { gallery } from "@/constans";
 import React from "react";
+import HeroGallery from "@/components/sections/HeroGallery";
 
 const ProjectGallery = ({
   params,
@@ -13,24 +14,26 @@ const ProjectGallery = ({
   params: { projectType: keyof typeof gallery };
   searchParams: { type: string };
 }) => {
-  const heroImages = [
-    {
-      url: gallery[params.projectType][0].url,
-      id: params.projectType + "-img-1",
-    },
-    {
-      url: gallery[params.projectType][1].url,
-      id: params.projectType + "-img-2",
-    },
-    {
-      url: gallery[params.projectType][2].url,
-      id: params.projectType + "-img-3",
-    },
-  ];
+  // const heroImages = [
+  //   {
+  //     url: gallery[params.projectType][0].url,
+  //     id: params.projectType + "-img-1",
+  //   },
+  //   {
+  //     url: gallery[params.projectType][1].url,
+  //     id: params.projectType + "-img-2",
+  //   },
+  //   {
+  //     url: gallery[params.projectType][2].url,
+  //     id: params.projectType + "-img-3",
+  //   },
+  // ];
 
   return (
     <>
-      <Hero heroImages={heroImages} />
+      <HeroGallery
+        img={gallery[params.projectType][0].url}
+      />
       <section className="wrapper section section-gap section-start">
         <ProjectsTitle
           title={searchParams.type}

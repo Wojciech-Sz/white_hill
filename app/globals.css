@@ -140,6 +140,10 @@
     @apply absolute flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-10 self-end text-pretty pb-5 md:pb-10 lg:pb-12 xl:pb-14 2xl:pb-16 text-left font-montserrat text-2xl sm:text-3xl md:text-4xl font-thin text-white lg:text-5xl;
   }
 
+  .hero_gallery-text {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase tracking-wider sticky top-[4.5rem] font-bold text-white;
+  }
+
   /* Office */
   .office-text {
     @apply flex flex-col font-montserrat text-base/tight sm:text-lg/tight md:text-xl/tight lg:text-2xl/tight;

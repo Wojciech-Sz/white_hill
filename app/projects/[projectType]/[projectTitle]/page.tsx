@@ -2,6 +2,7 @@ import React from "react";
 import { gallery } from "@/constans";
 import ProjectGallery from "@/components/shared/ProjectGallery";
 import SectionTitle from "@/components/shared/SectionTitle";
+import HeroGallery from "@/components/sections/HeroGallery";
 
 const Project = ({
   params: { projectType, projectTitle },
@@ -14,14 +15,20 @@ const Project = ({
   searchParams: { title: string };
 }) => {
   return (
-    <section className="wrapper section section-gap ">
-      <SectionTitle title={title} />
-      <ProjectGallery
-        title={title}
-        type={projectType}
-        route={projectTitle}
+    <>
+      <HeroGallery
+        img={gallery[projectType][0].url}
+        title={title.split(" ")[0]}
       />
-    </section>
+      <section className="wrapper section section-gap ">
+        <SectionTitle title={title} />
+        <ProjectGallery
+          title={title}
+          type={projectType}
+          route={projectTitle}
+        />
+      </section>
+    </>
   );
 };
 
