@@ -7,7 +7,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    remotePatterns: [{ hostname: 'utfs.io' }],
+    remotePatterns: [{ hostname: "utfs.io" }],
   },
 };
 
