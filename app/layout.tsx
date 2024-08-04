@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import React from "react";
 import { montserrat, muesoSansCyrl } from "./fonts";
 import Header from "@/components/sections/Header";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title:
@@ -27,12 +28,13 @@ export default function RootLayout({
         <div className="flex min-h-screen flex-col font-museoSansCyrl font-medium">
           <Header />
 
-          <main className="flex-1 pb-12 md:pb-24">
+          <main className="relative flex-1 pb-12 md:pb-24">
             {children}
           </main>
           <Footer />
         </div>
         <Toaster />
+        <SpeedInsights />
       </body>
     </html>
   );

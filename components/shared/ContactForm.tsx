@@ -19,22 +19,9 @@ import { Input } from "@/components/ui/input";
 import { Checkbox } from "../ui/checkbox";
 import { useToast } from "../ui/use-toast";
 
-import {
-  registerLocale,
-  setDefaultLocale,
-} from "react-datepicker";
-import { pl } from "date-fns/locale"; // Polish locale
 import { Button } from "../ui/button";
 
-registerLocale("pl", pl);
-setDefaultLocale("pl");
-
 const ContactForm = () => {
-  const minDate = new Date();
-
-  minDate.setDate(minDate.getDate() + 2);
-  minDate.setHours(8);
-  minDate.setMinutes(0);
   const initialValues = {
     firstName: "",
     lastName: "",

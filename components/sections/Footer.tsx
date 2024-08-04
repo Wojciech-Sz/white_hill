@@ -4,8 +4,8 @@ import { footerLinks } from "@/constans";
 
 const Footer = () => {
   return (
-    <footer className="wrapper w-full bg-[#201E1D] py-10 text-white">
-      <div className="flex items-center justify-center gap-10 max-sm:flex-col sm:justify-between">
+    <footer className="wrapper w-full bg-[#201E1D] py-5 text-white lg:py-8">
+      <div className="flex items-center justify-center gap-5 max-sm:flex-col sm:justify-between">
         <Link
           href="/"
           className="flex items-center"

@@ -20,7 +20,7 @@
     --secondary-foreground: 36 45% 25%;
 
     --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 45%;
+    --muted-foreground: 266 4% 36%;
 
     --accent: 36 64% 57%;
     --accent-foreground: 36 72% 17%;
@@ -106,9 +106,13 @@
     @apply text-2xl font-bold uppercase tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl;
   }
 
+  .background-img {
+    @apply flex flex-col items-center justify-center bg-fixed bg-center bg-cover bg-no-repeat bg-gray-400 bg-blend-multiply;
+  }
+
   /* Header */
   .header {
-    @apply sticky top-0 z-20 flex h-[3rem] md:h-[4rem] w-full items-center justify-center bg-white/90 py-3 shadow-sm dark:bg-gray-950  md:py-4;
+    @apply sticky top-0 z-20 flex h-[3rem] md:h-[4rem] w-full items-center justify-center bg-background/90 shadow-md;
   }
 
   .mobile-close {
@@ -206,12 +210,20 @@
     @apply size-full object-cover transition-transform duration-500 group-hover:scale-110;
   }
 
+  .projects-img_container {
+    @apply relative aspect-[7/10] size-full max-h-[80vh] overflow-hidden;
+  }
+
   .projects-img_filter {
     @apply absolute inset-0 bg-background/30 z-[1] group-hover:opacity-0 transition-opacity duration-500;
   }
 
   .projects-img_title {
     @apply absolute bottom-10 left-8 z-[2] font-montserrat text-2xl/none md:text-3xl/none lg:text-4xl/none xl:text-3xl/none font-extralight text-white transition-transform duration-500 group-hover:translate-x-2;
+  }
+
+  .projects-hero_gallery {
+    @apply h-[70vh];
   }
 
   /* About */
@@ -225,7 +237,7 @@
 
   /* Contact */
   .appointment {
-    @apply flex h-[60vh] w-full flex-col mt-12 gap-6 md:mt-20 items-center justify-center bg-fixed bg-center bg-no-repeat bg-gray-400 bg-blend-multiply;
+    @apply h-[60vh] w-full mt-12 gap-6 md:mt-20;
   }
 
   .appointment-text {
@@ -233,11 +245,15 @@
   }
 
   .btn {
-    @apply px-[0.15rem] py-0 font-museoSansCyrl tracking-tighter text-sm/[1px] font-bold h-7 uppercase xs:px-1.5 xs:text-base/[1px] sm:px-2 sm:text-lg/[1px] md:text-xl/[1px];
+    @apply px-[0.15rem] py-0 font-museoSansCyrl tracking-tighter text-sm font-bold h-7 uppercase xs:px-1.5 xs:text-base sm:px-2 sm:text-lg md:text-xl;
   }
 
   .btn-contact {
-    @apply font-museoSansCyrl text-lg/[1px] font-bold uppercase md:text-xl/[1px];
+    @apply font-museoSansCyrl text-lg font-bold uppercase md:text-xl;
+  }
+
+  .input {
+    @apply flex h-10 w-full rounded-md border-2 border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
   }
 
   /* SVG */
@@ -268,11 +284,11 @@
 }
 
 .react-datepicker__day--selected {
-  background-color: hsl(36 45% 15%) !important;
+  background-color: hsl(26 5% 74%) !important;
   color: #ffffff !important;
   border-radius: 4px;
 }
 
 .react-datepicker__time-list-item--selected {
-  background-color: hsl(36 45% 15%) !important;
+  background-color: hsl(26 5% 74%) !important;
 }

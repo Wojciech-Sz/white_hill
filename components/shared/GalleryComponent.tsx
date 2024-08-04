@@ -16,26 +16,26 @@ const GalleryComponent = ({
     <>
       <div className="projects-grid">
         {images.map((project) => (
-          <Link
+          <figure
             key={project.route}
-            href={`/projects/${type || project.type}/${project.route}?title=${project.title}`}
-            className={`${className} aspect-[7/10] max-h-[80vh] w-full`}
+            className={`${className} projects-img_container group`}
           >
-            <figure className="group relative h-full overflow-hidden ">
-              <Image
-                className="projects-img"
-                src={project.url}
-                title={project.title}
-                alt={project.title}
-                width={640}
-                height={1080}
-              />
-              <div className="projects-img_filter" />
-              <figcaption className="projects-img_title">
-                <h3>{project.title}</h3>
-              </figcaption>
-            </figure>
-          </Link>
+            <Image
+              className="projects-img"
+              src={project.url}
+              title={project.title}
+              alt={project.title}
+              fill
+            />
+            <div className="projects-img_filter" />
+            <figcaption className="projects-img_title">
+              <h3>{project.title}</h3>
+            </figcaption>
+            <Link
+              href={`/projects/${type || project.type}/${project.route}?title=${project.title}`}
+              className="absolute inset-0 z-[3]"
+            />
+          </figure>
         ))}
       </div>
     </>

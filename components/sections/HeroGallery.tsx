@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 const HeroGallery = ({
@@ -10,7 +12,7 @@ const HeroGallery = ({
   return (
     <section
       style={{ backgroundImage: `url(${img})` }}
-      className="flex h-[70vh] items-center justify-center bg-gray-400 bg-cover bg-fixed bg-center bg-no-repeat bg-blend-multiply"
+      className="projects-hero_gallery background-img"
     >
       <h2 className="hero_gallery-text">
         {title || "Realizacje"}

@@ -16,7 +16,7 @@ const About = () => {
         {about.map((item) => (
           <figure
             key={item.name}
-            className="img-span-2 about-img "
+            className="img-span-2 about-img"
           >
             <Image
               src={item.image}

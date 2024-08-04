@@ -48,5 +48,8 @@ export const formSchema = z
         message:
           "Musisz wyrazić zgodę na przetwarzanie danych", // Wiadomość błędu
       }),
+    date: z.date({
+      required_error: "Data jest wymagana",
+    }),
   })
   .required();
