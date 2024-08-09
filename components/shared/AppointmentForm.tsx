@@ -39,6 +39,11 @@ const AppointmentForm = () => {
   minDate.setDate(minDate.getDate() + 2);
   minDate.setHours(9);
   minDate.setMinutes(0);
+  if (minDate.getDay() === 0)
+    minDate.setDate(minDate.getDate() + 1);
+  else if (minDate.getDay() === 6)
+    minDate.setDate(minDate.getDate() + 2);
+
   const initialValues = {
     firstName: "",
     lastName: "",
