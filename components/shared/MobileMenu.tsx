@@ -22,7 +22,7 @@ const MobileMenu = () => {
         <button
           title="Menu"
           aria-label="Włacz menu"
-          className="absolute left-5 cursor-pointer p-0 md:left-10 lg:left-20 xl:left-32 2xl:left-40"
+          className="absolute left-5 cursor-pointer p-0 md:left-7 lg:left-14 xl:left-20 2xl:left-28"
         >
           <MenuIcon className="size-7 text-primary-foreground" />
         </button>
@@ -64,6 +64,7 @@ const MobileMenu = () => {
                         className="mobile-link_projects"
                         href={link.href}
                         key={link.label}
+                        title=""
                       >
                         {link.label}
                         <SheetClose className="mobile-close" />

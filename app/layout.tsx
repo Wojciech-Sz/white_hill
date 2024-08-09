@@ -28,7 +28,7 @@ export default function RootLayout({
         <div className="flex min-h-screen flex-col font-museoSansCyrl font-medium">
           <Header />
 
-          <main className="relative flex-1 pb-12 md:pb-24">
+          <main className="flex flex-1 flex-col">
             {children}
           </main>
           <Footer />

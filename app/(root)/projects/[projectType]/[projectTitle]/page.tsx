@@ -20,7 +20,10 @@ const Project = ({
         img={gallery[projectType][0].url}
         title={title.split(" ")[0]}
       />
-      <section className="wrapper section section-gap ">
+      <section
+        id="hero"
+        className="wrapper section section-gap "
+      >
         <SectionTitle title={title} />
         <ProjectGallery
           title={title}

@@ -73,7 +73,7 @@
 
 @layer base {
   * {
-    @apply border-primary-foreground;
+    @apply border-primary;
   }
   body {
     @apply bg-background text-primary-foreground;
@@ -84,10 +84,11 @@
   /* Section */
   .wrapper {
     @apply px-5
-    md:px-10
-    lg:px-20
-    xl:px-32
-    2xl:px-40;
+    
+    md:px-7
+    lg:px-14
+    xl:px-20
+    2xl:px-28;
   }
 
   .section {
@@ -103,11 +104,15 @@
   }
 
   .section-title {
-    @apply text-2xl font-bold uppercase tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl;
+    @apply text-2xl font-bold uppercase tracking-tighter sm:text-3xl md:text-4xl xl:text-5xl;
   }
 
   .background-img {
-    @apply flex flex-col items-center justify-center bg-fixed bg-center bg-cover bg-no-repeat bg-gray-400 bg-blend-multiply;
+    @apply bg-fixed bg-center bg-cover bg-no-repeat bg-gray-400 bg-blend-multiply;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
   }
 
   /* Header */
@@ -141,20 +146,20 @@
   }
 
   .hero-text {
-    @apply absolute flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-10 self-end text-pretty pb-5 md:pb-10 lg:pb-12 xl:pb-14 2xl:pb-16 text-left font-montserrat text-2xl sm:text-3xl md:text-4xl font-thin text-white lg:text-5xl;
+    @apply absolute flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-10 self-end text-pretty pb-5 md:pb-10 lg:pb-12 xl:pb-14 2xl:pb-16 text-left font-montserrat text-2xl sm:text-3xl md:text-4xl font-thin text-white xl:text-5xl;
   }
 
   .hero_gallery-text {
-    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase tracking-wider sticky top-[4.5rem] font-bold text-white;
+    @apply text-3xl sm:text-4xl md:text-5xl xl:text-6xl uppercase tracking-wider sticky top-[4.5rem] font-bold text-white;
   }
 
   /* Office */
   .office-text {
-    @apply flex flex-col font-montserrat text-base/tight sm:text-lg/tight md:text-xl/tight lg:text-2xl/tight;
+    @apply flex flex-col font-montserrat text-base/tight sm:text-lg/tight md:text-xl/tight xl:text-2xl/tight;
   }
 
   .office-text_title {
-    @apply text-xl/none font-bold tracking-tighter sm:text-2xl/none md:text-3xl/none lg:text-4xl/none;
+    @apply text-xl/none font-bold tracking-tighter sm:text-2xl/none md:text-3xl/none xl:text-4xl/none;
   }
 
   .office-question {
@@ -162,7 +167,7 @@
   }
 
   .office-question_title {
-    @apply ml-[-1.8px] self-center font-bold text-balance text-lg/none sm:text-xl/none md:text-2xl/none lg:text-3xl/none;
+    @apply ml-[-1.8px] self-center font-bold text-balance text-lg/none sm:text-xl/none md:text-2xl/none xl:text-3xl/none;
   }
 
   .office-question_text-container {
@@ -174,11 +179,11 @@
   }
 
   .office-question_text-title {
-    @apply inline text-base/none sm:text-lg/none font-bold md:text-xl/none lg:text-2xl/none;
+    @apply inline text-base/none sm:text-lg/none font-bold md:text-xl/none xl:text-2xl/none;
   }
 
   .office-question_text-description {
-    @apply inline text-sm/none sm:text-base/none md:text-lg/none tracking-tight lg:text-xl/none;
+    @apply inline text-sm/none sm:text-base/none md:text-lg/none tracking-tight xl:text-xl/none;
   }
 
   /* Projects */
@@ -187,7 +192,7 @@
   }
 
   .projects-link {
-    @apply tracking-tighter  uppercase w-min xs:w-auto text-xs/none sm:text-lg/none md:text-xl/none lg:text-2xl/none hover:text-primary-foreground/80 font-light text-center;
+    @apply tracking-tighter  uppercase w-min xs:w-auto text-xs/none sm:text-lg/none md:text-xl/none xl:text-2xl/none hover:text-primary-foreground/80 font-light text-center;
   }
 
   .projects-container {
@@ -203,7 +208,7 @@
   }
 
   .projects-grid {
-    @apply grid w-full grid-cols-1 section-gap sm:grid-cols-2 xl:grid-cols-3;
+    @apply grid w-full grid-cols-1 section-gap sm:grid-cols-2 lg:grid-cols-3;
   }
 
   .projects-img {
@@ -219,11 +224,11 @@
   }
 
   .projects-img_title {
-    @apply absolute bottom-10 left-8 z-[2] font-montserrat text-2xl/none md:text-3xl/none lg:text-4xl/none xl:text-3xl/none font-extralight text-white transition-transform duration-500 group-hover:translate-x-2;
+    @apply absolute bottom-10 left-8 z-[2] font-montserrat text-2xl/none md:text-3xl/none 2xl:text-4xl/none lg:text-3xl/none font-extralight text-white transition-transform duration-500 group-hover:translate-x-2;
   }
 
   .projects-hero_gallery {
-    @apply h-[70vh];
+    @apply h-[70vh] w-full;
   }
 
   /* About */
@@ -232,16 +237,32 @@
   }
 
   .img-span-2 {
-    @apply sm:last:aspect-video sm:last:col-span-2 xl:last:col-span-1 xl:last:aspect-[7/10];
+    @apply sm:last:aspect-video sm:last:col-span-2 lg:last:col-span-1 lg:last:aspect-[7/10];
   }
 
   /* Contact */
-  .appointment {
+  .appointment-section {
     @apply h-[60vh] w-full mt-12 gap-6 md:mt-20;
   }
 
   .appointment-text {
-    @apply max-w-[60ch] px-6 text-center font-montserrat text-xl/none text-white  md:text-2xl/none lg:text-3xl/none;
+    @apply max-w-[60ch] px-6 text-center font-montserrat text-xl/none text-white  md:text-2xl/none xl:text-3xl/none;
+  }
+
+  .appointment-container {
+    @apply grid flex-1 grid-cols-1 h-max lg:grid-cols-[1fr_auto] content-start justify-items-center gap-5 py-10;
+  }
+
+  .appointment-fieldset {
+    @apply grid grid-cols-1 h-max gap-1 xl:grid-cols-3;
+  }
+
+  .appointment-field {
+    @apply min-h-40 h-max w-full bg-white flex flex-col gap-5 px-2 py-3 hover:bg-gray-50 hover:shadow-md hover:shadow-gray-600 cursor-default;
+  }
+
+  .appointment-field_title {
+    @apply text-xl font-bold;
   }
 
   .btn {
@@ -260,6 +281,7 @@
   .svgBg {
     @apply absolute inset-x-0 -bottom-12 -top-[6rem] z-[-10] grid grid-cols-[repeat(10,1fr)] md:grid-cols-[repeat(16,1fr)] lg:grid-cols-[repeat(22,1fr)] md:-bottom-24;
   }
+
   .svgBg-line {
     @apply border-l border-[#b6b5b5];
   }
@@ -269,7 +291,7 @@
   }
 
   .svgBg-square-lg {
-    @apply absolute w-full top-[22%] bottom-[25%] md:bottom-[28%] md:top-[22%] lg:top-[29%] lg:bottom-[7%] bg-[#d4d3d3];
+    @apply absolute w-full top-[22%] bottom-[23%] xs:bottom-[25%] md:bottom-[28%] md:top-[22%] lg:top-[29%] lg:bottom-[7%] bg-[#d4d3d3];
   }
 }
 

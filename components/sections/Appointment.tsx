@@ -10,7 +10,7 @@ const Appointment = () => {
           "url(https://utfs.io/f/e9343b39-5585-4828-a56e-c5b26f5fbc83-oe69nl.jpg)",
       }}
       id="contact"
-      className="appointment background-img"
+      className="appointment-section background-img"
     >
       <p className="appointment-text">
         Odrobinę nas poznaliście. Jeśli chcecie zaprosić nas

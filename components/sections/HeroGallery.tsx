@@ -12,7 +12,7 @@ const HeroGallery = ({
   return (
     <section
       style={{ backgroundImage: `url(${img})` }}
-      className="projects-hero_gallery background-img"
+      className="projects-hero_gallery flex-center background-img"
     >
       <h2 className="hero_gallery-text">
         {title || "Realizacje"}

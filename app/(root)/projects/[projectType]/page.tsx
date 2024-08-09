@@ -34,7 +34,10 @@ const ProjectGallery = ({
       <HeroGallery
         img={gallery[params.projectType][0].url}
       />
-      <section className="wrapper section section-gap section-start">
+      <section
+        id="hero"
+        className="wrapper section section-gap section-start"
+      >
         <ProjectsTitle
           title={searchParams.type}
           className={`${searchParams.type === "Wnętrza" ? "translate-x-[-0.5px]" : ""}`}

@@ -4,7 +4,7 @@ import { Textarea } from "../ui/textarea";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { formSchema } from "@/lib/validators";
+import { contactFormSchema } from "@/lib/validators";
 
 import "react-datepicker/dist/react-datepicker.css";
 import {
@@ -31,16 +31,17 @@ const ContactForm = () => {
     message: "",
     agree: false,
   };
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<z.infer<typeof contactFormSchema>>({
+    resolver: zodResolver(contactFormSchema),
     defaultValues: { ...initialValues },
   });
   const { toast } = useToast();
 
   const onSubmit = async (
-    values: z.infer<typeof formSchema>
+    values: z.infer<typeof contactFormSchema>
   ) => {
-    const response = await fetch("/api/send", {
+    console.log("asdfsdafd");
+    const response = await fetch("/api/send/contact", {
       method: "POST",
       cache: "no-store",
       headers: {
@@ -200,9 +201,9 @@ const ContactForm = () => {
                 <div className="space-y-1 leading-none">
                   <FormDescription className="text-base">
                     Wyrażam zgodę na przetwarzanie moich
-                    danych osobowych. Administratorem danych
-                    jest. Dane zostaną wykorzystane w celu
-                    odpowiedzi na zadane pytanie.
+                    danych osobowych. Dane zostaną
+                    wykorzystane w celu odpowiedzi na zadane
+                    pytanie.
                   </FormDescription>
                 </div>
                 <FormMessage />

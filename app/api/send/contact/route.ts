@@ -18,7 +18,7 @@ export async function POST(req: Request) {
     } = emailData;
     const { data, error } = await resend.emails.send({
       from: "Formularz <onboarding@resend.dev>",
-      to: [String(process.env.NEXT_PUBLIC_EMAIL)],
+      to: [String("w.szczygielski00@gmail.com")],
       subject,
       react: EmailTemplate({
         firstName,

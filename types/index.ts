@@ -27,3 +27,11 @@ export interface IHero {
   url: string;
   id: string;
 }
+
+export interface IAppointment {
+  title: string;
+  description: string;
+  content: {
+    text: string;
+  };
+}

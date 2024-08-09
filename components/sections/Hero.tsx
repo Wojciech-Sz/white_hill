@@ -53,7 +53,9 @@ const Hero = ({ heroImages }: { heroImages: IHero[] }) => {
           id={image.id}
           src={image.url}
           alt={image.id}
-          fill
+          priority
+          width={1920}
+          height={1080}
           className={`absolute size-full object-cover ${
             i !== 0 ? "opacity-0" : ""
           }`}

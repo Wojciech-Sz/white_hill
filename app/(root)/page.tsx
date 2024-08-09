@@ -8,13 +8,13 @@ import { heroImages } from "@/constans";
 
 export default function Home() {
   return (
-    <div className="flex w-full flex-col items-center">
+    <>
       <Hero heroImages={heroImages} />
       <Office />
       <Projects />
       <About />
       <Appointment />
       <Contact />
-    </div>
+    </>
   );
 }

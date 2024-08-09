@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const formSchema = z
+export const contactFormSchema = z
   .object({
     firstName: z
       .string()
@@ -48,8 +48,44 @@ export const formSchema = z
         message:
           "Musisz wyrazić zgodę na przetwarzanie danych", // Wiadomość błędu
       }),
-    date: z.date({
-      required_error: "Data jest wymagana",
+  })
+  .required();
+
+export const appointmentFormSchema = z
+  .object({
+    firstName: z
+      .string()
+      .min(2, {
+        message: "Imię musi mieć co najmniej 2 znaki.",
+      })
+      .max(50, {
+        message: "Imię nie może przekraczać 50 znaków.",
+      }),
+    lastName: z
+      .string()
+      .min(2, {
+        message: "Nazwisko musi mieć co najmniej 2 znaki.",
+      })
+      .max(50, {
+        message: "Nazwisko nie może przekraczać 50 znaków.",
+      }),
+    phoneNumber: z.string().min(9, {
+      message:
+        "Numer telefonu musi mieć co najmniej 9 znaków.",
     }),
+
+    email: z
+      .string()
+      .email({ message: "Niepoprawny adres E-mail" }),
+    subject: z.enum(["15 min", "1 h", "2 h"], {
+      required_error: "Wybierz typ konsultacji",
+    }),
+    date: z.date(),
+    agree: z
+      .boolean({ message: "isActive is required" })
+      .refine((value) => value === true, {
+        message:
+          "Musisz wyrazić zgodę na przetwarzanie danych", // Wiadomość błędu
+      }),
   })
   .required();
