@@ -7,7 +7,7 @@ const SectionTitle = ({ title }: { title: string }) => {
       <h2 className="section-title projects-title">
         {title}
       </h2>
-      <Separator className="w-full border-b-2" />
+      <Separator className="separator" />
     </div>
   );
 };

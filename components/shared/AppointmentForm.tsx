@@ -210,7 +210,7 @@ const AppointmentForm = () => {
             control={form.control}
             name="subject"
             render={({ field }) => (
-              <FormItem className="border-2 p-2">
+              <FormItem className="border-2 border-input p-2 text-muted-foreground">
                 <FormLabel>Konsultacja:</FormLabel>
                 <FormControl>
                   <RadioGroup
@@ -221,7 +221,7 @@ const AppointmentForm = () => {
                       field.onChange(value);
                     }}
                     defaultValue={field.value}
-                    className="flex space-y-1 text-base text-muted-foreground"
+                    className="flex space-y-1 text-base"
                   >
                     <FormItem className="flex items-center space-x-3 space-y-0">
                       <FormControl>
@@ -253,9 +253,9 @@ const AppointmentForm = () => {
             control={form.control}
             name="date"
             render={({ field }) => (
-              <FormItem className="w-full">
+              <FormItem className="w-full text-muted-foreground">
                 <FormControl>
-                  <div className="relative z-[1] text-muted-foreground">
+                  <div className="relative z-[1] ">
                     <DatePicker
                       className="input w-full cursor-pointer text-base"
                       selected={field.value}

@@ -73,7 +73,7 @@
 
 @layer base {
   * {
-    @apply border-primary;
+    @apply border-primary-foreground;
   }
   body {
     @apply bg-background text-primary-foreground;
@@ -113,6 +113,10 @@
 
   .flex-center {
     @apply flex items-center justify-center;
+  }
+
+  .separator {
+    @apply w-full border-b-2;
   }
 
   /* Header */

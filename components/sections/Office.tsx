@@ -44,7 +44,7 @@ const Office = () => {
           </p>
         </figcaption>
       </figure>
-      <Separator className="md:w-full md:border-b-2" />
+      <Separator className="separator md:w-full md:border-b-2" />
       {office.map((question) => (
         <div
           key={question.title}
@@ -54,7 +54,7 @@ const Office = () => {
             {question.title}
           </h4>
           <div className="office-question_text-container">
-            <Separator className="w-full border-t-2 md:h-full md:w-0 md:border-l-2" />
+            <Separator className="separator md:h-full md:w-0 md:border-l-2" />
 
             <div className="section-gap flex flex-col">
               {question.info.map((info) => (
