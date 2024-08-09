@@ -205,7 +205,7 @@ const AppointmentForm = () => {
             control={form.control}
             name="subject"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="border-2 p-2">
                 <FormLabel>Konsultacja:</FormLabel>
                 <FormControl>
                   <RadioGroup
