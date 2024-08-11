@@ -57,7 +57,7 @@ const Office = () => {
           <div className="office-question_text-container">
             <Separator className="separator md:h-full md:w-0 md:border-l-2" />
 
-            <div className="section-gap flex flex-col py-4">
+            <div className="section-gap flex flex-col md:py-4">
               {question.info.map((info) => (
                 <article
                   key={info.title}
