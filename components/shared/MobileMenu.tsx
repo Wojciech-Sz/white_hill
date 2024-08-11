@@ -24,7 +24,7 @@ const MobileMenu = () => {
           aria-label="Włacz menu"
           className="absolute left-5 cursor-pointer p-0 md:left-7 lg:left-14 xl:left-20 2xl:left-28"
         >
-          <MenuIcon className="size-7 text-primary-foreground" />
+          <MenuIcon className="size-7 text-foreground" />
         </button>
       </SheetTrigger>
       <SheetContent
@@ -36,6 +36,7 @@ const MobileMenu = () => {
             scroll
             href="#hero"
             className="relative text-3xl"
+            title="Powrót na góre"
           >
             White Hill
             <SheetClose className="mobile-close" />
@@ -54,6 +55,7 @@ const MobileMenu = () => {
                     className="mobile-link"
                     prefetch={false}
                     scroll
+                    title={link.label}
                   >
                     {link.label}
                     <SheetClose className="mobile-close" />
@@ -64,7 +66,7 @@ const MobileMenu = () => {
                         className="mobile-link_projects"
                         href={link.href}
                         key={link.label}
-                        title=""
+                        title={link.label}
                       >
                         {link.label}
                         <SheetClose className="mobile-close" />
@@ -79,6 +81,7 @@ const MobileMenu = () => {
                   className="mobile-link"
                   prefetch={false}
                   scroll
+                  title={link.label}
                 >
                   {link.label}
                   <SheetClose className="mobile-close" />
@@ -91,6 +94,7 @@ const MobileMenu = () => {
               scroll
               className="mobile-link"
               prefetch={false}
+              title="Kontakt"
             >
               Kontakt
               <SheetClose className="mobile-close " />
@@ -100,20 +104,22 @@ const MobileMenu = () => {
               href="/appointment"
               className="mobile-link"
               prefetch={false}
+              title="Umów spotkanie"
             >
               Umów spotkanie
               <SheetClose className="mobile-close " />
             </Link>
           </div>
 
-          <div className="flex self-center md:hidden">
+          <div className="flex gap-2 self-center md:hidden">
             {footerLinks.map((link, i) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className=" flex size-10 items-center text-primary-foreground hover:text-primary "
+                className="nav-social"
                 prefetch={false}
                 target="_blank"
+                title={link.name}
               >
                 {link.icon}
                 <span className="sr-only">{link.name}</span>

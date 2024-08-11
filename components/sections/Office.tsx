@@ -19,6 +19,7 @@ const Office = () => {
           alt="O Nas"
           width={840}
           height={840}
+          title="O Nas"
         />
         <figcaption className="office-text">
           <h3 className="office-text_title">WHITEHILL</h3>
@@ -44,7 +45,7 @@ const Office = () => {
           </p>
         </figcaption>
       </figure>
-      <Separator className="separator md:w-full md:border-b-2" />
+      <Separator className="md:w-full md:border-b-2" />
       {office.map((question) => (
         <div
           key={question.title}

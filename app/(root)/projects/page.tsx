@@ -1,5 +1,6 @@
+"use client";
+
 import GalleryComponent from "@/components/shared/GalleryComponent";
-// import Hero from "@/components/sections/Hero";
 import ProjectsTitle from "@/components/shared/ProjectsTitle";
 
 import { gallery } from "@/constans";

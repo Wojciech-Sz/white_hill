@@ -39,6 +39,7 @@ const ProjectsTitle = ({
             <Link
               href={link.href}
               className="projects-link"
+              title={link.label}
             >
               {link.label}
             </Link>

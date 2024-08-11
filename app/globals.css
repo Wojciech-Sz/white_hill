@@ -5,62 +5,64 @@
 @layer base {
   :root {
     --background: 30 3% 89%;
-    --foreground: 36 45% 15%;
-
-    --card: 36 46% 82%;
-    --card-foreground: 36 45% 20%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --foreground: 30 15% 20%;
 
     --primary: 26 5% 74%;
-    --primary-foreground: 36 45% 11%;
+    --primary-foreground: 26 35% 15%;
 
-    --secondary: 40 35% 77%;
-    --secondary-foreground: 36 45% 25%;
+    --muted: 30 3% 80%;
+    --muted-foreground: 30 10% 30%;
 
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 266 4% 36%;
+    --card: 30 3% 89%;
+    --card-foreground: 30 15% 20%;
 
-    --accent: 36 64% 57%;
-    --accent-foreground: 36 72% 17%;
+    --popover: 30 3% 89%;
+    --popover-foreground: 30 15% 20%;
 
-    --destructive: 0 84% 37%;
-    --destructive-foreground: 0 0% 98%;
+    --border: 30 3% 70%;
+    --input: 30 3% 70%;
 
-    --border: 36 45% 60%;
-    --input: 26 5% 74%;
-    --ring: 26 5% 74%;
+    --secondary: 26 5% 60%;
+    --secondary-foreground: 26 30% 15%;
+
+    --accent: 26 5% 65%;
+    --accent-foreground: 26 40% 20%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 100% 95%;
+
+    --ring: 30 15% 50%;
   }
 
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 30 3% 20%;
+    --foreground: 30 15% 90%;
 
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --primary: 26 5% 50%;
+    --primary-foreground: 26 35% 90%;
 
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --muted: 30 3% 30%;
+    --muted-foreground: 30 10% 70%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
+    --card: 30 3% 20%;
+    --card-foreground: 30 15% 90%;
 
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
+    --popover: 30 3% 20%;
+    --popover-foreground: 30 15% 90%;
 
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
+    --border: 30 3% 40%;
+    --input: 30 3% 40%;
 
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
+    --secondary: 26 5% 50%;
+    --secondary-foreground: 26 30% 85%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --accent: 26 5% 55%;
+    --accent-foreground: 26 40% 80%;
 
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
+    --destructive: 0 60% 40%;
+    --destructive-foreground: 0 100% 95%;
+
+    --ring: 30 15% 30%;
   }
 }
 
@@ -73,10 +75,10 @@
 
 @layer base {
   * {
-    @apply border-primary-foreground;
+    @apply border-foreground;
   }
   body {
-    @apply bg-background text-primary-foreground;
+    @apply bg-background text-foreground;
   }
 }
 
@@ -124,6 +126,10 @@
     @apply sticky top-0 z-20 flex h-[3rem] md:h-[4rem] w-full items-center justify-center bg-background/90 shadow-md;
   }
 
+  .nav-social {
+    @apply flex size-full items-center text-foreground hover:text-secondary;
+  }
+
   .mobile-close {
     @apply absolute left-0 size-full opacity-0;
   }
@@ -133,11 +139,11 @@
   }
 
   .mobile-link {
-    @apply relative w-max font-bold tracking-tighter text-2xl/none hover:text-primary-foreground/80;
+    @apply relative w-max font-bold tracking-tighter text-2xl/none hover:text-foreground/80;
   }
 
   .mobile-link_projects {
-    @apply relative w-max font-medium hover:text-primary-foreground/80 text-xl/none;
+    @apply relative w-max font-medium hover:text-foreground/80 text-xl/none;
   }
 
   .mobile-projects_container {
@@ -196,7 +202,7 @@
   }
 
   .projects-link {
-    @apply tracking-tighter  uppercase w-min xs:w-auto text-xs/none sm:text-lg/none md:text-xl/none xl:text-2xl/none hover:text-primary-foreground/80 font-light text-center;
+    @apply tracking-tighter  uppercase w-min xs:w-auto text-xs/none sm:text-lg/none md:text-xl/none xl:text-2xl/none hover:text-foreground/80 font-light text-center;
   }
 
   .projects-container {
@@ -278,29 +284,41 @@
   }
 
   .input {
-    @apply flex h-10 w-full rounded-md border-2 border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+    @apply flex h-10 w-full rounded-md border-2 border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .input-text {
+    @apply text-base;
   }
 
   /* SVG */
   .svgBg {
-    @apply absolute inset-x-0 -bottom-12 -top-[6rem] z-[-10] grid grid-cols-[repeat(10,1fr)] md:grid-cols-[repeat(16,1fr)] lg:grid-cols-[repeat(22,1fr)] md:-bottom-24;
+    @apply absolute inset-x-0 -bottom-14 -top-[6rem] z-[-10] grid grid-cols-[repeat(10,1fr)] md:grid-cols-[repeat(16,1fr)] lg:grid-cols-[repeat(22,1fr)] md:-bottom-20;
   }
 
   .svgBg-line {
-    @apply border-l border-[#b6b5b5];
+    @apply border-l border-border;
   }
 
   .svgBg-square-sm {
-    @apply absolute bottom-0 aspect-[1/4] max-h-[25%] w-full bg-[#d4d3d3] lg:bottom-auto lg:top-[58%] lg:h-auto lg:max-h-[40%];
+    @apply absolute bottom-0 top-[76%] xs:top-[74%] w-full md:aspect-[1/4] md:max-h-[25%] md:top-auto bg-muted lg:bottom-auto lg:top-[60%] lg:h-auto lg:max-h-[30%];
   }
 
   .svgBg-square-lg {
-    @apply absolute w-full top-[22%] bottom-[23%] xs:bottom-[25%] md:bottom-[28%] md:top-[22%] lg:top-[29%] lg:bottom-[7%] bg-[#d4d3d3];
+    @apply absolute w-full top-[22%] bottom-[24%] xs:bottom-[26%]  md:bottom-[28%] md:top-[23%] lg:top-[30%] lg:bottom-[6%] xl:top-[31%] bg-muted;
   }
 }
 
 .datePicker {
   width: 100%;
+}
+
+.react-datepicker ::-webkit-scrollbar {
+  display: none;
+}
+
+.react-datepicker {
+  display: flex !important;
 }
 
 .react-datepicker__input-container input {
@@ -310,11 +328,25 @@
 }
 
 .react-datepicker__day--selected {
-  background-color: hsl(26 5% 74%) !important;
+  background-color: hsl(var(--primary)) !important;
   color: #ffffff !important;
   border-radius: 4px;
 }
 
+.react-datepicker__time-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-datepicker__time-list-item:hover {
+  background-color: hsl(var(--background)) !important;
+}
+
+.react-datepicker__day:hover {
+  background-color: hsl(var(--background)) !important;
+}
+
 .react-datepicker__time-list-item--selected {
-  background-color: hsl(26 5% 74%) !important;
+  background-color: hsl(var(--primary)) !important;
 }

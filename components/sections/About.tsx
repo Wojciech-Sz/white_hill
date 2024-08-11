@@ -24,17 +24,18 @@ const About = () => {
               width={1080}
               className="size-full object-cover"
               alt="Imie Nazwisko"
+              title={item.name}
             />
             <figcaption>
               <div className="flex flex-col gap-1">
-                <h3 className="flex flex-wrap gap-1 text-2xl/none font-bold first-letter:ml-[-2px] sm:text-xl/none lg:text-2xl/none xl:text-xl/none 2xl:text-2xl/none">
+                <h3 className="flex flex-wrap gap-1 text-2xl/none font-bold first-letter:ml-[-2px] sm:text-xl/none 2xl:text-2xl/none">
                   {item.degree && (
                     <span>{item.degree}</span>
                   )}
 
                   {item.name}
                 </h3>
-                <p className="text-xl font-medium italic text-muted-foreground sm:text-lg lg:text-xl xl:text-lg 2xl:text-xl">
+                <p className="text-xl font-medium italic text-muted-foreground sm:text-lg 2xl:text-xl">
                   {item.position}
                 </p>
               </div>

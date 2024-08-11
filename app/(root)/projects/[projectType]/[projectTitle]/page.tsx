@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { gallery } from "@/constans";
 import ProjectGallery from "@/components/shared/ProjectGallery";

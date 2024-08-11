@@ -138,11 +138,7 @@ const AppointmentForm = () => {
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Input
-                    className="text-base"
-                    placeholder="Imię"
-                    {...field}
-                  />
+                  <Input placeholder="Imię" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -157,7 +153,6 @@ const AppointmentForm = () => {
               <FormItem>
                 <FormControl>
                   <Input
-                    className="text-base"
                     placeholder="Nazwisko"
                     {...field}
                   />
@@ -176,7 +171,6 @@ const AppointmentForm = () => {
                 <FormControl>
                   <Input
                     type="tel"
-                    className="text-base"
                     placeholder="Numer telefonu"
                     {...field}
                   />
@@ -195,7 +189,6 @@ const AppointmentForm = () => {
                 <FormControl>
                   <Input
                     type="email"
-                    className=" text-base"
                     placeholder="E-mail"
                     {...field}
                   />
@@ -210,8 +203,10 @@ const AppointmentForm = () => {
             control={form.control}
             name="subject"
             render={({ field }) => (
-              <FormItem className="border-2 border-input p-2 text-muted-foreground">
-                <FormLabel>Konsultacja:</FormLabel>
+              <FormItem className="border-2 border-input p-2">
+                <FormLabel className="input-text">
+                  Konsultacja:
+                </FormLabel>
                 <FormControl>
                   <RadioGroup
                     onValueChange={(
@@ -221,25 +216,31 @@ const AppointmentForm = () => {
                       field.onChange(value);
                     }}
                     defaultValue={field.value}
-                    className="flex space-y-1 text-base"
+                    className="flex space-y-1"
                   >
                     <FormItem className="flex items-center space-x-3 space-y-0">
                       <FormControl>
                         <RadioGroupItem value="15 min" />
                       </FormControl>
-                      <FormLabel>15 min</FormLabel>
+                      <FormLabel className="input-text">
+                        15 min
+                      </FormLabel>
                     </FormItem>
                     <FormItem className="flex items-center space-x-3 space-y-0">
                       <FormControl>
                         <RadioGroupItem value="1 h" />
                       </FormControl>
-                      <FormLabel>1 h</FormLabel>
+                      <FormLabel className="input-text">
+                        1 h
+                      </FormLabel>
                     </FormItem>
                     <FormItem className="flex items-center space-x-3 space-y-0">
                       <FormControl>
                         <RadioGroupItem value="2 h" />
                       </FormControl>
-                      <FormLabel>2 h</FormLabel>
+                      <FormLabel className="input-text">
+                        2 h
+                      </FormLabel>
                     </FormItem>
                   </RadioGroup>
                 </FormControl>
@@ -297,14 +298,14 @@ const AppointmentForm = () => {
                     aria-label="Zgoda na przetwarzanie danych osobowych"
                   />
                 </FormControl>
-                <div className="space-y-1 leading-none">
-                  <FormDescription className="text-base">
-                    Wyrażam zgodę na przetwarzanie moich
-                    danych osobowych. Dane zostaną
-                    wykorzystane w celu odpowiedzi na zadane
-                    pytanie.
-                  </FormDescription>
-                </div>
+
+                <FormDescription>
+                  Wyrażam zgodę na przetwarzanie moich
+                  danych osobowych. Dane zostaną
+                  wykorzystane w celu odpowiedzi na zadane
+                  pytanie.
+                </FormDescription>
+
                 <FormMessage />
               </FormItem>
             )}

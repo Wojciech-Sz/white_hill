@@ -35,6 +35,7 @@ const GalleryComponent = ({
             <Link
               href={`/projects/${type || project.type}/${project.route}?title=${project.title}`}
               className="absolute inset-0 z-[3]"
+              title={project.title}
             />
           </figure>
         ))}

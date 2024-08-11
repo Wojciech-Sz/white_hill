@@ -1,6 +1,5 @@
 "use client";
 
-import "react-datepicker/dist/react-datepicker.css";
 import { ChevronRight } from "lucide-react";
 import { appointments } from "@/constans";
 import gsap from "gsap";

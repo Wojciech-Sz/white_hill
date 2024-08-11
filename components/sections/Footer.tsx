@@ -4,12 +4,13 @@ import { footerLinks } from "@/constans";
 
 const Footer = () => {
   return (
-    <footer className="wrapper w-full bg-[#201E1D] py-5 text-white lg:py-8">
+    <footer className="wrapper w-full bg-foreground py-5 text-white lg:py-8">
       <div className="flex items-center justify-center gap-5 max-sm:flex-col sm:justify-between">
         <Link
           href="/"
           className="flex items-center"
           prefetch={false}
+          title="White Hill"
         >
           <span className="ml-2 text-xl  font-bold">
             Architekt
@@ -28,6 +29,7 @@ const Footer = () => {
               className="flex size-full text-white hover:text-primary"
               prefetch={false}
               target="_blank"
+              title={link.name}
             >
               {link.icon}
               <span className="sr-only">{link.name}</span>

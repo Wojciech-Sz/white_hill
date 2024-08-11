@@ -6,7 +6,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { contactFormSchema } from "@/lib/validators";
 
-import "react-datepicker/dist/react-datepicker.css";
 import {
   Form,
   FormControl,
@@ -83,7 +82,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormControl>
                   <Input
-                    className="border-primary bg-transparent text-base"
+                    className="border-primary bg-transparent"
                     placeholder="Imię"
                     {...field}
                   />
@@ -101,7 +100,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormControl>
                   <Input
-                    className="border-primary bg-transparent text-base"
+                    className="border-primary bg-transparent"
                     placeholder="Nazwisko"
                     {...field}
                   />
@@ -120,7 +119,7 @@ const ContactForm = () => {
                 <FormControl>
                   <Input
                     type="tel"
-                    className="border-primary bg-transparent text-base"
+                    className="border-primary bg-transparent"
                     placeholder="Numer telefonu"
                     {...field}
                   />
@@ -139,7 +138,7 @@ const ContactForm = () => {
                 <FormControl>
                   <Input
                     type="email"
-                    className=" bg-transparent text-base"
+                    className=" bg-transparent"
                     placeholder="E-mail"
                     {...field}
                   />
@@ -157,7 +156,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormControl>
                   <Input
-                    className="border-primary bg-transparent text-base"
+                    className="border-primary bg-transparent"
                     placeholder="Temat"
                     {...field}
                   />
@@ -175,7 +174,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormControl>
                   <Textarea
-                    className="border-primary bg-transparent text-base"
+                    className="border-primary bg-transparent"
                     placeholder="Treść wiadomości"
                     {...field}
                   />
@@ -198,14 +197,14 @@ const ContactForm = () => {
                     aria-label="Zgoda na przetwarzanie danych osobowych"
                   />
                 </FormControl>
-                <div className="space-y-1 leading-none">
-                  <FormDescription className="text-base">
-                    Wyrażam zgodę na przetwarzanie moich
-                    danych osobowych. Dane zostaną
-                    wykorzystane w celu odpowiedzi na zadane
-                    pytanie.
-                  </FormDescription>
-                </div>
+
+                <FormDescription>
+                  Wyrażam zgodę na przetwarzanie moich
+                  danych osobowych. Dane zostaną
+                  wykorzystane w celu odpowiedzi na zadane
+                  pytanie.
+                </FormDescription>
+
                 <FormMessage />
               </FormItem>
             )}

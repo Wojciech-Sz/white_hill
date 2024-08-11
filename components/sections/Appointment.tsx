@@ -19,7 +19,11 @@ const Appointment = () => {
       </p>
 
       <Button variant="default" className="btn-contact">
-        <Link href="/appointment" prefetch={false}>
+        <Link
+          href="/appointment"
+          title="Umów spotkanie"
+          prefetch={false}
+        >
           SKONTAKUJ SIĘ Z NAMI
         </Link>
       </Button>
