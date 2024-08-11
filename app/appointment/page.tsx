@@ -51,7 +51,7 @@ const Appointment = () => {
         backgroundImage:
           "url(https://utfs.io/f/e9343b39-5585-4828-a56e-c5b26f5fbc83-oe69nl.jpg)",
       }}
-      className="background-img wrapper appointment-container overflow-hidden"
+      className="background-img wrapper appointment-container"
       id="hero"
     >
       <div className="appointment-fieldset">

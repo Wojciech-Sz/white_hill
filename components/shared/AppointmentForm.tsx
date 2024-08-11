@@ -254,7 +254,7 @@ const AppointmentForm = () => {
             control={form.control}
             name="date"
             render={({ field }) => (
-              <FormItem className="w-full text-muted-foreground">
+              <FormItem className="w-full text-foreground">
                 <FormControl>
                   <div className="relative z-[1] ">
                     <DatePicker

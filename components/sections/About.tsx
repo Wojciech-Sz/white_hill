@@ -26,16 +26,16 @@ const About = () => {
               alt="Imie Nazwisko"
               title={item.name}
             />
-            <figcaption>
-              <div className="flex flex-col gap-1">
-                <h3 className="flex flex-wrap gap-1 text-2xl/none font-bold first-letter:ml-[-2px] sm:text-xl/none 2xl:text-2xl/none">
+            <figcaption className="about-img_title">
+              <div className="flex flex-col gap-2">
+                <h3 className="flex flex-wrap gap-1 font-bold">
                   {item.degree && (
                     <span>{item.degree}</span>
                   )}
 
                   {item.name}
                 </h3>
-                <p className="text-xl font-medium italic text-muted-foreground sm:text-lg 2xl:text-xl">
+                <p className="about-img_description">
                   {item.position}
                 </p>
               </div>

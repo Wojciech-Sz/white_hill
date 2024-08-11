@@ -106,7 +106,7 @@
   }
 
   .section-title {
-    @apply text-2xl font-bold uppercase tracking-tighter sm:text-3xl md:text-4xl xl:text-5xl;
+    @apply text-2xl font-bold uppercase tracking-tighter xs:text-3xl md:text-4xl xl:text-5xl;
   }
 
   .background-img {
@@ -156,20 +156,20 @@
   }
 
   .hero-text {
-    @apply absolute flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-10 self-end text-pretty pb-5 md:pb-10 lg:pb-12 xl:pb-14 2xl:pb-16 text-left font-montserrat text-2xl sm:text-3xl md:text-4xl font-thin text-white xl:text-5xl;
+    @apply absolute flex flex-col gap-4 xs:gap-6 md:gap-8 lg:gap-10 self-end text-pretty pb-5 md:pb-10 lg:pb-12 xl:pb-14 2xl:pb-16 text-left font-montserrat text-2xl xs:text-3xl md:text-4xl font-thin text-white xl:text-5xl;
   }
 
-  .hero_gallery-text {
-    @apply text-3xl sm:text-4xl md:text-5xl xl:text-6xl uppercase tracking-wider sticky top-[4.5rem] font-bold text-white;
+  .hero_gallery-title {
+    @apply text-3xl xs:text-4xl md:text-5xl xl:text-6xl uppercase tracking-wider sticky top-[4.5rem] font-bold text-white;
   }
 
   /* Office */
   .office-text {
-    @apply flex flex-col font-montserrat text-base/tight sm:text-lg/tight md:text-xl/tight xl:text-2xl/tight;
+    @apply flex flex-col font-montserrat text-base/tight xs:text-lg/tight md:text-xl/tight xl:text-2xl/tight;
   }
 
   .office-text_title {
-    @apply text-xl/none font-bold tracking-tighter sm:text-2xl/none md:text-3xl/none xl:text-4xl/none;
+    @apply text-xl/none font-bold tracking-tighter xs:text-2xl/none md:text-3xl/none xl:text-4xl/none;
   }
 
   .office-question {
@@ -177,23 +177,23 @@
   }
 
   .office-question_title {
-    @apply ml-[-1.8px] self-center font-bold text-balance text-lg/none sm:text-xl/none md:text-2xl/none xl:text-3xl/none;
+    @apply ml-[-1.8px] self-center font-bold text-balance text-lg/none xs:text-xl/none md:text-2xl/none xl:text-3xl/none;
   }
 
   .office-question_text-container {
-    @apply section-gap flex flex-col items-center md:flex-row;
+    @apply section-gap flex flex-col font-montserrat items-center md:flex-row text-sm/none xs:text-base/none md:text-lg/none xl:text-xl/none;
   }
 
   .office-question_text {
-    @apply ml-[-1.8px] text-pretty font-montserrat leading-none md:ml-0;
+    @apply ml-[-1.8px] text-pretty md:ml-0;
   }
 
   .office-question_text-title {
-    @apply inline text-base/none sm:text-lg/none font-bold md:text-xl/none xl:text-2xl/none;
+    @apply inline text-base/none xs:text-lg/none font-bold md:text-xl/none xl:text-2xl/none;
   }
 
   .office-question_text-description {
-    @apply inline text-sm/none sm:text-base/none md:text-lg/none tracking-tight xl:text-xl/none;
+    @apply inline tracking-tight;
   }
 
   /* Projects */
@@ -234,7 +234,7 @@
   }
 
   .projects-img_title {
-    @apply absolute bottom-10 left-8 z-[2] font-montserrat text-2xl/none md:text-3xl/none 2xl:text-4xl/none lg:text-3xl/none font-extralight text-white transition-transform duration-500 group-hover:translate-x-2;
+    @apply absolute pr-4 bottom-10 left-8 z-[2] font-montserrat text-2xl/none md:text-3xl/none lg:text-2xl/none  2xl:text-3xl/none font-extralight text-white transition-transform duration-500 group-hover:translate-x-2;
   }
 
   .projects-hero_gallery {
@@ -250,6 +250,14 @@
     @apply sm:last:aspect-video sm:last:col-span-2 lg:last:col-span-1 lg:last:aspect-[7/10];
   }
 
+  .about-img_title {
+    @apply text-xl/none tracking-tight xs:text-2xl/none sm:text-xl/[none] xl:text-2xl/none;
+  }
+
+  .about-img_description {
+    @apply text-lg/none font-medium italic text-muted-foreground xs:text-xl/none sm:text-lg/none xl:text-xl/none;
+  }
+
   /* Contact */
   .appointment-section {
     @apply h-[60vh] w-full mt-12 gap-6 md:mt-20 flex-center flex-col;
@@ -260,7 +268,7 @@
   }
 
   .appointment-container {
-    @apply grid flex-1 grid-cols-1 h-max lg:grid-cols-[1fr_auto] content-start justify-items-center gap-5 py-10;
+    @apply grid flex-1 grid-cols-1 min-h-max lg:grid-cols-[1fr_auto] content-start justify-items-center gap-5 py-10;
   }
 
   .appointment-fieldset {
