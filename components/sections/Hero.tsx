@@ -46,7 +46,7 @@ const Hero = ({ heroImages }: { heroImages: IHero[] }) => {
   }, []);
 
   return (
-    <section id="hero" className="hero h-[83vh]">
+    <section id="hero" className="hero relative h-[83vh]">
       {heroImages.map((image, i) => (
         <Image
           key={image.id}
@@ -55,8 +55,8 @@ const Hero = ({ heroImages }: { heroImages: IHero[] }) => {
           alt={image.id}
           priority
           title="Hero image"
-          width={1920}
-          height={1080}
+          fill
+          sizes="100vw"
           className={`absolute size-full object-cover ${
             i !== 0 ? "opacity-0" : ""
           }`}

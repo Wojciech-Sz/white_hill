@@ -23,7 +23,7 @@ const ProjectGallery = ({
           alt={title}
           width={image.width}
           height={image.height}
-          className="aspect-[7/10] h-full  max-h-[80vh] object-cover md:odd:col-span-2 2xl:[&:nth-child(2)]:col-span-3"
+          className="aspect-[7/10] h-full max-h-[80vh] object-cover md:odd:col-span-2 2xl:[&:nth-child(2)]:col-span-3"
         />
       ))}
     </div>

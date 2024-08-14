@@ -1,5 +1,3 @@
-"use client";
-
 import GalleryComponent from "@/components/shared/GalleryComponent";
 import ProjectsTitle from "@/components/shared/ProjectsTitle";
 
