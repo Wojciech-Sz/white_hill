@@ -260,7 +260,7 @@
 
   /* Contact */
   .appointment-section {
-    @apply h-[clamp(50vh,60svh,60vh)] relative w-full mt-12 gap-6 md:mt-20 flex-center flex-col;
+    @apply h-[clamp(50vh,60svh,60vh)] w-full mt-12 gap-6 md:mt-20 flex-center flex-col;
   }
 
   .appointment-text {
