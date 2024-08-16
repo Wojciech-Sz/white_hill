@@ -47,8 +47,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://utfs.io/f/5b304e99-9833-4093-9c2a-78ece5c5c6aa-rcqaza.png",
-        width: 1200,
-        height: 630,
+        width: 1920,
+        height: 800,
       },
     ],
     type: "website",
@@ -62,8 +62,11 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://utfs.io/f/5b304e99-9833-4093-9c2a-78ece5c5c6aa-rcqaza.png",
+        width: 1920,
+        height: 800,
       },
     ],
+    site: "https://white-hill-two.vercel.app/",
   },
   robots: {
     index: true,
