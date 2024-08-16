@@ -268,7 +268,7 @@
   }
 
   .appointment-container {
-    @apply grid flex-1 grid-cols-1 min-h-screen lg:min-h-max lg:grid-cols-[1fr_auto] content-start justify-items-center gap-5 py-10;
+    @apply grid flex-1 grid-cols-1 min-h-lvh lg:min-h-max lg:grid-cols-[1fr_auto] content-start justify-items-center gap-5 py-10;
   }
 
   .appointment-fieldset {
@@ -276,7 +276,7 @@
   }
 
   .appointment-field {
-    @apply min-h-40 h-max w-full bg-white flex flex-col gap-5 px-2 py-3 hover:bg-gray-50 hover:shadow-md hover:shadow-gray-600 cursor-default;
+    @apply min-h-40 h-max w-full bg-white flex flex-col gap-5 px-2 py-3 hover:bg-gray-50 hover:shadow-md hover:shadow-gray-600;
   }
 
   .appointment-field_title {

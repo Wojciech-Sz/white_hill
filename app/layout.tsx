@@ -10,7 +10,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 export const metadata: Metadata = {
   title: "WhiteHill Architecture | Budynki i Wnętrza",
   description:
-    "Oferujemy kompleksowe usługi architektoniczne dla budynków mieszkalnych i usługowych, obejmujące projektowanie całych obiektów oraz aranżację wnętrz. Stawiamy na funkcjonalność, estetykę i dopasowanie do indywidualnych potrzeb każdego klienta.",
+    "Oferujemy kompleksowe usługi architektoniczne obejmujące projektowanie całych obiektów oraz aranżację wnętrz. Stawiamy na funkcjonalność i estetykę.",
   keywords: [
     "budynki",
     "wnętrza",
@@ -47,27 +47,26 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://utfs.io/f/5b304e99-9833-4093-9c2a-78ece5c5c6aa-rcqaza.png",
-        width: 1920,
-        height: 800,
+        alt: "WhiteHill Architecture | Budynki i Wnętrza",
       },
     ],
     type: "website",
     locale: "pl_PL",
   },
   twitter: {
-    title: "WhiteHill Architecture | Budynki i Wnętrza",
     card: "summary_large_image",
+
+    title: "WhiteHill Architecture | Budynki i Wnętrza",
     description:
       "Kompleksowe usługi architektoniczne dla budynów i wnętrz dostosowane do Twoich potrzeb.",
     images: [
       {
         url: "https://utfs.io/f/5b304e99-9833-4093-9c2a-78ece5c5c6aa-rcqaza.png",
-        width: 1920,
-        height: 800,
+        alt: "WhiteHill Architecture | Budynki i Wnętrza",
       },
     ],
-    site: "https://white-hill-two.vercel.app/",
   },
+
   robots: {
     index: true,
     follow: true,
@@ -79,6 +78,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 

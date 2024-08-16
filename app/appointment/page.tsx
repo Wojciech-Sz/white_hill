@@ -51,28 +51,25 @@ const Appointment = () => {
         backgroundImage:
           "url(https://utfs.io/f/e9343b39-5585-4828-a56e-c5b26f5fbc83-oe69nl.jpg)",
       }}
-      className="background-img wrapper appointment-container"
+      className="background-img wrapper appointment-container min-h-screen"
       id="hero"
     >
       <div className="appointment-fieldset">
         {appointments.map((appointment, i) => (
           <div
             key={appointment.title}
-            className="appointment-field"
+            className="appointment-field cursor-pointer"
+            onMouseDown={() =>
+              showAppointment(`chevron${i}`, `content${i}`)
+            }
           >
             <div className="flex justify-between">
               <h2 className="appointment-field_title">
                 {appointment.title}
               </h2>
               <ChevronRight
-                className="cursor-pointer"
+                className=""
                 id={`chevron${i}`}
-                onMouseDown={() =>
-                  showAppointment(
-                    `chevron${i}`,
-                    `content${i}`
-                  )
-                }
               />
             </div>
             <p>{appointment.description}</p>
