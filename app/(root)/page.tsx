@@ -5,6 +5,13 @@ import Hero from "@/components/sections/Hero";
 import Office from "@/components/sections/Office";
 import Projects from "@/components/sections/Projects";
 import { heroImages } from "@/constans";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://white-hill-two.vercel.app/",
+  },
+};
 
 export default function Home() {
   return (
