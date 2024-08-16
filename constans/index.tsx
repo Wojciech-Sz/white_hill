@@ -1018,7 +1018,7 @@ export const appointments = [
     },
   },
   {
-    title: "Konsultacja - 1 h",
+    title: "Konsultacja - 1 h - 300zł",
     description:
       "Konsultacje projektowe to czas w którym służymy Państwu swoim doświadczeniem i wiedzą",
     content: {
@@ -1026,7 +1026,7 @@ export const appointments = [
     },
   },
   {
-    title: "Konsultacja - 2 h",
+    title: "Konsultacja - 2 h - 500zł",
     description:
       "Konsultacje projektowe to czas w którym służymy Państwu swoim doświadczeniem i wiedzą",
     content: {

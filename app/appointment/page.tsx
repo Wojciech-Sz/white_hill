@@ -20,6 +20,11 @@ const Appointment = () => {
     chevronTarget: string,
     contentTarget: string
   ) => {
+    setIsDown((prev) => ({
+      ...prev,
+      [chevronTarget]: !prev[chevronTarget],
+    }));
+
     gsap.to(`#${chevronTarget}`, {
       rotate: isDown[chevronTarget] ? 0 : 90,
       duration: 0.2,
@@ -27,22 +32,11 @@ const Appointment = () => {
     });
 
     gsap.to(`#${contentTarget}`, {
-      height: isDown[chevronTarget] ? "0" : "100",
-      overflowY: "hidden",
+      height: isDown[chevronTarget] ? "0" : "200",
+      overflowY: isDown[chevronTarget] ? "hidden" : "auto",
       duration: 0.2,
       ease: "linear",
-      onComplete: () => {
-        gsap.to(contentTarget, {
-          overflowY: isDown[chevronTarget]
-            ? "auto"
-            : "hidden",
-        });
-      },
     });
-    setIsDown((prev) => ({
-      ...prev,
-      [chevronTarget]: !prev[chevronTarget],
-    }));
   };
 
   return (
@@ -55,7 +49,7 @@ const Appointment = () => {
           backgroundImage:
             "url(https://utfs.io/f/e9343b39-5585-4828-a56e-c5b26f5fbc83-oe69nl.jpg)",
         }}
-        className="fixed inset-0 -z-10 h-screen bg-gray-400 bg-cover bg-center bg-no-repeat bg-blend-multiply"
+        className="fixed inset-0 -z-10 bg-gray-400 bg-cover bg-center bg-no-repeat bg-blend-multiply"
       />
       <div className="appointment-fieldset">
         {appointments.map((appointment, i) => (
@@ -79,9 +73,10 @@ const Appointment = () => {
 
             <div
               id={`content${i}`}
-              className="left-0 h-0 w-full overflow-hidden bg-white"
+              className="left-0 h-0 w-full overflow-hidden bg-white px-2"
             >
-              {appointment.content.text}
+              <p>{appointment.content.text}</p>
+              <p>Dane do przelewu:</p>
             </div>
           </div>
         ))}
