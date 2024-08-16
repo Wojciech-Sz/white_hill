@@ -47,13 +47,16 @@ const Appointment = () => {
 
   return (
     <section
-      style={{
-        backgroundImage:
-          "url(https://utfs.io/f/e9343b39-5585-4828-a56e-c5b26f5fbc83-oe69nl.jpg)",
-      }}
-      className="background-img wrapper appointment-container min-h-screen"
+      className="wrapper appointment-container"
       id="hero"
     >
+      <div
+        style={{
+          backgroundImage:
+            "url(https://utfs.io/f/e9343b39-5585-4828-a56e-c5b26f5fbc83-oe69nl.jpg)",
+        }}
+        className="fixed inset-0 -z-10 h-screen bg-gray-400 bg-cover bg-center bg-no-repeat bg-blend-multiply"
+      />
       <div className="appointment-fieldset">
         {appointments.map((appointment, i) => (
           <div
@@ -63,7 +66,7 @@ const Appointment = () => {
               showAppointment(`chevron${i}`, `content${i}`)
             }
           >
-            <div className="flex justify-between">
+            <div className=" flex justify-between">
               <h2 className="appointment-field_title">
                 {appointment.title}
               </h2>

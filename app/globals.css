@@ -260,7 +260,7 @@
 
   /* Contact */
   .appointment-section {
-    @apply h-[60vh] w-full mt-12 gap-6 md:mt-20 flex-center flex-col;
+    @apply h-[60vh] relative w-full mt-12 gap-6 md:mt-20 flex-center flex-col;
   }
 
   .appointment-text {
@@ -268,7 +268,7 @@
   }
 
   .appointment-container {
-    @apply grid flex-1 grid-cols-1 min-h-lvh lg:min-h-max lg:grid-cols-[1fr_auto] content-start justify-items-center gap-5 py-10;
+    @apply grid relative flex-1 grid-cols-1 min-h-screen lg:min-h-max lg:grid-cols-[1fr_auto] content-start justify-items-center gap-5 py-10;
   }
 
   .appointment-fieldset {
