@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Footer from "@/components/sections/Footer";
 import { Toaster } from "@/components/ui/toaster";
@@ -80,6 +80,13 @@ export const metadata: Metadata = {
   },
 
   icons: [{ rel: "icon", url: "/favicon.ico" }],
+};
+
+export const viewport: Viewport = {
+  height: "device-height",
+  maximumScale: 3,
+  minimumScale: 0.1,
+  userScalable: true,
 };
 
 export default function RootLayout({

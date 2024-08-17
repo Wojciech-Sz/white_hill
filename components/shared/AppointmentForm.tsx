@@ -326,7 +326,7 @@ const AppointmentForm = () => {
             control={form.control}
             name="agree"
             render={({ field }) => (
-              <FormItem className="flex h-auto flex-col items-start border-2 border-input  bg-background p-4">
+              <FormItem className="flex h-auto flex-col items-start border-2 border-input  bg-background px-4 py-2">
                 <FormControl>
                   <Checkbox
                     checked={field.value}
