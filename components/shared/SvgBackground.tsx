@@ -4,17 +4,17 @@ const SvgBackground = () => {
   return (
     <div className="svgBg">
       <div className="svgBg-line relative">
-        <div className="svgBg-square-sm" />
+        <div className="svgBg-square_sm" />
       </div>
       <div className="svgBg-line relative">
-        <div className="svgBg-square-sm" />
+        <div className="svgBg-square_sm" />
       </div>
       <div className="svgBg-line relative">
-        <div className="svgBg-square-sm" />
+        <div className="svgBg-square_sm" />
       </div>
       <div className="svgBg-line relative">
-        <div className="svgBg-square-sm flex items-center">
-          <div className="absolute left-0 right-[-102%] hidden aspect-square rounded-full border border-muted-foreground lg:block" />
+        <div className="svgBg-square_sm flex items-center">
+          <div className="svg-circle" />
         </div>
       </div>
       <div className="svgBg-line hidden lg:block" />
@@ -28,28 +28,28 @@ const SvgBackground = () => {
       <div className="svgBg-line hidden md:block" />
       <div className="svgBg-line hidden md:block" />
       <div className="svgBg-line relative hidden md:block">
-        <div className="2xl:svgBg-square-lg" />
+        <div className="2xl:svgBg-square_lg" />
       </div>
       <div className="svgBg-line relative hidden md:block ">
-        <div className="svgBg-square-lg" />
+        <div className="svgBg-square_lg" />
       </div>
       <div className="svgBg-line relative">
-        <div className="svgBg-square-lg" />
+        <div className="svgBg-square_lg" />
       </div>
       <div className="svgBg-line relative">
-        <div className="svgBg-square-lg" />
+        <div className="svgBg-square_lg" />
       </div>
       <div className="svgBg-line relative">
-        <div className="svgBg-square-lg" />
+        <div className="svgBg-square_lg" />
       </div>
       <div className="svgBg-line relative">
-        <div className="svgBg-square-lg" />
+        <div className="svgBg-square_lg" />
       </div>
       <div className="svgBg-line relative">
-        <div className="svgBg-square-lg" />
+        <div className="svgBg-square_lg" />
       </div>
       <div className="svgBg-line relative">
-        <div className="svgBg-square-lg" />
+        <div className="svgBg-square_lg" />
       </div>
     </div>
   );

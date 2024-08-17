@@ -12,7 +12,7 @@ import ContactForm from "../shared/ContactForm";
 
 const Contact = () => {
   return (
-    <section className="section section-start wrapper relative items-center gap-1">
+    <section className="section wrapper section-start relative items-center gap-1">
       <h2 className="section-title">Kontakt</h2>
       <p className="mb-8 max-w-[60ch] text-center text-base/none xs:text-lg/none md:text-xl/none xl:text-2xl/none">
         Nasze biuro stacjonarne mieści się w Białymstoku.

@@ -54,6 +54,7 @@ const AppointmentForm = () => {
     subject: "15 min" as "15 min",
     date: minDate,
     agree: false,
+    payment: true,
   };
   const form = useForm<
     z.infer<typeof appointmentFormSchema>
@@ -77,9 +78,10 @@ const AppointmentForm = () => {
     // Adjust the maxTime based on selected consultation time
     if (value === "15 min") {
       setMaxTime(new Date("2024-07-14T16:45"));
+      form.setValue("payment", true);
     } else if (value === "1 h") {
       setMaxTime(new Date("2024-07-14T16:00"));
-
+      form.setValue("payment", false);
       if (hours === 16 && minutes > 0) {
         const newDate = form.getValues("date");
         newDate.setMinutes(0);
@@ -121,6 +123,7 @@ const AppointmentForm = () => {
         };
 
     form.reset();
+    form.setValue("subject", "15 min");
     toast({
       ...message,
     });
@@ -211,6 +214,7 @@ const AppointmentForm = () => {
                 </FormLabel>
                 <FormControl>
                   <RadioGroup
+                    value={field.value}
                     onValueChange={(
                       value: "15 min" | "1 h" | "2 h"
                     ) => {
@@ -247,6 +251,36 @@ const AppointmentForm = () => {
                   </RadioGroup>
                 </FormControl>
                 <FormMessage />
+              </FormItem>
+            )}
+          />
+
+          {/* Płatność */}
+
+          <FormField
+            control={form.control}
+            name="payment"
+            render={({ field }) => (
+              <FormItem
+                className={`${form.getValues("subject") === "15 min" ? "hidden" : "flex"} gap-3 space-y-0 border-2 border-input p-4`}
+              >
+                <FormControl>
+                  <Checkbox
+                    checked={field.value}
+                    onCheckedChange={field.onChange}
+                    aria-label="Potwierdzenie płatności"
+                  />
+                </FormControl>
+                <div className="flex flex-col gap-1 leading-none">
+                  <FormLabel>
+                    Potwierdzenie płatności
+                  </FormLabel>
+                  <FormDescription>
+                    Dane do płatności dostępne w szczegółach
+                    konsultacji.
+                  </FormDescription>
+                  <FormMessage />
+                </div>
               </FormItem>
             )}
           />
@@ -304,8 +338,7 @@ const AppointmentForm = () => {
                 <FormDescription>
                   Wyrażam zgodę na przetwarzanie moich
                   danych osobowych. Dane zostaną
-                  wykorzystane w celu odpowiedzi na zadane
-                  pytanie.
+                  wykorzystane w celu umówienia konsultacji.
                 </FormDescription>
 
                 <FormMessage />

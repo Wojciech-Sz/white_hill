@@ -81,11 +81,14 @@ export const appointmentFormSchema = z
       required_error: "Wybierz typ konsultacji",
     }),
     date: z.date(),
-    agree: z
-      .boolean({ message: "isActive is required" })
+    agree: z.boolean().refine((value) => value === true, {
+      message:
+        "Musisz wyrazić zgodę na przetwarzanie danych", // Wiadomość błędu
+    }),
+    payment: z
+      .boolean({ required_error: "Wybierz typ płatnosci" })
       .refine((value) => value === true, {
-        message:
-          "Musisz wyrazić zgodę na przetwarzanie danych", // Wiadomość błędu
+        message: "Musisz potwierdzić płatność", // Wiadomość błędu
       }),
   })
   .required();

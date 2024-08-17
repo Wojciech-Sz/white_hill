@@ -49,7 +49,7 @@ const Appointment = () => {
           backgroundImage:
             "url(https://utfs.io/f/e9343b39-5585-4828-a56e-c5b26f5fbc83-oe69nl.jpg)",
         }}
-        className="fixed inset-0 -z-10 bg-gray-400 bg-cover bg-center bg-no-repeat bg-blend-multiply"
+        className="fixed inset-0 -z-10 min-h-screen bg-gray-400 bg-cover bg-center bg-no-repeat bg-blend-multiply"
       />
       <div className="appointment-fieldset">
         {appointments.map((appointment, i) => (

@@ -22,7 +22,7 @@ const Project = ({
       />
       <section
         id="hero"
-        className="wrapper section section-gap "
+        className="wrapper section section-start section-gap "
       >
         <SectionTitle title={title} />
         <ProjectGallery
