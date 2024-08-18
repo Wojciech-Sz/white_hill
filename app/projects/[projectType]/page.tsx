@@ -30,7 +30,7 @@ const ProjectGallery = ({
     <>
       <Hero
         heroImages={heroImages}
-        className="hero-gallery h-[40vh] "
+        className="hero-gallery h-[300px]"
         title={"Galeria / " + type}
         subtitle="Zapoznaj się z naszymi najnowszymi realizacjami"
       />
