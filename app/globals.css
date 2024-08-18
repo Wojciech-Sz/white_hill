@@ -156,15 +156,11 @@
   }
 
   .hero-gallery {
-    @apply relative flex h-[clamp(300px,40svh,350px)] w-full overflow-hidden;
+    @apply relative flex portrait:h-[clamp(150px,20svh,250px)] landscape:h-[clamp(220px,30svh,320px)] xl:landscape:h-[clamp(250px,35svh,350px)] md:portrait:h-[clamp(250px,20svh,350px)] w-full overflow-hidden;
   }
 
   .hero-text {
-    @apply absolute flex flex-col gap-4 xs:gap-6 md:gap-8 lg:gap-10 self-end text-pretty pb-5 md:pb-10 lg:pb-12 xl:pb-14 2xl:pb-16 text-left font-montserrat text-2xl xs:text-3xl md:text-4xl font-thin text-white xl:text-5xl;
-  }
-
-  .hero_gallery-title {
-    @apply text-3xl xs:text-4xl md:text-5xl xl:text-6xl uppercase tracking-wider sticky top-[4.5rem] font-bold text-white;
+    @apply absolute flex flex-col gap-4 md:gap-6 lg:gap-8 self-end text-pretty pb-[2vh] md:pb-[4vh] lg:pb-[5vh] xl:pb-[6vh] text-left font-montserrat text-2xl xs:text-3xl md:text-4xl font-thin text-white xl:text-5xl;
   }
 
   /* Office */
