@@ -33,7 +33,7 @@ const Project = ({
     <>
       <Hero
         heroImages={heroImages}
-        className="hero-gallery h-[40vh]"
+        className="hero-gallery h-[40vh] portrait:h-[25vh]"
         title={"Galeria / " + title.split(" ")[0]}
       />
       <section

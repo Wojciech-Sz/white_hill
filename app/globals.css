@@ -156,7 +156,7 @@
   }
 
   .hero-gallery {
-    @apply relative flex h-[clamp(30vh,40svh,40vh)] w-full overflow-hidden;
+    @apply relative flex h-[clamp(30vh,40svh,40vh)] portrait:h-[clamp(15vh,25svh,25vh)] w-full overflow-hidden;
   }
 
   .hero-text {
@@ -325,7 +325,7 @@
   }
 
   .svgBg-square_sm {
-    @apply absolute bottom-0 top-[76%] xs:top-[75%] w-full md:aspect-[1/4] md:top-auto bg-muted lg:bottom-[16%] lg:top-[54%] lg:h-auto lg:max-h-[30%];
+    @apply absolute bottom-0 top-[76%] xs:top-[75%] w-full md:aspect-[1/4] md:top-auto bg-muted lg:bottom-[16%] lg:top-[auto] lg:max-h-[40%];
   }
 
   .svg-circle {
@@ -333,7 +333,7 @@
   }
 
   .svgBg-square_lg {
-    @apply absolute w-full top-[13%] bottom-[24%] xs:bottom-[25%]  md:bottom-[32%] md:top-[12.5%] lg:top-[17%] lg:bottom-[7%] xl:top-[18.5%] bg-muted;
+    @apply absolute w-full top-[12%] bottom-[24%]  xs:bottom-[25%] sm:top-[11%] md:bottom-[32%] md:top-[11.5%] lg:top-[17%] lg:bottom-[7%] xl:top-[18.5%] bg-muted;
   }
 }
 
