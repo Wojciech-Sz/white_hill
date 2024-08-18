@@ -80,6 +80,9 @@
   body {
     @apply bg-background text-foreground;
   }
+  .hero-gallery {
+    @apply h-[200px] md:h-[250px] xl:h-[320px];
+  }
 }
 
 @layer utilities {
