@@ -156,7 +156,7 @@
   }
 
   .hero-gallery {
-    @apply relative flex h-[clamp(30vh,40svh,40vh)] portrait:h-[clamp(15vh,25svh,25vh)] w-full overflow-hidden;
+    @apply relative flex landscape:h-[clamp(40vh,50svh,50vh)] landscape:md:h-[clamp(30vh,40svh,40vh)] landscape:xl:h-[clamp(40vh,50svh,50vh)] portrait:h-[clamp(20vh,30svh,30vh)] w-full overflow-hidden;
   }
 
   .hero-text {

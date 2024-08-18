@@ -15,7 +15,7 @@ const Gallery = () => {
     <>
       <Hero
         heroImages={heroImages}
-        className="hero-gallery h-[40vh] portrait:h-[25vh]"
+        className="hero-gallery h-[40vh] "
         title="Galeria"
         subtitle="Zapoznaj się z naszymi najnowszymi realizacjami"
       />
