@@ -3,17 +3,22 @@ import ProjectsTitle from "@/components/shared/ProjectsTitle";
 
 import { gallery } from "@/constans";
 import React from "react";
-import HeroGallery from "@/components/sections/HeroGallery";
+import Hero from "@/components/sections/Hero";
 
 const Gallery = () => {
-  // const heroImages = [
-  //   { url: gallery.houses[0].url, id: "gallery-img-1" },
-  //   { url: gallery.interiors[0].url, id: "gallery-img-2" },
-  //   { url: gallery.offices[0].url, id: "gallery-img-3" },
-  // ];
+  const heroImages = [
+    { url: gallery.houses[0].url, id: "gallery-img-1" },
+    { url: gallery.interiors[0].url, id: "gallery-img-2" },
+    { url: gallery.offices[0].url, id: "gallery-img-3" },
+  ];
   return (
     <>
-      <HeroGallery img={gallery.houses[0].url} />
+      <Hero
+        heroImages={heroImages}
+        className="hero-gallery h-[40vh]"
+        title="Galeria"
+        subtitle="Zapoznaj się z naszymi najnowszymi realizacjami"
+      />
       <section
         id="hero"
         className="wrapper section section-start section-gap"

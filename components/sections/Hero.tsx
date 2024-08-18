@@ -4,9 +4,14 @@ import Image from "next/image";
 import React from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { IHero } from "@/types";
+import { HeroProps } from "@/types";
 
-const Hero = ({ heroImages }: { heroImages: IHero[] }) => {
+const Hero = ({
+  heroImages,
+  className,
+  title,
+  subtitle,
+}: HeroProps) => {
   const tl = gsap.timeline({ repeat: -1 });
 
   useGSAP(() => {
@@ -46,7 +51,7 @@ const Hero = ({ heroImages }: { heroImages: IHero[] }) => {
   }, []);
 
   return (
-    <section id="hero" className="hero h-[83vh]">
+    <section id="hero" className={className}>
       {heroImages.map((image, i) => (
         <Image
           key={image.id}
@@ -62,13 +67,14 @@ const Hero = ({ heroImages }: { heroImages: IHero[] }) => {
           }`}
         />
       ))}
-      <div className="absolute inset-0 bg-foreground/30" />
+      <div className="absolute inset-0 bg-foreground/50" />
       <div className="wrapper hero-text">
-        <h2>Architektura / Wnętrza</h2>
-        <p className="ml-[-4.4px] max-w-[30ch]">
-          Pomożemy wam stworzyć waszą niepowtarzalną
-          przestrzeń
-        </p>
+        <h2>{title}</h2>
+        {subtitle && (
+          <p className="ml-[-4.4px] max-w-[30ch] text-balance">
+            {subtitle}
+          </p>
+        )}
       </div>
     </section>
   );

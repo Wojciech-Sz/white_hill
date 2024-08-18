@@ -28,6 +28,13 @@ export interface IHero {
   id: string;
 }
 
+export type HeroProps = {
+  heroImages: IHero[];
+  className: string;
+  title: string;
+  subtitle?: string;
+};
+
 export interface IAppointment {
   title: string;
   description: string;

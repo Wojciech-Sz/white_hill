@@ -94,11 +94,11 @@
   }
 
   .section {
-    @apply flex w-full flex-col pb-14 md:pb-20;
+    @apply flex w-full flex-col pb-14 md:pb-20 bg-background;
   }
 
   .section-start {
-    @apply pt-8;
+    @apply pt-5 lg:pt-8;
   }
 
   .section-gap {
@@ -153,6 +153,10 @@
   /* Hero */
   .hero {
     @apply relative flex h-[clamp(73vh,83svh,83vh)] w-full overflow-hidden;
+  }
+
+  .hero-gallery {
+    @apply relative flex h-[clamp(30vh,40svh,40vh)] w-full overflow-hidden;
   }
 
   .hero-text {
@@ -237,10 +241,6 @@
     @apply absolute pr-4 bottom-10 left-8 z-[2] font-montserrat text-2xl/none md:text-3xl/none lg:text-2xl/none  2xl:text-3xl/none font-extralight text-white transition-transform duration-500 group-hover:translate-x-2;
   }
 
-  .projects-hero_gallery {
-    @apply h-[70vh] w-full;
-  }
-
   /* About */
   .about-img {
     @apply flex aspect-[7/10] max-h-[80vh] w-full flex-col gap-2 transition-all duration-500 hover:-translate-y-3 hover:scale-[103%] hover:shadow-lg;
@@ -283,6 +283,22 @@
     @apply text-xl font-bold;
   }
 
+  .contact-text {
+    @apply mb-8 max-w-[60ch] text-center text-base/none xs:text-lg/none md:text-xl/none xl:text-2xl/none;
+  }
+
+  .contact-container {
+    @apply flex w-auto flex-col-reverse items-center justify-center gap-6 md:gap-10 lg:flex-row lg:items-start lg:justify-center lg:gap-20;
+  }
+
+  .contact-info_container {
+    @apply flex flex-col items-center justify-center gap-2 text-center lg:items-start lg:gap-4 lg:text-left;
+  }
+
+  .contact-info {
+    @apply flex w-full flex-col items-center justify-center gap-2 font-montserrat text-base font-normal xs:text-lg lg:items-start;
+  }
+
   .btn {
     @apply px-[0.15rem] py-0 font-museoSansCyrl tracking-tighter text-sm font-bold h-7 uppercase xs:px-1.5 xs:text-base sm:px-2 sm:text-lg md:text-xl;
   }
@@ -301,7 +317,7 @@
 
   /* SVG */
   .svgBg {
-    @apply absolute inset-x-0 bottom-0 top-0 z-[-10] grid grid-cols-[repeat(10,1fr)] md:grid-cols-[repeat(16,1fr)] lg:grid-cols-[repeat(22,1fr)];
+    @apply absolute inset-x-0 bottom-0 top-0 z-[0] grid grid-cols-[repeat(10,1fr)] md:grid-cols-[repeat(16,1fr)] lg:grid-cols-[repeat(22,1fr)];
   }
 
   .svgBg-line {

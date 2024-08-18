@@ -13,25 +13,25 @@ import ContactForm from "../shared/ContactForm";
 const Contact = () => {
   return (
     <section className="section wrapper section-start relative items-center gap-1">
-      <h2 className="section-title">Kontakt</h2>
-      <p className="mb-8 max-w-[60ch] text-center text-base/none xs:text-lg/none md:text-xl/none xl:text-2xl/none">
+      <h2 className="section-title z-[1]">Kontakt</h2>
+      <p className="contact-text z-[1]">
         Nasze biuro stacjonarne mieści się w Białymstoku.
         Projekty realizujemy na terenie całego kraju oraz
         poza jego granicami.
       </p>
       <SvgBackground />
-      <div className="flex w-auto flex-col-reverse items-center gap-6 md:gap-10 lg:flex-row lg:items-start lg:justify-center lg:gap-20">
-        <div className="flex flex-col items-center gap-2 text-center lg:items-start lg:gap-4 lg:text-left">
+      <div className="contact-container z-[1]">
+        <div className="contact-info_container">
           <h3 className="text-lg font-bold xs:text-xl ">
             Informacje Kontaktowe
           </h3>
-          <div className="flex w-full flex-col items-center gap-2 font-montserrat text-base font-normal xs:text-lg lg:items-start">
+          <div className="contact-info">
             <a
               aria-label="Zadzwoń"
               href={`tel:${process.env.NEXT_PUBLIC_PHONE}`}
               title="501-458-229"
             >
-              <div className="flex  items-center gap-2  hover:text-foreground/70 ">
+              <div className="flex items-center gap-2 hover:text-foreground/70 ">
                 <PhoneIcon className="size-5 shrink-0" />
                 501-458-229
               </div>
@@ -41,7 +41,7 @@ const Contact = () => {
               href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
               title="biuro@wharchitecture.pl"
             >
-              <div className="flex items-center gap-2  hover:text-foreground/70 ">
+              <div className="flex items-center gap-2 hover:text-foreground/70 ">
                 <MailIcon
                   className="size-5 shrink-0 "
                   strokeWidth="2.5"

@@ -2,46 +2,49 @@ import GalleryComponent from "@/components/shared/GalleryComponent";
 import ProjectsTitle from "@/components/shared/ProjectsTitle";
 import { gallery } from "@/constans";
 import React from "react";
-import HeroGallery from "@/components/sections/HeroGallery";
+import Hero from "@/components/sections/Hero";
 
 const ProjectGallery = ({
-  params,
-  searchParams,
+  params: { projectType },
+  searchParams: { type },
 }: {
   params: { projectType: keyof typeof gallery };
   searchParams: { type: string };
 }) => {
-  // const heroImages = [
-  //   {
-  //     url: gallery[params.projectType][0].url,
-  //     id: params.projectType + "-img-1",
-  //   },
-  //   {
-  //     url: gallery[params.projectType][1].url,
-  //     id: params.projectType + "-img-2",
-  //   },
-  //   {
-  //     url: gallery[params.projectType][2].url,
-  //     id: params.projectType + "-img-3",
-  //   },
-  // ];
+  const heroImages = [
+    {
+      url: gallery[projectType][0].url,
+      id: projectType + "-img-1",
+    },
+    {
+      url: gallery[projectType][1].url,
+      id: projectType + "-img-2",
+    },
+    {
+      url: gallery[projectType][2].url,
+      id: projectType + "-img-3",
+    },
+  ];
 
   return (
     <>
-      <HeroGallery
-        img={gallery[params.projectType][0].url}
+      <Hero
+        heroImages={heroImages}
+        className="hero-gallery h-[40vh]"
+        title={"Galeria / " + type}
+        subtitle="Zapoznaj się z naszymi najnowszymi realizacjami"
       />
       <section
         id="hero"
         className="wrapper section section-gap section-start"
       >
         <ProjectsTitle
-          title={searchParams.type}
-          className={`${searchParams.type === "Wnętrza" ? "translate-x-[-0.5px]" : ""}`}
+          title={type}
+          className={`${type === "Wnętrza" ? "translate-x-[-0.5px]" : ""}`}
         />
         <GalleryComponent
-          type={params.projectType}
-          images={gallery[params.projectType]}
+          type={projectType}
+          images={gallery[projectType]}
         />
       </section>
     </>

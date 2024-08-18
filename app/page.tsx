@@ -16,7 +16,12 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Hero heroImages={heroImages} />
+      <Hero
+        heroImages={heroImages}
+        className="hero h-[83vh]"
+        title="Architektura / Wnętrza"
+        subtitle="Pomożemy wam stworzyć waszą niepowtarzalną przestrzeń"
+      />
       <Office />
       <Projects />
       <About />
