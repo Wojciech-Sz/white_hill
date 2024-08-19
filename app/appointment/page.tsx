@@ -64,10 +64,7 @@ const Appointment = () => {
               <h2 className="appointment-field_title">
                 {appointment.title}
               </h2>
-              <ChevronRight
-                className=""
-                id={`chevron${i}`}
-              />
+              <ChevronRight id={`chevron${i}`} />
             </div>
             <p>{appointment.description}</p>
 

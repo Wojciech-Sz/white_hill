@@ -38,7 +38,7 @@ const ProjectsTitle = ({
           >
             <Link
               href={link.href}
-              className="projects-link"
+              className="projects-link hover:text-foreground/80"
               title={link.label}
             >
               {link.label}

@@ -19,9 +19,15 @@ export default function Home() {
       <Hero
         heroImages={heroImages}
         className="hero h-[83vh]"
-        title="Architektura / Wnętrza"
-        subtitle="Pomożemy wam stworzyć waszą niepowtarzalną przestrzeń"
-      />
+      >
+        <div className="wrapper hero-text">
+          <h2>Architektura / Wnętrza</h2>
+          <p className="ml-[-4.4px] max-w-[30ch] text-balance">
+            Pomożemy wam stworzyć waszą niepowtarzalną
+            przestrzeń
+          </p>
+        </div>
+      </Hero>
       <Office />
       <Projects />
       <About />

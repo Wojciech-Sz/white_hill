@@ -15,7 +15,7 @@ const GalleryComponent = ({
   return (
     <>
       <div className="projects-grid">
-        {images.map((project) => (
+        {images.map((project, i) => (
           <figure
             key={project.route}
             className={`${className} projects-img_container group`}

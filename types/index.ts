@@ -1,4 +1,5 @@
 import { gallery } from "@/constans";
+import React from "react";
 
 export type IconProps = {
   className?: string;
@@ -31,8 +32,7 @@ export interface IHero {
 export type HeroProps = {
   heroImages: IHero[];
   className: string;
-  title: string;
-  subtitle?: string;
+  children: React.ReactNode;
 };
 
 export interface IAppointment {

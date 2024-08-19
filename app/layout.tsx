@@ -84,9 +84,6 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   height: "device-height",
-  maximumScale: 3,
-  minimumScale: 0.1,
-  userScalable: true,
 };
 
 export default function RootLayout({
@@ -102,7 +99,7 @@ export default function RootLayout({
         <div className="flex min-h-screen flex-col font-museoSansCyrl font-medium">
           <Header />
 
-          <main className="flex flex-1 flex-col">
+          <main className="relative flex flex-1 flex-col">
             {children}
           </main>
           <Footer />

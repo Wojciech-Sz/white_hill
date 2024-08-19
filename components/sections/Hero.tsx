@@ -9,8 +9,7 @@ import { HeroProps } from "@/types";
 const Hero = ({
   heroImages,
   className,
-  title,
-  subtitle,
+  children,
 }: HeroProps) => {
   const tl = gsap.timeline({ repeat: -1 });
 
@@ -68,14 +67,7 @@ const Hero = ({
         />
       ))}
       <div className="absolute inset-0 bg-foreground/50" />
-      <div className="wrapper hero-text">
-        <h2>{title}</h2>
-        {subtitle && (
-          <p className="ml-[-4.4px] max-w-[30ch] text-balance">
-            {subtitle}
-          </p>
-        )}
-      </div>
+      {children}
     </section>
   );
 };
