@@ -36,13 +36,16 @@ const ProjectsTitle = ({
             key={link.label}
             className="flex items-center gap-1 sm:gap-2"
           >
-            <Link
-              href={link.href}
-              className="projects-link hover:text-foreground/80"
-              title={link.label}
-            >
-              {link.label}
-            </Link>
+            <div className="group flex flex-col">
+              <Link
+                href={link.href}
+                className="projects-link hover:text-foreground/80"
+                title={link.label}
+              >
+                {link.label}
+              </Link>
+              <div className="w-0 border-b-2 border-foreground transition-all duration-300 group-hover:w-full" />
+            </div>
             <Separator
               className={`${projectLinks.length - 1 === i ? "h-0" : "h-7 xs:h-5 sm:h-6 md:h-7"} border-l-2 border-primary-foreground/70 lg:hidden`}
             />
