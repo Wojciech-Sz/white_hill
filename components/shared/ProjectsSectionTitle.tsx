@@ -5,7 +5,7 @@ import { projectLinks } from "@/constans";
 import Link from "next/link";
 import { Separator } from "@radix-ui/react-separator";
 
-const ProjectsTitle = ({
+const ProjectsSectionTitle = ({
   title,
   className,
 }: {
@@ -36,16 +36,14 @@ const ProjectsTitle = ({
             key={link.label}
             className="flex items-center gap-1 sm:gap-2"
           >
-            <div className="group flex flex-col">
-              <Link
-                href={link.href}
-                className="projects-link hover:text-foreground/80"
-                title={link.label}
-              >
-                {link.label}
-              </Link>
-              <div className="w-0 border-b-2 border-foreground transition-all duration-300 group-hover:w-full" />
-            </div>
+            <Link
+              href={link.href}
+              className="projects-link group hover:text-foreground/80"
+              title={link.label}
+            >
+              {link.label}
+              <div className="border-bottom" />
+            </Link>
             <Separator
               className={`${projectLinks.length - 1 === i ? "h-0" : "h-7 xs:h-5 sm:h-6 md:h-7"} border-l-2 border-primary-foreground/70 lg:hidden`}
             />
@@ -57,4 +55,4 @@ const ProjectsTitle = ({
   );
 };
 
-export default ProjectsTitle;
+export default ProjectsSectionTitle;

@@ -984,6 +984,42 @@ export const gallery = {
   ],
 };
 
+export const approach = {
+  houses: {
+    title: "Nasze podejście",
+    subtitle: "Budynki mieszkalne",
+    description: [
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+    ],
+  },
+  interiors: {
+    title: "Nasze podejście",
+    subtitle: "Wnętrza",
+    description: [
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+    ],
+  },
+  offices: {
+    title: "Nasze podejście",
+    subtitle: "Budynki usługowe",
+    description: [
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+    ],
+  },
+};
+
 export const about = [
   {
     image:

@@ -2,7 +2,7 @@ import React from "react";
 import { gallery } from "@/constans";
 import ProjectGallery from "@/components/shared/ProjectGallery";
 import Hero from "@/components/sections/Hero";
-import HeroGalleryTitle from "@/components/shared/HeroGalleryTitle";
+import GalleryHeroTitle from "@/components/shared/GalleryHeroTitle";
 import { Separator } from "@radix-ui/react-separator";
 
 const Project = ({
@@ -36,7 +36,7 @@ const Project = ({
         heroImages={heroImages}
         className="hero-gallery"
       >
-        <HeroGalleryTitle title={title} />
+        <GalleryHeroTitle title={title} />
       </Hero>
       <section
         id="hero"

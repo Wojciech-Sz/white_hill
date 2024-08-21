@@ -6,12 +6,9 @@ import SectionTitle from "../shared/SectionTitle";
 
 const Office = () => {
   return (
-    <section
-      id="office"
-      className="wrapper section-start section section-gap "
-    >
+    <section className="wrapper section-start section section-gap ">
+      <div id="office" className="absolute -top-10" />
       <SectionTitle title="Pracownia" />
-
       <figure className="section-gap grid w-full  grid-cols-1 lg:grid-cols-2">
         <Image
           src="https://utfs.io/f/cdaa3749-c2a3-4fb8-bea3-f14fbe6e2a18-njtigs.jpg"

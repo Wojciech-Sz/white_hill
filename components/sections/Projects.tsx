@@ -2,7 +2,7 @@ import { gallery } from "@/constans";
 import React from "react";
 
 import GalleryComponent from "../shared/GalleryComponent";
-import ProjectsTitle from "../shared/ProjectsTitle";
+import ProjectsSectionTitle from "../shared/ProjectsSectionTitle";
 
 const Projects = () => {
   const projects = Object.entries(gallery).flatMap(
@@ -16,11 +16,13 @@ const Projects = () => {
   );
 
   return (
-    <section
-      id="projects"
-      className="wrapper section section-gap"
-    >
-      <ProjectsTitle title={"Realizacje"} />
+    <section className="wrapper section section-gap">
+      <div
+        id="projects"
+        className="absolute top-[-4.25rem]"
+      />
+
+      <ProjectsSectionTitle title={"Realizacje"} />
       <GalleryComponent
         images={projects}
         className="img-span-2"

@@ -83,6 +83,9 @@
   .hero-gallery {
     @apply h-[200px] md:h-[250px] xl:h-[320px];
   }
+  .border-bottom {
+    @apply w-0 border-b-2 transition-all duration-300 group-hover:w-full;
+  }
 }
 
 @layer utilities {
@@ -97,11 +100,11 @@
   }
 
   .section {
-    @apply flex w-full flex-col pb-14 md:pb-20 bg-background;
+    @apply flex relative w-full flex-col pb-14 md:pb-20 bg-background;
   }
 
   .section-start {
-    @apply pt-5 lg:pt-8;
+    @apply pt-5 md:pt-7;
   }
 
   .section-gap {
@@ -142,11 +145,11 @@
   }
 
   .mobile-link {
-    @apply relative w-max font-bold tracking-tighter text-2xl/none hover:text-foreground/80;
+    @apply relative w-max font-bold tracking-tighter text-2xl/none hover:text-foreground/90;
   }
 
   .mobile-link_projects {
-    @apply relative w-max font-medium hover:text-foreground/80 text-xl/none;
+    @apply relative w-max font-medium hover:text-foreground/90 text-xl/none;
   }
 
   .mobile-projects_container {
@@ -238,6 +241,20 @@
 
   .projects-img_title {
     @apply absolute pr-4 bottom-10 left-8 z-[2] font-montserrat text-2xl/none md:text-3xl/none lg:text-2xl/none  2xl:text-3xl/none font-extralight text-white transition-transform duration-500 group-hover:translate-x-2;
+  }
+
+  /* Approach */
+
+  .approach_title {
+    @apply text-2xl font-bold font-museoSansCyrl;
+  }
+
+  .approach_subtitle {
+    @apply text-xl italic text-muted-foreground font-museoSansCyrl;
+  }
+
+  .approach_description {
+    @apply text-lg font-montserrat leading-none py-1 pr-1;
   }
 
   /* About */

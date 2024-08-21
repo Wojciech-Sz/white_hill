@@ -5,10 +5,8 @@ import SectionTitle from "../shared/SectionTitle";
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="wrapper section section-gap"
-    >
+    <section className="wrapper section section-gap">
+      <div id="about" className="absolute top-[-4.25rem]" />
       <SectionTitle title="O nas" />
       <div className="projects-grid">
         {about.map((item) => (

@@ -52,24 +52,26 @@ const MobileMenu = () => {
                 >
                   <Link
                     href={link.route}
-                    className="mobile-link"
+                    className="mobile-link group"
                     prefetch={false}
                     scroll
                     title={link.label}
                   >
                     {link.label}
                     <SheetClose className="mobile-close" />
+                    <div className="border-bottom" />
                   </Link>
                   <div className="mobile-projects_container">
                     {projectLinks.map((link) => (
                       <Link
-                        className="mobile-link_projects"
+                        className="mobile-link_projects group"
                         href={link.href}
                         key={link.label}
                         title={link.label}
                       >
                         {link.label}
                         <SheetClose className="mobile-close" />
+                        <div className="border-bottom" />
                       </Link>
                     ))}
                   </div>
@@ -78,13 +80,14 @@ const MobileMenu = () => {
                 <Link
                   href={link.route}
                   key={link.route}
-                  className="mobile-link"
+                  className="mobile-link group"
                   prefetch={false}
                   scroll
                   title={link.label}
                 >
                   {link.label}
                   <SheetClose className="mobile-close" />
+                  <div className="border-bottom" />
                 </Link>
               )
             )}
@@ -92,22 +95,24 @@ const MobileMenu = () => {
             <Link
               href="/#contact"
               scroll
-              className="mobile-link"
+              className="mobile-link group"
               prefetch={false}
               title="Kontakt"
             >
               Kontakt
               <SheetClose className="mobile-close " />
+              <div className="border-bottom" />
             </Link>
 
             <Link
               href="/appointment"
-              className="mobile-link"
+              className="mobile-link group"
               prefetch={false}
               title="Umów spotkanie"
             >
               Umów spotkanie
               <SheetClose className="mobile-close " />
+              <div className="border-bottom" />
             </Link>
           </div>
 

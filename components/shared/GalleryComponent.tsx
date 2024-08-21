@@ -2,6 +2,7 @@ import { gallery } from "@/constans";
 import { IProject } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
+import Card from "./Card";
 
 const GalleryComponent = ({
   images,
@@ -15,30 +16,34 @@ const GalleryComponent = ({
   return (
     <>
       <div className="projects-grid">
-        {images.map((project, i) => (
-          <figure
-            key={project.route}
-            className={`${className} projects-img_container group`}
-          >
-            <Image
-              className="projects-img"
-              src={project.url}
-              title={project.title}
-              alt={project.title}
-              width={1920}
-              height={1080}
-            />
-            <div className="projects-img_filter" />
-            <figcaption className="projects-img_title">
-              <h3>{project.title}</h3>
-            </figcaption>
-            <Link
-              href={`/projects/${type || project.type}/${project.route}?title=${project.title}`}
-              className="absolute inset-0 z-[3]"
-              title={project.title}
-            />
-          </figure>
-        ))}
+        {images.map((project, i) =>
+          type && i === 1 ? (
+            <Card key={i} type={type} />
+          ) : (
+            <figure
+              key={project.route}
+              className={`${className} projects-img_container group`}
+            >
+              <Image
+                className="projects-img"
+                src={project.url}
+                title={project.title}
+                alt={project.title}
+                width={1920}
+                height={1080}
+              />
+              <div className="projects-img_filter" />
+              <figcaption className="projects-img_title">
+                <h3>{project.title}</h3>
+              </figcaption>
+              <Link
+                href={`/projects/${type || project.type}/${project.route}?title=${project.title}`}
+                className="absolute inset-0 z-[3]"
+                title={project.title}
+              />
+            </figure>
+          )
+        )}
       </div>
     </>
   );
