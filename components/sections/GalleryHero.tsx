@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { HeroProps } from "@/types";
 
-const Hero = ({
+const GalleryHero = ({
   heroImages,
   className,
   children,
@@ -17,11 +17,15 @@ const Hero = ({
 
   useGSAP(() => {
     heroImages.forEach((image, i) => {
-      tl.to(`#${image.id}`, {
-        scale: 1.1,
-        duration: 6,
-        ease: "linear",
-      })
+      tl.to(
+        `#${image.id}`,
+        {
+          scale: 1.1,
+          duration: 6,
+          ease: "linear",
+        },
+        i > 0 ? ">-2" : ""
+      )
         .to(
           `#${image.id}`,
           {
@@ -44,10 +48,14 @@ const Hero = ({
           },
           "<"
         )
-        .to(`#${image.id}`, {
-          scale: 1,
-          duration: 0.1,
-        });
+        .to(
+          `#${image.id}`,
+          {
+            scale: 1,
+            duration: 0.1,
+          },
+          ">-0.1"
+        );
     });
   }, []);
 
@@ -74,4 +82,4 @@ const Hero = ({
   );
 };
 
-export default Hero;
+export default GalleryHero;

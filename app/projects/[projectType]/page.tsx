@@ -1,9 +1,9 @@
 import GalleryComponent from "@/components/shared/GalleryComponent";
 import { gallery } from "@/constans";
 import React from "react";
-import Hero from "@/components/sections/Hero";
 import GalleryHeroTitle from "@/components/shared/GalleryHeroTitle";
 import { Separator } from "@radix-ui/react-separator";
+import GalleryHero from "@/components/sections/GalleryHero";
 
 const ProjectGallery = ({
   params: { projectType },
@@ -29,12 +29,12 @@ const ProjectGallery = ({
 
   return (
     <>
-      <Hero
+      <GalleryHero
         heroImages={heroImages}
         className="hero-gallery"
       >
         <GalleryHeroTitle title={type} />
-      </Hero>
+      </GalleryHero>
       <section
         id="hero"
         className="wrapper section section-gap section-start"

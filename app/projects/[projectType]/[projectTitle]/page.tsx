@@ -1,9 +1,9 @@
 import React from "react";
 import { gallery } from "@/constans";
 import ProjectGallery from "@/components/shared/ProjectGallery";
-import Hero from "@/components/sections/Hero";
 import GalleryHeroTitle from "@/components/shared/GalleryHeroTitle";
 import { Separator } from "@radix-ui/react-separator";
+import GalleryHero from "@/components/sections/GalleryHero";
 
 const Project = ({
   params: { projectType, projectTitle },
@@ -32,12 +32,12 @@ const Project = ({
 
   return (
     <>
-      <Hero
+      <GalleryHero
         heroImages={heroImages}
         className="hero-gallery"
       >
         <GalleryHeroTitle title={title} />
-      </Hero>
+      </GalleryHero>
       <section
         id="hero"
         className="wrapper section section-start section-gap "

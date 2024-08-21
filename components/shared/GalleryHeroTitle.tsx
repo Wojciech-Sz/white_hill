@@ -16,18 +16,21 @@ const GalleryHeroTitle = ({
     setIsDown(!isDown);
   };
   return (
-    <div className="wrapper relative flex size-full flex-col text-white">
-      <div className="flex-center relative h-full flex-col items-center">
-        <h2 className="section-title">
-          {title || "Galeria"}
-        </h2>
-        <ChevronDown
-          id="chevron"
-          onMouseDown={() => handleClick()}
-          className="size-8 cursor-pointer transition-transform duration-300 hover:translate-y-1 hover:scale-125 sm:size-10 lg:size-14"
-        />
+    <div className="wrapper flex-center relative size-full flex-col text-white">
+      <div className="grid w-full grid-rows-[1fr_auto_1fr] justify-center lg:justify-normal">
+        <div />
+        <div className="flex-center flex-col">
+          <h2 className="section-title">
+            {title || "Galeria"}
+          </h2>
+          <ChevronDown
+            id="chevron"
+            onMouseDown={() => handleClick()}
+            className="size-8 cursor-pointer transition-transform duration-300 hover:translate-y-2 hover:scale-125 sm:size-10 lg:size-14"
+          />
+        </div>
         <div
-          className={`projects-links-container absolute inset-x-0 bottom-0 w-full ${isDown ? "mb-2 h-9 opacity-100" : "mb-0 h-0 overflow-hidden opacity-0"}`}
+          className={`projects-links-container w-max -translate-x-0.5 md:-translate-x-1 lg:w-full lg:-translate-x-2 ${isDown ? "mb-2 h-9 opacity-100" : "mb-0 h-0 overflow-hidden opacity-0"}`}
         >
           {projectLinks.map((link, i) => (
             <div
