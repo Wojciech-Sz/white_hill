@@ -29,7 +29,7 @@ const ProjectsSectionTitle = ({
         </Button>
       </div>
       <div
-        className={`projects-links-container ${visible ? "mb-2 h-9 opacity-100" : "mb-0 h-0 overflow-hidden opacity-0"}`}
+        className={`projects-links-container self-center ${visible ? "mb-2 h-9 opacity-100" : "mb-0 h-0 overflow-hidden opacity-0"}`}
       >
         {projectLinks.map((link, i) => (
           <div

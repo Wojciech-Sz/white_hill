@@ -42,6 +42,7 @@ const ProjectGallery = ({
         <Separator className="separator" />
         <GalleryComponent
           type={projectType}
+          card
           images={gallery[projectType]}
         />
       </section>

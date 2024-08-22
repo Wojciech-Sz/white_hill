@@ -21,19 +21,19 @@ const GalleryHero = ({
         `#${image.id}`,
         {
           scale: 1.1,
-          duration: 6,
+          duration: 8,
           ease: "linear",
         },
-        i > 0 ? ">-2" : ""
+        i > 0 ? ">-3" : ""
       )
         .to(
           `#${image.id}`,
           {
             opacity: 0,
-            duration: 2,
+            duration: 3,
             ease: "linear",
           },
-          ">-2"
+          ">-3"
         )
         .to(
           `#${
@@ -43,7 +43,7 @@ const GalleryHero = ({
           }`,
           {
             opacity: 1,
-            duration: 2,
+            duration: 3,
             ease: "linear",
           },
           "<"

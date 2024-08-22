@@ -8,16 +8,18 @@ const GalleryComponent = ({
   images,
   type,
   className,
+  card,
 }: {
   type?: keyof typeof gallery;
   images: IProject[];
   className?: string;
+  card?: boolean;
 }) => {
   return (
     <>
       <div className="projects-grid">
         {images.map((project, i) =>
-          type && i === 1 ? (
+          type && card && i === 1 ? (
             <Card key={i} type={type} />
           ) : (
             <figure

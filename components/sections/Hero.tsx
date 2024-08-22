@@ -13,6 +13,7 @@ const Hero = ({
 }: HeroProps) => {
   const tl = gsap.timeline({
     repeat: -1,
+    repeatDelay: 0.5,
   });
 
   useGSAP(() => {
@@ -21,12 +22,13 @@ const Hero = ({
         scale: 1.1,
         duration: 6,
         ease: "linear",
+        delay: 0.5,
       })
         .to(
           `#${image.id}`,
           {
             opacity: 0,
-            duration: 2,
+            duration: 3,
             ease: "linear",
           },
           ">-2"
@@ -39,7 +41,7 @@ const Hero = ({
           }`,
           {
             opacity: 1,
-            duration: 2,
+            duration: 3,
             ease: "linear",
           },
           "<"
