@@ -96,10 +96,10 @@ export default function RootLayout({
       <body
         className={`font-sans ${montserrat.variable} ${muesoSansCyrl.variable}`}
       >
-        <div className="flex min-h-screen flex-col font-museoSansCyrl font-medium">
+        <div className="flex min-h-screen flex-col font-museoSansCyrl font-normal">
           <Header />
 
-          <main className="relative flex flex-1 flex-col">
+          <main className="flex flex-1 flex-col items-center">
             {children}
           </main>
           <Footer />

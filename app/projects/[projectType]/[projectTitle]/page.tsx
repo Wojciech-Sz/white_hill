@@ -15,10 +15,8 @@ const Project = ({
 }) => {
   return (
     <>
-      <section
-        id="hero"
-        className="wrapper section section-start section-gap "
-      >
+      <section className="wrapper section section-start section-gap ">
+        <div id="hero" className="absolute -top-16" />
         <SectionTitle title={title} />
         <ProjectGallery
           title={title}

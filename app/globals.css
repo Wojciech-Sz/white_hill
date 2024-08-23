@@ -92,11 +92,10 @@
   /* Section */
   .wrapper {
     @apply px-5
-    
     md:px-7
-    lg:px-14
-    xl:px-20
-    2xl:px-28;
+    lg:px-28
+    xl:px-40
+    2xl:px-56;
   }
 
   .section {
@@ -175,7 +174,7 @@
   }
 
   .office-text_title {
-    @apply text-xl/none font-bold tracking-tighter xs:text-2xl/none md:text-3xl/none xl:text-4xl/none;
+    @apply text-xl/none font-semibold tracking-tighter xs:text-2xl/none md:text-3xl/none xl:text-4xl/none;
   }
 
   .office-question {
@@ -195,7 +194,7 @@
   }
 
   .office-question_text-title {
-    @apply inline text-base/none xs:text-lg/none font-bold md:text-xl/none xl:text-2xl/none;
+    @apply inline text-base/none xs:text-lg/none font-semibold md:text-xl/none xl:text-2xl/none;
   }
 
   .office-question_text-description {

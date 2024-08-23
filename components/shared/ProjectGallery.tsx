@@ -15,7 +15,7 @@ const ProjectGallery = ({
     (project) => project.route === route
   );
   return (
-    <div className="section-gap grid grid-cols-1 md:grid-flow-row-dense md:grid-cols-2 2xl:grid-cols-3">
+    <div className="section-gap grid w-full grid-cols-1 md:grid-flow-row-dense md:grid-cols-2 2xl:grid-cols-3">
       {projectGallery?.images.map((image, i) => (
         <Image
           key={image.url + i}
@@ -23,7 +23,7 @@ const ProjectGallery = ({
           alt={title}
           width={image.width}
           height={image.height}
-          className="aspect-[7/10] h-full max-h-[80vh] object-cover md:odd:col-span-2 2xl:[&:nth-child(2)]:col-span-3"
+          className="aspect-[7/10] size-full max-h-[80vh] object-cover md:odd:col-span-2 2xl:[&:nth-child(2)]:col-span-3"
         />
       ))}
     </div>

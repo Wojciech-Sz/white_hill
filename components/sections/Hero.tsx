@@ -13,17 +13,19 @@ const Hero = ({
 }: HeroProps) => {
   const tl = gsap.timeline({
     repeat: -1,
-    repeatDelay: 0.5,
   });
 
   useGSAP(() => {
     heroImages.forEach((image, i) => {
-      tl.to(`#${image.id}`, {
-        scale: 1.1,
-        duration: 6,
-        ease: "linear",
-        delay: 0.5,
-      })
+      tl.to(
+        `#${image.id}`,
+        {
+          scale: 1.1,
+          duration: 10,
+          ease: "linear",
+        },
+        i > 0 ? ">-3" : ""
+      )
         .to(
           `#${image.id}`,
           {
@@ -31,7 +33,7 @@ const Hero = ({
             duration: 3,
             ease: "linear",
           },
-          ">-2"
+          ">-3"
         )
         .to(
           `#${
@@ -46,15 +48,20 @@ const Hero = ({
           },
           "<"
         )
-        .to(`#${image.id}`, {
-          scale: 1,
-          duration: 0.1,
-        });
+        .to(
+          `#${image.id}`,
+          {
+            scale: 1,
+            duration: 0.1,
+          },
+          ">-0.1"
+        );
     });
   }, []);
 
   return (
-    <section id="hero" className={className}>
+    <section className={className}>
+      <div id="hero" className="absolute -top-16" />
       {heroImages.map((image, i) => (
         <Image
           key={image.id}
@@ -65,7 +72,7 @@ const Hero = ({
           title="Hero image"
           width={1920}
           height={1080}
-          className={`absolute size-full object-cover ${
+          className={`absolute size-full object-cover object-bottom ${
             i !== 0 ? "opacity-0" : ""
           }`}
         />

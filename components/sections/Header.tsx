@@ -16,7 +16,7 @@ export default function Header() {
       >
         <h1 className="text-2xl font-black">White Hill</h1>
       </Link>
-      <div className="absolute right-5 flex items-center gap-5 md:right-7 lg:right-14 xl:right-20 2xl:right-28">
+      <div className="absolute right-5 flex items-center gap-5 md:right-7 lg:right-28 xl:right-40 2xl:right-56">
         <div className="hidden gap-2 md:flex">
           {footerLinks.map((link, i) => (
             <Link

@@ -984,6 +984,24 @@ export const gallery = {
   ],
 };
 
+export const galleryHero = {
+  houses: [
+    "/images/house/dom1.webp",
+    "/images/house/dom2.webp",
+    "/images/house/dom3.webp",
+  ],
+  interiors: [
+    "/images/Interiors/wnętrza1.webp",
+    "/images/Interiors/wnętrza2.webp",
+    "/images/Interiors/wnętrza3.webp",
+  ],
+  offices: [
+    "/images/office/usługowe.webp",
+    "/images/office/usługowe2.webp",
+    "/images/office/usługowe3.webp",
+  ],
+};
+
 export const approach = {
   houses: {
     title: "Nasze podejście",

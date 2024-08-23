@@ -33,7 +33,11 @@ export const montserrat = localFont({
       weight: "700",
       style: "normal",
     },
-
+    {
+      path: "./Montserrat/Montserrat-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
     {
       path: "./Montserrat/Montserrat-Medium.ttf",
       weight: "500",

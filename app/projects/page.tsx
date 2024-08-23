@@ -2,27 +2,37 @@ import GalleryComponent from "@/components/shared/GalleryComponent";
 import { Separator } from "@radix-ui/react-separator";
 import GalleryHeroTitle from "@/components/shared/GalleryHeroTitle";
 import { gallery } from "@/constans";
-import GalleryHero from "@/components/sections/GalleryHero";
+import Hero from "@/components/sections/Hero";
 
 const Gallery = () => {
   const heroImages = [
-    { url: gallery.houses[0].url, id: "gallery-img-1" },
-    { url: gallery.interiors[0].url, id: "gallery-img-2" },
-    { url: gallery.offices[0].url, id: "gallery-img-3" },
+    {
+      url: "/images/gallery/galeria1.webp",
+      id: "gallery-img-1",
+    },
+    {
+      url: "/images/gallery/galeria2.webp",
+      id: "gallery-img-2",
+    },
+    {
+      url: "/images/gallery/galeria3.webp",
+      id: "gallery-img-3",
+    },
+    {
+      url: "/images/gallery/galeria4.webp",
+      id: "gallery-img-4",
+    },
   ];
 
   return (
     <>
-      <GalleryHero
+      <Hero
         heroImages={heroImages}
         className="hero-gallery"
       >
         <GalleryHeroTitle />
-      </GalleryHero>
-      <section
-        id="hero"
-        className="wrapper section section-start section-gap"
-      >
+      </Hero>
+      <section className="wrapper section section-start section-gap">
         <Separator className="separator" />
         <GalleryComponent
           type={"houses"}
