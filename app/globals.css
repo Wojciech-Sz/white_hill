@@ -287,7 +287,7 @@
   }
 
   .appointment-fieldset {
-    @apply grid grid-cols-1 h-max gap-1 xl:grid-cols-3;
+    @apply grid grid-cols-1 h-max gap-1;
   }
 
   .appointment-field {

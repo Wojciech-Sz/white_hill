@@ -6,6 +6,8 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { HeroProps } from "@/types";
 
+gsap.registerPlugin(useGSAP);
+
 const Hero = ({
   heroImages,
   className,
