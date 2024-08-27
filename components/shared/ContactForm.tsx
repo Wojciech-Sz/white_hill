@@ -68,7 +68,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-md">
+    <div className="w-full max-w-md">
       <Form {...form}>
         <form
           className="flex flex-col gap-3 font-montserrat"

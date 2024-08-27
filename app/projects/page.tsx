@@ -3,6 +3,7 @@ import { Separator } from "@radix-ui/react-separator";
 import GalleryHeroTitle from "@/components/shared/GalleryHeroTitle";
 import { gallery } from "@/constans";
 import Hero from "@/components/sections/Hero";
+import Section from "@/components/shared/Section";
 
 const Gallery = () => {
   const heroImages = [
@@ -32,7 +33,7 @@ const Gallery = () => {
       >
         <GalleryHeroTitle />
       </Hero>
-      <section className="wrapper section section-start section-gap">
+      <Section className="wrapper section-start section-gap">
         <Separator className="separator" />
         <GalleryComponent
           type={"houses"}
@@ -46,7 +47,7 @@ const Gallery = () => {
           type={"offices"}
           images={gallery.offices}
         />
-      </section>
+      </Section>
     </>
   );
 };

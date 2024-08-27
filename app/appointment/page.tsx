@@ -60,7 +60,7 @@ const Appointment = () => {
               showAppointment(`chevron${i}`, `content${i}`)
             }
           >
-            <div className=" flex justify-between">
+            <div className="flex justify-between">
               <h2 className="appointment-field_title">
                 {appointment.title}
               </h2>

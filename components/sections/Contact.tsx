@@ -9,10 +9,11 @@ import {
 import { Mails } from "lucide-react";
 import SvgBackground from "../shared/SvgBackground";
 import ContactForm from "../shared/ContactForm";
+import Section from "../shared/Section";
 
 const Contact = () => {
   return (
-    <section className="section wrapper section-start relative items-center gap-1">
+    <Section className="section-start items-center gap-1 px-5 lg:px-0">
       <h2 className="section-title z-[1]">Kontakt</h2>
       <p className="contact-text z-[1]">
         Nasze biuro stacjonarne mieści się w Białymstoku.
@@ -77,7 +78,7 @@ const Contact = () => {
         </div>
         <ContactForm />
       </div>
-    </section>
+    </Section>
   );
 };
 

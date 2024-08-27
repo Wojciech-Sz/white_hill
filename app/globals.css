@@ -91,15 +91,11 @@
 @layer utilities {
   /* Section */
   .wrapper {
-    @apply px-5
-    md:px-7
-    lg:px-28
-    xl:px-40
-    2xl:px-56;
+    @apply max-w-7xl px-5 md:px-7;
   }
 
   .section {
-    @apply flex relative w-full flex-col pb-14 md:pb-20 bg-background;
+    @apply flex box-content w-full relative flex-col pb-14 md:pb-20 bg-background;
   }
 
   .section-start {
@@ -111,7 +107,7 @@
   }
 
   .section-title {
-    @apply text-2xl font-bold uppercase tracking-tighter xs:text-3xl md:text-4xl xl:text-5xl;
+    @apply text-xl font-bold uppercase tracking-tighter xs:text-2xl md:text-3xl xl:text-4xl;
   }
 
   .background-img {
@@ -128,7 +124,7 @@
 
   /* Header */
   .header {
-    @apply sticky top-0 z-20 flex h-[4rem] w-full items-center justify-center bg-background/90 shadow-md;
+    @apply sticky px-5 md:px-7 top-0 z-20 h-[4rem] flex justify-center items-center w-full bg-background/90 shadow-md;
   }
 
   .nav-social {
@@ -157,7 +153,7 @@
 
   /* Hero */
   .hero {
-    @apply relative flex h-[clamp(73vh,83svh,83vh)] w-full overflow-hidden;
+    @apply relative px-5 md:px-7 items-end justify-center flex h-[clamp(73vh,83svh,83vh)] w-full overflow-hidden;
   }
 
   .hero-gallery {
@@ -165,28 +161,28 @@
   }
 
   .hero-text {
-    @apply absolute flex flex-col gap-4 md:gap-6 lg:gap-8 self-end text-pretty pb-[2vh] md:pb-[4vh] lg:pb-[5vh] xl:pb-[6vh] text-left font-montserrat text-2xl xs:text-3xl md:text-4xl font-thin text-white xl:text-5xl;
+    @apply relative max-w-7xl w-full flex flex-col gap-4 md:gap-6 lg:gap-8 text-pretty pb-[2vh] md:pb-[4vh] lg:pb-[5vh] xl:pb-[6vh] text-left font-montserrat text-2xl xs:text-3xl md:text-4xl font-thin text-white xl:text-5xl;
   }
 
   /* Office */
   .office-text {
-    @apply flex flex-col font-montserrat text-base/tight xs:text-lg/tight md:text-xl/tight xl:text-2xl/tight;
+    @apply flex flex-col font-montserrat text-sm/tight xs:text-base/tight md:text-lg/tight xl:text-xl/tight;
   }
 
   .office-text_title {
-    @apply text-xl/none font-semibold tracking-tighter xs:text-2xl/none md:text-3xl/none xl:text-4xl/none;
+    @apply text-base/none font-semibold tracking-tighter xs:text-lg/none md:text-xl/none xl:text-2xl/none;
   }
 
   .office-question {
-    @apply grid w-full grid-cols-1 md:grid-cols-[30%_1fr] md:gap-2;
+    @apply grid w-full grid-cols-1 md:grid-cols-[20%_1fr] md:gap-2;
   }
 
   .office-question_title {
-    @apply ml-[-1.8px] self-center font-bold text-balance text-lg/none xs:text-xl/none md:text-2xl/none xl:text-3xl/none;
+    @apply ml-[-1.8px] self-center tracking-tight font-bold text-balance text-base/none xs:text-lg/none md:text-xl/none xl:text-2xl/none;
   }
 
   .office-question_text-container {
-    @apply section-gap flex flex-col font-montserrat items-center md:flex-row text-sm/none xs:text-base/none md:text-lg/none xl:text-xl/none;
+    @apply section-gap flex flex-col font-montserrat items-center md:flex-row text-xs/none xs:text-sm/none md:text-base/none xl:text-lg/none;
   }
 
   .office-question_text {
@@ -194,7 +190,7 @@
   }
 
   .office-question_text-title {
-    @apply inline text-base/none xs:text-lg/none font-semibold md:text-xl/none xl:text-2xl/none;
+    @apply inline text-sm/none xs:text-base/none font-semibold md:text-lg/none xl:text-xl/none;
   }
 
   .office-question_text-description {
@@ -207,7 +203,7 @@
   }
 
   .projects-link {
-    @apply tracking-tighter uppercase w-min xs:w-auto text-xs/none sm:text-lg/none md:text-xl/none xl:text-2xl/none  font-light text-center;
+    @apply tracking-tighter uppercase w-min xs:w-auto text-sm/none xs:text-base sm:text-lg/none md:text-xl/none xl:text-2xl/none  font-light text-center;
   }
 
   .projects-container {
@@ -219,7 +215,7 @@
   }
 
   .projects-links-container {
-    @apply flex justify-center lg:justify-between gap-1 w-max lg:w-full sm:gap-2 transition-all duration-300 lg:px-10;
+    @apply flex justify-center md:justify-between gap-1 w-max md:w-full sm:gap-2 transition-all duration-300 md:px-5 lg:px-10;
   }
 
   .projects-grid {
@@ -231,7 +227,7 @@
   }
 
   .projects-img_container {
-    @apply relative aspect-[7/10] size-full max-h-[80vh] overflow-hidden;
+    @apply relative aspect-[7/10] size-full max-h-[70vh] overflow-hidden;
   }
 
   .projects-img_filter {
@@ -258,7 +254,7 @@
 
   /* About */
   .about-img {
-    @apply flex aspect-[7/10] max-h-[80vh] w-full flex-col gap-2 transition-all duration-500 hover:-translate-y-3 hover:scale-[103%] hover:shadow-lg;
+    @apply flex aspect-[7/10] max-h-[70vh] w-full flex-col gap-2 transition-all duration-500 hover:-translate-y-3 hover:scale-[103%] hover:shadow-lg;
   }
 
   .img-span-2 {
@@ -291,7 +287,7 @@
   }
 
   .appointment-field {
-    @apply min-h-40 h-max w-full bg-white flex flex-col gap-5 px-2 py-3 hover:bg-gray-50 hover:shadow-md hover:shadow-gray-600;
+    @apply h-max w-full bg-white flex flex-col gap-5 px-2 py-3 hover:bg-gray-50 hover:shadow-md hover:shadow-gray-600;
   }
 
   .appointment-field_title {
@@ -348,7 +344,7 @@
   }
 
   .svgBg-square_lg {
-    @apply absolute w-full top-[12%] bottom-[24%]  xs:bottom-[25%] sm:top-[11%] md:bottom-[31%] md:top-[11.5%] lg:top-[17%] lg:bottom-[7%] xl:top-[18.5%] bg-muted;
+    @apply absolute w-full top-[11%] bottom-[24%] xs:top-[11.5%] xs:bottom-[25%] sm:top-[11%] md:bottom-[31%] md:top-[11.5%] lg:top-[16.5%] lg:bottom-[7%] xl:top-[18%] bg-muted;
   }
 }
 

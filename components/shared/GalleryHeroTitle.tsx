@@ -26,7 +26,7 @@ const GalleryHeroTitle = ({
           <ChevronDown
             id="chevron"
             onMouseDown={() => handleClick()}
-            className="relative -top-2 z-[1] size-8 cursor-pointer transition-transform duration-300 hover:translate-y-4 hover:scale-150 sm:size-10 lg:size-14"
+            className="relative -top-2 z-[1] size-8 cursor-pointer transition-transform duration-300 hover:translate-y-2 hover:scale-125 sm:size-10 lg:size-14"
           />
         </div>
         <div

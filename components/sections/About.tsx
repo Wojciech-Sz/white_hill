@@ -2,10 +2,11 @@ import Image from "next/image";
 import React from "react";
 import { about } from "@/constans";
 import SectionTitle from "../shared/SectionTitle";
+import Section from "../shared/Section";
 
 const About = () => {
   return (
-    <section className="wrapper section section-gap">
+    <Section className="section-gap wrapper">
       <div id="about" className="absolute top-[-4.25rem]" />
       <SectionTitle title="O nas" />
       <div className="projects-grid">
@@ -39,7 +40,7 @@ const About = () => {
           </figure>
         ))}
       </div>
-    </section>
+    </Section>
   );
 };
 

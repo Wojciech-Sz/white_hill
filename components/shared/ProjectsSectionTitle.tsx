@@ -14,7 +14,7 @@ const ProjectsSectionTitle = ({
 }) => {
   const [visible, setVisible] = useState(false);
   return (
-    <div className="relative flex w-full flex-col">
+    <div className="relative flex w-full flex-col gap-px xs:gap-0">
       <div className="projects-container">
         <h2
           className={`section-title ${className || "projects-title"}`}
@@ -45,7 +45,7 @@ const ProjectsSectionTitle = ({
               <div className="border-bottom" />
             </Link>
             <Separator
-              className={`${projectLinks.length - 1 === i ? "h-0" : "h-7 xs:h-5 sm:h-6 md:h-7"} border-l-2 border-primary-foreground/70 lg:hidden`}
+              className={`${projectLinks.length - 1 === i ? "h-0" : "h-7 xs:h-5 sm:h-6 md:h-7"} border-l-2 border-primary-foreground/70 md:hidden`}
             />
           </div>
         ))}

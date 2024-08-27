@@ -3,6 +3,7 @@ import React from "react";
 
 import GalleryComponent from "../shared/GalleryComponent";
 import ProjectsSectionTitle from "../shared/ProjectsSectionTitle";
+import Section from "../shared/Section";
 
 const Projects = () => {
   const projects = Object.entries(gallery).flatMap(
@@ -16,7 +17,7 @@ const Projects = () => {
   );
 
   return (
-    <section className="wrapper section section-gap">
+    <Section className="section-gap wrapper">
       <div
         id="projects"
         className="absolute top-[-4.25rem]"
@@ -27,7 +28,7 @@ const Projects = () => {
         images={projects}
         className="img-span-2"
       />
-    </section>
+    </Section>
   );
 };
 

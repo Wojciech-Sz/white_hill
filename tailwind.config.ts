@@ -13,7 +13,7 @@ const config: import("tailwindcss").Config = {
   theme: {
     extend: {
       screens: {
-        xs: "435px",
+        xs: "530px",
       },
       colors: {
         border: "hsl(var(--border))",

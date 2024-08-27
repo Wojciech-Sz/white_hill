@@ -2,6 +2,7 @@ import React from "react";
 import { gallery } from "@/constans";
 import ProjectGallery from "@/components/shared/ProjectGallery";
 import SectionTitle from "@/components/shared/SectionTitle";
+import Section from "@/components/shared/Section";
 
 const Project = ({
   params: { projectType, projectTitle },
@@ -15,7 +16,7 @@ const Project = ({
 }) => {
   return (
     <>
-      <section className="wrapper section section-start section-gap ">
+      <Section className="wrapper section-start section-gap">
         <div id="hero" className="absolute -top-16" />
         <SectionTitle title={title} />
         <ProjectGallery
@@ -23,7 +24,7 @@ const Project = ({
           type={projectType}
           route={projectTitle}
         />
-      </section>
+      </Section>
     </>
   );
 };

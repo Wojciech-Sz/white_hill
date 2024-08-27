@@ -3,16 +3,17 @@ import { Separator } from "@radix-ui/react-separator";
 import Image from "next/image";
 import React from "react";
 import SectionTitle from "../shared/SectionTitle";
+import Section from "../shared/Section";
 
 const Office = () => {
   return (
-    <section className="wrapper section-start section section-gap ">
+    <Section className="section-start wrapper section-gap ">
       <div id="office" className="absolute -top-10" />
       <SectionTitle title="Pracownia" />
       <figure className="section-gap grid w-full  grid-cols-1 lg:grid-cols-2">
         <Image
           src="https://utfs.io/f/cdaa3749-c2a3-4fb8-bea3-f14fbe6e2a18-njtigs.jpg"
-          className="h-[60vh] w-full object-cover object-center lg:h-[70vh]"
+          className="max-h-[50vh] w-full object-cover object-center"
           alt="O Nas"
           width={840}
           height={840}
@@ -74,7 +75,7 @@ const Office = () => {
           </div>
         </div>
       ))}
-    </section>
+    </Section>
   );
 };
 
