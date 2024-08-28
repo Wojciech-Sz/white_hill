@@ -5,20 +5,21 @@ import { footerLinks } from "@/constans";
 const Footer = () => {
   return (
     <footer className="flex w-full justify-center bg-foreground py-5 text-white lg:py-8">
-      <div className="wrapper flex w-full gap-5 max-sm:flex-col sm:justify-between">
+      <div className="wrapper box-content flex w-full items-center gap-3 max-sm:flex-col sm:justify-between">
         <Link
           href="/"
           className="flex-center"
           prefetch={false}
           title="White Hill"
         >
-          <span className="ml-2 text-xl  font-bold">
-            Architekt
+          <span className="text-2xl/none  font-bold">
+            White Hill
           </span>
         </Link>
-        <p className="lg:block">
-          © {new Date().getFullYear()}. All rights
-          reserved.
+        <p className="text-center leading-none lg:block">
+          © {new Date().getFullYear()} White Hill.
+          <br />
+          Wszelkie prawa zastrzeżone.
         </p>
 
         <div className="flex gap-2">
