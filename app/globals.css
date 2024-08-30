@@ -295,11 +295,11 @@
   }
 
   .contact-text {
-    @apply mb-8 max-w-[60ch] text-center text-lg/none md:text-xl/none xl:text-2xl/none;
+    @apply mb-8 max-w-[60ch] text-center text-sm/none md:text-xl/none xl:text-2xl/none;
   }
 
   .contact-container {
-    @apply flex w-auto flex-col-reverse items-center justify-center gap-6 md:gap-10 lg:flex-row lg:items-start lg:justify-center lg:gap-20;
+    @apply flex w-auto flex-col-reverse items-center justify-center gap-12 md:gap-10 lg:flex-row lg:items-start lg:justify-center lg:gap-20;
   }
 
   .contact-info_container {
@@ -348,7 +348,7 @@
   }
 
   .svgBg-square_lg {
-    @apply absolute w-full top-[11%] bottom-[24%] xs:top-[11.5%] xs:bottom-[25%] sm:top-[11%] md:bottom-[31%] md:top-[11.5%] lg:top-[16.5%] lg:bottom-[7%] xl:top-[18%] bg-muted;
+    @apply absolute w-full top-[11%] bottom-[24%] xs:top-[10%] xs:bottom-[25%] md:bottom-[31%] md:top-[11.5%] lg:top-[16.5%] lg:bottom-[7%] xl:top-[18%] bg-muted;
   }
 }
 
