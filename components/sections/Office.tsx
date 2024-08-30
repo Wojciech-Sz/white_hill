@@ -62,9 +62,9 @@ const Office = () => {
                   className="office-question_text"
                 >
                   {info.title && (
-                    <h5 className="office-question_text-title">
+                    <span className="office-question_text-title">
                       {info.title}{" "}
-                    </h5>
+                    </span>
                   )}
                   <p className="office-question_text-description">
                     {info.description}

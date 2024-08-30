@@ -17,7 +17,7 @@ const Appointment = () => {
       />
       <p className="appointment-text">
         Odrobinę nas poznaliście. Jeśli chcecie zaprosić nas
-        do pracy nad waszą wymarzoną przestrzenią, jesteśmy
+        do pracy nad Waszą wymarzoną przestrzenią, jesteśmy
         gotowi.
       </p>
 

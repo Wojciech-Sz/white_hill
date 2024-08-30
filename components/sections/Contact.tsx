@@ -23,16 +23,16 @@ const Contact = () => {
       <SvgBackground />
       <div className="contact-container z-[1]">
         <div className="contact-info_container">
-          <h3 className="text-lg font-bold xs:text-xl ">
+          <h3 className="text-lg font-bold xs:text-xl">
             Informacje Kontaktowe
           </h3>
-          <div className="contact-info">
+          <address className="contact-info not-italic">
             <a
               aria-label="Zadzwoń"
               href={`tel:${process.env.NEXT_PUBLIC_PHONE}`}
               title="501-458-229"
             >
-              <div className="flex items-center gap-2 hover:text-foreground/70 ">
+              <div className="info-link ">
                 <PhoneIcon className="size-5 shrink-0" />
                 501-458-229
               </div>
@@ -42,7 +42,7 @@ const Contact = () => {
               href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
               title="biuro@wharchitecture.pl"
             >
-              <div className="flex items-center gap-2 hover:text-foreground/70 ">
+              <div className="info-link ">
                 <MailIcon
                   className="size-5 shrink-0 "
                   strokeWidth="2.5"
@@ -55,13 +55,13 @@ const Contact = () => {
               target="_blank"
               title="ul. Dobra 10 lok.76, Białystok"
             >
-              <div className="flex items-center gap-2 hover:text-foreground/70">
-                <MapPinIcon className="size-5 shrink-0 " />
-                ul. Dobra 10 lok.76, Białystok
+              <div className="info-link">
+                <MapPinIcon className="size-5 shrink-0" />
+                ul. Dobra 10 lok. 76, Białystok
               </div>
             </a>
             <div className="flex items-center gap-2">
-              <ClockIcon className="size-5 shrink-0 " />
+              <ClockIcon className="size-5 shrink-0" />
               <div className="flex gap-2">
                 <p className="">pon - pt:</p>
                 <p className="">9:00 - 17:00</p>
@@ -74,7 +74,7 @@ const Contact = () => {
               </span>
               <p>ul. Piastowska 13a/1, 15-207 Białystok</p>
             </div>
-          </div>
+          </address>
         </div>
         <ContactForm />
       </div>

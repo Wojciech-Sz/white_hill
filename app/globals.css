@@ -182,7 +182,7 @@
   }
 
   .office-question_text-container {
-    @apply section-gap flex flex-col font-montserrat items-center md:flex-row text-xs/none xs:text-sm/none md:text-base/none xl:text-lg/none;
+    @apply section-gap flex flex-col font-montserrat items-center md:flex-row text-xs xs:text-sm md:text-base xl:text-lg;
   }
 
   .office-question_text {
@@ -287,7 +287,7 @@
   }
 
   .appointment-field {
-    @apply h-max w-full bg-white flex flex-col gap-5 px-2 py-3 hover:bg-gray-50 hover:shadow-md hover:shadow-gray-600;
+    @apply h-max w-full bg-white flex flex-col gap-5 px-2 py-3 hover:shadow-md hover:shadow-gray-600;
   }
 
   .appointment-field_title {
@@ -308,6 +308,10 @@
 
   .contact-info {
     @apply flex w-full flex-col items-center justify-center gap-2 font-montserrat text-base font-normal xs:text-lg lg:items-start;
+  }
+
+  .info-link {
+    @apply flex items-center gap-2 hover:text-foreground/70;
   }
 
   .btn {
