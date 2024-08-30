@@ -48,6 +48,7 @@ export const montserrat = localFont({
       weight: "400",
       style: "normal",
     },
+
     {
       path: "./Montserrat/Montserrat-ExtraLight.ttf",
       weight: "200",
