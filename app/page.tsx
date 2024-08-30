@@ -23,7 +23,7 @@ export default function Home() {
         <div className="hero-text">
           <h2>Architektura / Wnętrza</h2>
           <p className="ml-[-4.4px] max-w-[30ch] text-balance">
-            Pomożemy wam stworzyć waszą niepowtarzalną
+            Pomożemy Wam stworzyć Waszą niepowtarzalną
             przestrzeń
           </p>
         </div>

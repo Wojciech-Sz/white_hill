@@ -14,7 +14,7 @@ const ProjectsSectionTitle = ({
 }) => {
   const [visible, setVisible] = useState(false);
   return (
-    <div className="relative flex w-full flex-col gap-px xs:gap-0">
+    <div className="relative flex w-full flex-col">
       <div className="projects-container">
         <h2
           className={`section-title ${className || "projects-title"}`}

@@ -107,7 +107,7 @@
   }
 
   .section-title {
-    @apply text-xl font-bold uppercase tracking-tighter xs:text-2xl md:text-3xl xl:text-4xl;
+    @apply font-bold uppercase tracking-tighter text-2xl md:text-3xl xl:text-4xl;
   }
 
   .background-img {
@@ -161,16 +161,16 @@
   }
 
   .hero-text {
-    @apply relative max-w-7xl w-full flex flex-col gap-4 md:gap-6 lg:gap-8 text-pretty pb-[2vh] md:pb-[4vh] lg:pb-[5vh] xl:pb-[6vh] text-left font-montserrat text-2xl xs:text-3xl md:text-4xl font-thin text-white xl:text-5xl;
+    @apply relative max-w-7xl w-full flex flex-col gap-4 md:gap-6 lg:gap-8 text-pretty pb-[2vh] md:pb-[4vh] lg:pb-[5vh] xl:pb-[6vh] text-left font-montserrat text-2xl text-3xl md:text-4xl font-thin text-white xl:text-5xl;
   }
 
   /* Office */
   .office-text {
-    @apply flex flex-col font-montserrat text-sm/tight xs:text-base/tight md:text-lg/tight xl:text-xl/tight;
+    @apply flex flex-col font-montserrat text-base/tight md:text-lg/tight xl:text-xl/tight;
   }
 
   .office-text_title {
-    @apply text-base/none font-semibold tracking-tighter xs:text-lg/none md:text-xl/none xl:text-2xl/none;
+    @apply font-semibold tracking-tighter text-lg/none md:text-xl/none xl:text-2xl/none;
   }
 
   .office-question {
@@ -178,11 +178,11 @@
   }
 
   .office-question_title {
-    @apply ml-[-1.8px] self-center tracking-tight font-bold text-balance text-base/none xs:text-lg/none md:text-xl/none xl:text-2xl/none;
+    @apply ml-[-1.8px] self-center tracking-tight font-bold text-balance text-lg/none md:text-xl/none xl:text-2xl/none;
   }
 
   .office-question_text-container {
-    @apply section-gap flex flex-col font-montserrat items-center md:flex-row text-xs xs:text-sm md:text-base xl:text-lg;
+    @apply section-gap flex flex-col font-montserrat items-center md:flex-row text-sm md:text-base xl:text-lg;
   }
 
   .office-question_text {
@@ -190,7 +190,7 @@
   }
 
   .office-question_text-title {
-    @apply inline text-sm/none xs:text-base/none font-semibold md:text-lg/none xl:text-xl/none;
+    @apply inline text-base/none font-semibold md:text-lg/none xl:text-xl/none;
   }
 
   .office-question_text-description {
@@ -295,7 +295,7 @@
   }
 
   .contact-text {
-    @apply mb-8 max-w-[60ch] text-center text-base/none xs:text-lg/none md:text-xl/none xl:text-2xl/none;
+    @apply mb-8 max-w-[60ch] text-center text-lg/none md:text-xl/none xl:text-2xl/none;
   }
 
   .contact-container {
@@ -315,7 +315,7 @@
   }
 
   .btn {
-    @apply px-[0.15rem] py-0 font-museoSansCyrl tracking-tighter text-sm/none font-bold h-7 uppercase xs:px-1.5 xs:text-base/none sm:px-2 sm:text-lg/none md:text-xl/none;
+    @apply px-1 py-0 font-museoSansCyrl tracking-tighter text-sm/none font-bold h-6 md:h-7 uppercase xs:px-1.5 xs:text-base/none sm:px-2 md:text-lg/none xl:text-xl/none;
   }
 
   .btn-contact {

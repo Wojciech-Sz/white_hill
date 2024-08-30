@@ -24,7 +24,7 @@ const MobileMenu = () => {
           aria-label="Włacz menu"
           className="absolute left-0 cursor-pointer p-0"
         >
-          <MenuIcon className="size-7 text-foreground" />
+          <MenuIcon className="size-6 text-foreground md:size-7" />
         </button>
       </SheetTrigger>
       <SheetContent
