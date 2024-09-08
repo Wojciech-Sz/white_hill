@@ -8,6 +8,13 @@ export type IconProps = {
   height?: string;
 };
 
+export type MenuIconProps = {
+  className: string;
+  topLine: React.LegacyRef<SVGLineElement>;
+  middleLine: React.LegacyRef<SVGLineElement>;
+  bottomLine: React.LegacyRef<SVGLineElement>;
+};
+
 export type ContactFormProps = {
   firstName: string;
   lastName: string;

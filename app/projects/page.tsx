@@ -4,6 +4,11 @@ import GalleryHeroTitle from "@/components/shared/GalleryHeroTitle";
 import { gallery } from "@/constans";
 import Hero from "@/components/sections/Hero";
 import Section from "@/components/shared/Section";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Galeria",
+};
 
 const Gallery = () => {
   const heroImages = [

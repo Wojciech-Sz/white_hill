@@ -8,7 +8,10 @@ import Header from "@/components/sections/Header";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
-  title: "WhiteHill Architecture | Budynki i Wnętrza",
+  title: {
+    default: "WhiteHill Architecture | Budynki & Wnętrza",
+    template: "%s | WhiteHill Architecture",
+  },
   description:
     "Oferujemy kompleksowe usługi architektoniczne obejmujące projektowanie całych obiektów oraz aranżację wnętrz. Stawiamy na funkcjonalność i estetykę.",
   keywords: [
@@ -18,25 +21,13 @@ export const metadata: Metadata = {
     "whitehill architecture",
     "budynki mieszkalne",
     "budynki usługowe",
-    "budynki publiczne",
-    "budynki prywatne",
-    "budynki przemysłowe",
     "architekt białystok",
     "architekt polska",
     "architektura",
     "architekt",
     "architekt wnętrz",
   ],
-
   generator: "Next.js",
-  authors: [
-    {
-      name: "Szczygielski W&M Developer",
-      url: "https://wm-portfolio-theta.vercel.app/",
-    },
-  ],
-  creator: "Szczygielski W&M Developer",
-  publisher: "Szczygielski W&M Developer",
 
   openGraph: {
     title: "WhiteHill Architecture | Budynki i Wnętrza",
@@ -83,7 +74,8 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  height: "device-height",
+  themeColor: "#e4e3e2",
+  colorScheme: "light",
 };
 
 export default function RootLayout({

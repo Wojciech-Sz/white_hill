@@ -5,7 +5,20 @@ import GalleryHeroTitle from "@/components/shared/GalleryHeroTitle";
 import { Separator } from "@radix-ui/react-separator";
 import Hero from "@/components/sections/Hero";
 import Section from "@/components/shared/Section";
+import { Metadata, ResolvingMetadata } from "next";
 
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: { type: string };
+  parent: ResolvingMetadata;
+}): Promise<Metadata> {
+  const title = searchParams.type;
+
+  return {
+    title: title ? `${title}` : "Projekty",
+  };
+}
 const ProjectGallery = ({
   params: { projectType },
   searchParams: { type },

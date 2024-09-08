@@ -50,14 +50,9 @@ const Hero = ({
           },
           "<"
         )
-        .to(
-          `#${image.id}`,
-          {
-            scale: 1,
-            duration: 0.1,
-          },
-          ">-0.1"
-        );
+        .set(`#${image.id}`, {
+          scale: 1,
+        });
     });
   }, []);
 

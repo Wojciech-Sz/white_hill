@@ -41,6 +41,8 @@ const AppointmentForm = () => {
   minDate.setDate(minDate.getDate() + 2);
   minDate.setHours(9);
   minDate.setMinutes(0);
+  minDate.setSeconds(0);
+  minDate.setMilliseconds(0);
   if (minDate.getDay() === 0)
     minDate.setDate(minDate.getDate() + 1);
   else if (minDate.getDay() === 6)
@@ -296,14 +298,19 @@ const AppointmentForm = () => {
                     <DatePicker
                       className="input w-full cursor-pointer text-base"
                       selected={field.value}
-                      onChange={(date: Date | null) =>
-                        field.onChange(date)
-                      }
+                      onChange={(date: Date | null) => {
+                        if (!date?.getHours()) {
+                          date?.setHours(9);
+                        }
+                        return field.onChange(
+                          date || minDate
+                        );
+                      }}
                       timeCaption="Godzina"
                       showTimeSelect
                       minDate={minDate}
                       dateFormat="dd/MM/yyy HH:mm"
-                      minTime={new Date("2024-07-14T09:00")}
+                      minTime={minDate}
                       timeIntervals={15}
                       maxTime={maxTime}
                       filterDate={(date) =>

@@ -80,7 +80,7 @@ export const appointmentFormSchema = z
     subject: z.enum(["15 min", "1 h", "2 h"], {
       required_error: "Wybierz typ konsultacji",
     }),
-    date: z.date(),
+    date: z.date({ message: "Wybierz date" }),
     agree: z.boolean().refine((value) => value === true, {
       message:
         "Musisz wyrazić zgodę na przetwarzanie danych", // Wiadomość błędu
