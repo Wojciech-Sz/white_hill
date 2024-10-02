@@ -103,7 +103,7 @@
   }
 
   .section-gap {
-    @apply gap-5 md:gap-7;
+    @apply gap-5 lg:gap-7;
   }
 
   .section-title {
@@ -161,7 +161,7 @@
   }
 
   .hero-text {
-    @apply relative max-w-7xl w-full flex flex-col pb-5 sm:pb-10 gap-4 md:gap-6 lg:gap-8 text-left font-montserrat font-thin text-white lg:text-5xl text-4xl;
+    @apply relative max-w-7xl w-full flex flex-col pb-5 sm:pb-10 gap-4 lg:gap-8 text-left font-montserrat font-thin text-white lg:text-5xl sm:text-4xl text-3xl;
   }
 
   /* Office */
@@ -299,7 +299,7 @@
   }
 
   .contact-container {
-    @apply flex w-auto flex-col-reverse items-center justify-center gap-12 md:gap-10 lg:flex-row lg:items-start lg:justify-center lg:gap-20;
+    @apply flex w-auto flex-col-reverse items-center justify-center gap-7 xs:gap-10 lg:flex-row lg:items-start lg:justify-center lg:gap-20;
   }
 
   .contact-info_container {
@@ -307,7 +307,7 @@
   }
 
   .contact-info {
-    @apply flex w-full flex-col items-center justify-center gap-2 font-montserrat text-base font-normal xs:text-lg lg:items-start;
+    @apply flex w-full flex-col items-center justify-center gap-2 font-montserrat text-base  font-normal lg:items-start;
   }
 
   .info-link {

@@ -23,7 +23,7 @@ const Contact = () => {
       <SvgBackground />
       <div className="contact-container z-[1]">
         <div className="contact-info_container">
-          <h3 className="text-lg font-bold xs:text-xl">
+          <h3 className="text-xl font-bold ">
             Informacje Kontaktowe
           </h3>
           <address className="contact-info not-italic">
