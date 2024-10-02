@@ -22,21 +22,25 @@ const Footer = () => {
           Wszelkie prawa zastrzeżone.
         </p>
 
-        <div className="flex gap-2">
+        <ul className="flex gap-2">
           {footerLinks.map((link, i) => (
-            <Link
+            <li
               key={link.name + i}
-              href={link.href}
               className="flex size-full text-white hover:text-primary"
-              prefetch={false}
-              target="_blank"
-              title={link.name}
             >
-              {link.icon}
-              <span className="sr-only">{link.name}</span>
-            </Link>
+              <Link
+                href={link.href}
+                prefetch={false}
+                target="_blank"
+                rel="noreferrer"
+                title={link.name}
+              >
+                {link.icon}
+                <span className="sr-only">{link.name}</span>
+              </Link>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </footer>
   );

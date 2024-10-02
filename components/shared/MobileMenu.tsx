@@ -36,21 +36,21 @@ const MobileMenu = () => {
       // Animate to X
       gsap.to(topLine.current, {
         attr: { y1: 4, y2: 20, x1: 1.2, x2: 22.8 },
-        duration: 0.5,
+        duration: 0.3,
       });
       gsap.to(middleLine.current, {
         attr: { opacity: 0 },
-        duration: 0.5,
+        duration: 0.3,
       });
       gsap.to(bottomLine.current, {
         attr: { y1: 20, y2: 4, x1: 1.2, x2: 22.8 },
-        duration: 0.5,
+        duration: 0.3,
       });
     } else {
       // Animate to hamburger
       gsap.to(topLine.current, {
         attr: { y1: 4, y2: 4, x1: 1.2, x2: 22.8 },
-        duration: 0.5,
+        duration: 0.3,
       });
       gsap.to(middleLine.current, {
         attr: {
@@ -60,11 +60,11 @@ const MobileMenu = () => {
           x2: 22.8,
           opacity: 1,
         },
-        duration: 0.5,
+        duration: 0.3,
       });
       gsap.to(bottomLine.current, {
         attr: { y1: 20, y2: 20, x1: 1.2, x2: 22.8 },
-        duration: 0.5,
+        duration: 0.3,
       });
     }
   });
@@ -101,10 +101,10 @@ const MobileMenu = () => {
           </Link>
         </SheetTitle>
         <nav className="flex size-full flex-col justify-between">
-          <div className="mobile-links_container">
+          <ul className="mobile-links_container">
             {headerLinks.map((link) =>
               link.label === "Realizacje" ? (
-                <div
+                <li
                   className="mobile-projects_container"
                   key={link.label}
                 >
@@ -119,76 +119,87 @@ const MobileMenu = () => {
                     <SheetClose className="mobile-close" />
                     <div className="border-bottom" />
                   </Link>
-                  <div className="mobile-projects_container">
+                  <ul className="mobile-projects_container">
                     {projectLinks.map((link) => (
-                      <Link
+                      <li
                         className="mobile-link_projects group"
-                        href={link.href}
                         key={link.label}
-                        title={link.label}
                       >
-                        {link.label}
-                        <SheetClose className="mobile-close" />
-                        <div className="border-bottom" />
-                      </Link>
+                        <Link
+                          href={link.href}
+                          title={link.label}
+                        >
+                          {link.label}
+                          <SheetClose className="mobile-close" />
+                          <div className="border-bottom" />
+                        </Link>
+                      </li>
                     ))}
-                  </div>
-                </div>
+                  </ul>
+                </li>
               ) : (
-                <Link
-                  href={link.route}
-                  key={link.route}
+                <li
                   className="mobile-link group"
-                  prefetch={false}
-                  scroll
-                  title={link.label}
+                  key={link.route}
                 >
-                  {link.label}
-                  <SheetClose className="mobile-close" />
-                  <div className="border-bottom" />
-                </Link>
+                  <Link
+                    href={link.route}
+                    prefetch={false}
+                    scroll
+                    title={link.label}
+                  >
+                    {link.label}
+                    <SheetClose className="mobile-close" />
+                    <div className="border-bottom" />
+                  </Link>
+                </li>
               )
             )}
 
-            <Link
-              href="/#contact"
-              scroll
-              className="mobile-link group"
-              prefetch={false}
-              title="Kontakt"
-            >
-              Kontakt
-              <SheetClose className="mobile-close " />
-              <div className="border-bottom" />
-            </Link>
-
-            <Link
-              href="/appointment"
-              className="mobile-link group"
-              prefetch={false}
-              title="Umów spotkanie"
-            >
-              Umów spotkanie
-              <SheetClose className="mobile-close " />
-              <div className="border-bottom" />
-            </Link>
-          </div>
-
-          <div className="flex gap-2 self-center md:hidden">
-            {footerLinks.map((link, i) => (
+            <li className="mobile-link group">
               <Link
-                key={link.name}
-                href={link.href}
-                className="nav-social"
+                href="/#contact"
+                scroll
                 prefetch={false}
-                target="_blank"
-                title={link.name}
+                title="Kontakt"
               >
-                {link.icon}
-                <span className="sr-only">{link.name}</span>
+                Kontakt
+                <SheetClose className="mobile-close " />
+                <div className="border-bottom" />
               </Link>
+            </li>
+
+            <li className="mobile-link group">
+              <Link
+                href="/appointment"
+                prefetch={false}
+                title="Umów spotkanie"
+              >
+                Umów spotkanie
+                <SheetClose className="mobile-close " />
+                <div className="border-bottom" />
+              </Link>
+            </li>
+          </ul>
+
+          <ul className="flex gap-2 self-center md:hidden">
+            {footerLinks.map((link, i) => (
+              <li className="nav-social" key={link.name}>
+                <Link
+                  href={link.href}
+                  prefetch={false}
+                  target="_blank"
+                  rel="noreferrer"
+                  title={link.name}
+                >
+                  {link.icon}
+                  <span className="sr-only">
+                    {link.name}
+                  </span>
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
         </nav>
       </SheetContent>
     </Sheet>

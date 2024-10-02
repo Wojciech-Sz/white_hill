@@ -53,6 +53,7 @@ const Contact = () => {
             <a
               href="https://maps.google.com/maps?hl=pl&gl=pl&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x471ffff413081853:0x2a68fbc7479fa52f"
               target="_blank"
+              rel="noreferrer"
               title="ul. Dobra 10 lok.76, Białystok"
             >
               <div className="info-link">

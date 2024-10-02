@@ -39,7 +39,6 @@ const ContactForm = () => {
   const onSubmit = async (
     values: z.infer<typeof contactFormSchema>
   ) => {
-    console.log("asdfsdafd");
     const response = await fetch("/api/send/contact", {
       method: "POST",
       cache: "no-store",

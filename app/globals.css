@@ -91,7 +91,7 @@
 @layer utilities {
   /* Section */
   .wrapper {
-    @apply max-w-7xl px-5 md:px-7;
+    @apply max-w-7xl px-5 sm:px-10;
   }
 
   .section {
@@ -107,7 +107,7 @@
   }
 
   .section-title {
-    @apply font-bold uppercase tracking-tighter text-2xl md:text-3xl xl:text-4xl;
+    @apply font-bold uppercase tracking-tighter text-3xl lg:text-4xl;
   }
 
   .background-img {
@@ -132,28 +132,28 @@
   }
 
   .mobile-close {
-    @apply absolute left-0 size-full opacity-0;
+    @apply absolute inset-0 left-0  opacity-0;
   }
 
   .mobile-links_container {
-    @apply flex flex-col gap-6;
+    @apply flex flex-col gap-4;
   }
 
   .mobile-link {
-    @apply relative w-max font-bold tracking-tighter text-2xl/none hover:text-foreground/90;
+    @apply relative w-max font-bold tracking-tighter text-2xl hover:text-foreground/90;
   }
 
   .mobile-link_projects {
-    @apply relative w-max font-medium hover:text-foreground/90 text-xl/none;
+    @apply relative w-max font-medium hover:text-foreground/90 text-xl;
   }
 
   .mobile-projects_container {
-    @apply gap-3 flex flex-col;
+    @apply gap-2 flex flex-col;
   }
 
   /* Hero */
   .hero {
-    @apply relative px-5 md:px-7 items-end justify-center flex h-[clamp(73vh,83svh,83vh)] w-full overflow-hidden;
+    @apply relative px-5 sm:px-10  items-end justify-center flex h-[clamp(73vh,83svh,83vh)] w-full overflow-hidden;
   }
 
   .hero-gallery {
@@ -161,16 +161,16 @@
   }
 
   .hero-text {
-    @apply relative max-w-7xl w-full flex flex-col gap-4 md:gap-6 lg:gap-8 text-pretty pb-[2vh] md:pb-[4vh] lg:pb-[5vh] xl:pb-[6vh] text-left font-montserrat text-2xl text-3xl md:text-4xl font-thin text-white xl:text-5xl;
+    @apply relative max-w-7xl w-full flex flex-col pb-5 sm:pb-10 gap-4 md:gap-6 lg:gap-8 text-left font-montserrat font-thin text-white lg:text-5xl text-4xl;
   }
 
   /* Office */
   .office-text {
-    @apply flex flex-col font-montserrat text-base/tight md:text-lg/tight xl:text-xl/tight;
+    @apply flex flex-col font-montserrat text-lg/tight lg:text-xl/tight;
   }
 
   .office-text_title {
-    @apply font-semibold tracking-tighter text-lg/none md:text-xl/none xl:text-2xl/none;
+    @apply font-semibold tracking-tighter text-xl/none lg:text-2xl/none;
   }
 
   .office-question {
@@ -178,11 +178,11 @@
   }
 
   .office-question_title {
-    @apply ml-[-1.8px] self-center tracking-tight font-bold text-balance text-lg/none md:text-xl/none xl:text-2xl/none;
+    @apply ml-[-1.8px] self-center tracking-tight font-bold text-balance text-2xl/none;
   }
 
   .office-question_text-container {
-    @apply section-gap flex flex-col font-montserrat items-center md:flex-row text-sm md:text-base xl:text-lg;
+    @apply section-gap flex flex-col font-montserrat items-center md:flex-row text-base/snug lg:text-lg/snug;
   }
 
   .office-question_text {
@@ -190,7 +190,7 @@
   }
 
   .office-question_text-title {
-    @apply inline text-base/none font-semibold md:text-lg/none xl:text-xl/none;
+    @apply inline  font-semibold text-lg/none lg:text-xl/none;
   }
 
   .office-question_text-description {
@@ -262,7 +262,7 @@
   }
 
   .about-img_title {
-    @apply text-xl/none tracking-tight xs:text-2xl/none sm:text-xl/[none] xl:text-2xl/none;
+    @apply text-xl/none tracking-tight sm:text-xl/none xl:text-2xl/none;
   }
 
   .about-img_description {
@@ -275,7 +275,7 @@
   }
 
   .appointment-text {
-    @apply max-w-[60ch] px-6 text-center font-montserrat text-xl/none text-white  md:text-2xl/none xl:text-3xl/none;
+    @apply max-w-[60ch] px-6 text-center font-montserrat text-xl/none text-white  lg:text-2xl/none;
   }
 
   .appointment-container {
@@ -295,7 +295,7 @@
   }
 
   .contact-text {
-    @apply mb-8 max-w-[60ch] text-center text-sm/none md:text-xl/none xl:text-2xl/none;
+    @apply mb-8 max-w-[60ch] text-center text-base/none sm:text-lg/none md:text-xl/none lg:text-2xl/none;
   }
 
   .contact-container {
@@ -348,7 +348,7 @@
   }
 
   .svgBg-square_lg {
-    @apply absolute w-full top-[11%] bottom-[24%] xs:top-[10%] xs:bottom-[25%] md:bottom-[31%] md:top-[11.5%] lg:top-[16.5%] lg:bottom-[7%] xl:top-[18%] bg-muted;
+    @apply absolute w-full top-[11%] bottom-[24%] xs:top-[10%] xs:bottom-[25%] md:bottom-[31%] md:top-[11.5%] lg:top-[16.5%] lg:bottom-[7%] bg-muted;
   }
 }
 

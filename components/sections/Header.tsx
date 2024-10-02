@@ -28,6 +28,7 @@ export default function Header() {
                 className="nav-social"
                 prefetch={false}
                 target="_blank"
+                rel="noreferrer"
                 title={link.name}
               >
                 {link.icon}
