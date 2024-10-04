@@ -91,6 +91,7 @@ const AppointmentForm = () => {
       }
     } else if (value === "2 h") {
       setMaxTime(new Date("2024-07-14T15:00"));
+      form.setValue("payment", false);
       if (hours >= 15) {
         const newDate = form.getValues("date");
         newDate.setMinutes(0);
@@ -264,19 +265,21 @@ const AppointmentForm = () => {
             name="payment"
             render={({ field }) => (
               <FormItem
-                className={`${form.getValues("subject") === "15 min" ? "hidden" : "flex"} gap-3 space-y-0 border-2 border-input p-4`}
+                className={`${form.getValues("subject") === "15 min" ? "hidden" : "flex"} flex-col gap-3 space-y-0 border-2 border-input p-4`}
               >
-                <FormControl>
-                  <Checkbox
-                    checked={field.value}
-                    onCheckedChange={field.onChange}
-                    aria-label="Potwierdzenie płatności"
-                  />
-                </FormControl>
-                <div className="flex flex-col gap-1 leading-none">
+                <div className="flex items-center gap-2">
+                  <FormControl>
+                    <Checkbox
+                      checked={field.value}
+                      onCheckedChange={field.onChange}
+                      aria-label="Potwierdzenie płatności"
+                    />
+                  </FormControl>
                   <FormLabel>
                     Potwierdzenie płatności
                   </FormLabel>
+                </div>
+                <div className="flex flex-col gap-1 leading-none">
                   <FormDescription>
                     Dane do płatności dostępne w szczegółach
                     konsultacji.

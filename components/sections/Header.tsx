@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 import { footerLinks } from "@/constans";
-import MobileMenu from "../shared/MobileMenu";
+// import MobileMenu from "../shared/MobileMenu";
 import { MenuIcon } from "../icons";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -12,7 +12,7 @@ import NavItems from "../shared/NavItems";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+
   const topLine = useRef(null);
   const middleLine = useRef(null);
   const bottomLine = useRef(null);
@@ -133,7 +133,7 @@ export default function Header() {
         </div>
       </div>
       <div
-        className={`absolute inset-x-0 flex flex-col overflow-hidden bg-background/90 font-museoSansCyrl uppercase shadow-md transition-all duration-300 ease-in-out ${isOpen ? "max-h-screen" : "max-h-0"}`}
+        className={`absolute inset-x-0 flex  flex-col overflow-hidden bg-background/90 font-museoSansCyrl uppercase shadow-md transition-all duration-300 ease-in-out ${isOpen ? "max-h-screen" : "max-h-0"}`}
       >
         <NavItems closeMenu={toggleMenu} />
       </div>
