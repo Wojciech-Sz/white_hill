@@ -124,7 +124,7 @@
 
   /* Header */
   .header {
-    @apply sticky px-5 md:px-7 top-0 z-20 h-[4rem] flex justify-center items-center w-full bg-background/90 shadow-md;
+    @apply sticky px-5 sm:px-10 top-0 z-20 h-[4rem]  w-full bg-background/90 shadow-md;
   }
 
   .nav-social {
