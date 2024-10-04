@@ -83,7 +83,7 @@ export default function Header() {
 
   return (
     <header className={`header ${!isOpen && "shadow-md"}`}>
-      <div className="relative mx-auto flex size-full items-center justify-center">
+      <div className="relative mx-auto flex size-full max-w-7xl items-center justify-center">
         {/* <MobileMenu /> */}
         <button
           title="Menu"

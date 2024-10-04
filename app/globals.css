@@ -198,9 +198,9 @@
   }
 
   /* Projects */
-  /* .projects-title {
+  .projects-title {
     @apply -ml-[1.9px] sm:-ml-[2.5px] md:-ml-[3.1px] lg:-ml-[4px];
-  } */
+  }
 
   .projects-link {
     @apply tracking-tighter uppercase w-min xs:w-auto text-sm/none xs:text-base sm:text-lg/none md:text-xl/none xl:text-2xl/none  font-light text-center;
