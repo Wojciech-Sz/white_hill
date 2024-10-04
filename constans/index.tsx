@@ -117,11 +117,11 @@ export const projectLinks = [
   },
   {
     href: "/projects/houses/?type=Budynki mieszkalne",
-    label: "mieszkalne",
+    label: "Mieszkalne",
   },
   {
     href: "/projects/offices/?type=Budynki usługowe",
-    label: "usługowe",
+    label: "Usługowe",
   },
   {
     href: "/projects/?type=Galeria",

@@ -12,7 +12,7 @@ const NavItems = ({
   closeMenu: () => void;
 }) => {
   return (
-    <nav className="flex size-full flex-col justify-between gap-5 p-5 sm:px-10">
+    <nav className="flex size-full flex-col items-start justify-between gap-5 p-5 sm:px-10 lg:items-center">
       <ul className="mobile-links_container">
         {headerLinks.map((link) =>
           link.label === "Realizacje" ? (
@@ -97,7 +97,7 @@ const NavItems = ({
         </li>
       </ul>
 
-      <ul className="flex gap-2 self-center md:hidden">
+      <ul className="flex gap-2 sm:hidden">
         {footerLinks.map((link, i) => (
           <li className="nav-social" key={link.name}>
             <Link

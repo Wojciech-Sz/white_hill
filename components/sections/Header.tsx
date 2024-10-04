@@ -82,7 +82,7 @@ export default function Header() {
   }, [isOpen, toggleMenu]);
 
   return (
-    <header className="header">
+    <header className={`header ${!isOpen && "shadow-md"}`}>
       <div className="relative mx-auto flex size-full items-center justify-center">
         {/* <MobileMenu /> */}
         <button
@@ -109,7 +109,7 @@ export default function Header() {
           </h1>
         </Link>
         <div className="absolute right-0 flex items-center gap-5">
-          <div className="hidden gap-2 md:flex">
+          <div className="hidden gap-2 sm:flex">
             {footerLinks.map((link, i) => (
               <Link
                 key={link.name + i}
@@ -133,7 +133,7 @@ export default function Header() {
         </div>
       </div>
       <div
-        className={`absolute inset-x-0 flex  flex-col overflow-hidden bg-background/90 font-museoSansCyrl uppercase shadow-md transition-all duration-300 ease-in-out ${isOpen ? "max-h-screen" : "max-h-0"}`}
+        className={`absolute  inset-x-0 flex flex-col overflow-hidden bg-background/90 font-museoSansCyrl uppercase shadow-md transition-all duration-300 ease-in-out ${isOpen ? "max-h-screen" : "max-h-0"}`}
       >
         <NavItems closeMenu={toggleMenu} />
       </div>
