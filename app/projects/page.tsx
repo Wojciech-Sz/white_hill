@@ -5,6 +5,7 @@ import { gallery } from "@/constans";
 import Hero from "@/components/sections/Hero";
 import Section from "@/components/shared/Section";
 import { Metadata } from "next";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "Galeria",
@@ -13,19 +14,19 @@ export const metadata: Metadata = {
 const Gallery = () => {
   const heroImages = [
     {
-      url: "/images/gallery/galeria1.webp",
+      url: "https://utfs.io/f/WoM0wck7Fkdg017ufRtodVmuCtGjWBcNlZbFQK6eUE4frDi8",
       id: "gallery-img-1",
     },
     {
-      url: "/images/gallery/galeria2.webp",
+      url: "https://utfs.io/f/WoM0wck7Fkdgcmvu6fsJxDMZ8HIUluG2wcWneFBQiCqvEgTV",
       id: "gallery-img-2",
     },
     {
-      url: "/images/gallery/galeria3.webp",
+      url: "https://utfs.io/f/WoM0wck7FkdgwnRL66inXFWOdzlVC86Ev5qiaf0DMB2NKGre",
       id: "gallery-img-3",
     },
     {
-      url: "/images/gallery/galeria4.webp",
+      url: "https://utfs.io/f/WoM0wck7FkdgTuYrAwLaXEOdM4JmAsgwtR5Svq6KCbQnIV7Y",
       id: "gallery-img-4",
     },
   ];

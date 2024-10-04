@@ -45,7 +45,7 @@ const Office = () => {
       </figure>
       <Separator className="md:w-full md:border-b-2" />
       {office.map((question) => (
-        <div
+        <article
           key={question.title}
           className="office-question"
         >
@@ -57,7 +57,7 @@ const Office = () => {
 
             <div className="section-gap flex flex-col md:py-4">
               {question.info.map((info) => (
-                <article
+                <div
                   key={info.title}
                   className="office-question_text"
                 >
@@ -69,11 +69,11 @@ const Office = () => {
                   <p className="office-question_text-description">
                     {info.description}
                   </p>
-                </article>
+                </div>
               ))}
             </div>
           </div>
-        </div>
+        </article>
       ))}
     </Section>
   );

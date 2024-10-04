@@ -986,19 +986,19 @@ export const gallery = {
 
 export const galleryHero = {
   houses: [
-    "/images/house/dom1.webp",
-    "/images/house/dom2.webp",
-    "/images/house/dom3.webp",
+    "https://utfs.io/f/WoM0wck7FkdgfWxeV0YmOdx9Mj548kAfLSaHPFoEVnYKTgZh",
+    "https://utfs.io/f/WoM0wck7FkdgQ5kGzA6zXj5FEVkLNe2ZpcS4lT3HhuwMasGm",
+    "https://utfs.io/f/WoM0wck7FkdgMKihDz9Gtb10wrHQje8ocpNWSmgvYLF6Ry5E",
   ],
   interiors: [
-    "/images/Interiors/wnętrza1.webp",
-    "/images/Interiors/wnętrza2.webp",
-    "/images/Interiors/wnętrza3.webp",
+    "https://utfs.io/f/WoM0wck7FkdgJw1NNUnLWhgQVmbjnozBfywP2tAeKsTD5EuO",
+    "https://utfs.io/f/WoM0wck7Fkdgy1hYs6ukgfzO2GZM3Ublhp9Aa68QNveiTjno",
+    "https://utfs.io/f/WoM0wck7FkdgD2dwCyfUfJyvnQlos0AP6eMGDp4VTXj3bHgF",
   ],
   offices: [
-    "/images/office/usługowe.webp",
-    "/images/office/usługowe2.webp",
-    "/images/office/usługowe3.webp",
+    "https://utfs.io/f/WoM0wck7FkdgZWddaPWjCWfhw03KDXu4esYgOdLEbAIaMo8P",
+    "https://utfs.io/f/WoM0wck7FkdgYDMRdS82S6FCatOlpmcUIueWjA4zKbLG8rTX",
+    "https://utfs.io/f/WoM0wck7FkdgGvACBi2BZzn7pdb1kjsoEFPM0QUVWgyKO46u",
   ],
 };
 

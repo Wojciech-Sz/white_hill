@@ -340,7 +340,7 @@
   }
 
   .svgBg-square_sm {
-    @apply absolute bottom-0 top-[76%] xs:top-[75%] w-full md:aspect-[1/4] md:top-auto bg-muted lg:bottom-[16%] lg:top-[auto] lg:max-h-[40%];
+    @apply absolute bottom-0 top-[76%]  w-full md:aspect-[1/4] md:top-auto bg-muted lg:bottom-[16%] lg:top-[auto] lg:max-h-[40%];
   }
 
   .svg-circle {
@@ -348,7 +348,7 @@
   }
 
   .svgBg-square_lg {
-    @apply absolute w-full top-[11%] bottom-[24%] xs:top-[10%] xs:bottom-[25%] md:bottom-[31%] md:top-[11.5%] lg:top-[16.5%] lg:bottom-[7%] bg-muted;
+    @apply absolute w-full top-[11%] bottom-[24%] xs:top-[10%]  md:bottom-[31%] md:top-[11.5%] lg:top-[16.5%] lg:bottom-[7%] bg-muted;
   }
 }
 
