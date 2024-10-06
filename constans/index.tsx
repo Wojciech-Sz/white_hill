@@ -112,20 +112,20 @@ export const office = [
 
 export const projectLinks = [
   {
-    href: "/projects/interiors/?type=Wnętrza",
-    label: "Wnętrza",
+    href: "/projects/?type=Galeria",
+    label: "Galeria",
   },
   {
-    href: "/projects/houses/?type=Budynki mieszkalne",
-    label: "Mieszkalne",
+    href: "/projects/interiors/?type=Wnętrza",
+    label: "Wnętrza",
   },
   {
     href: "/projects/offices/?type=Budynki usługowe",
     label: "Usługowe",
   },
   {
-    href: "/projects/?type=Galeria",
-    label: "Galeria",
+    href: "/projects/houses/?type=Budynki mieszkalne",
+    label: "Mieszkalne",
   },
 ];
 
@@ -275,7 +275,7 @@ export const gallery = {
     {
       url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
       route: "Dom4",
-      title: "Tytuł 225m2",
+      title: "Tytuł1 225m2",
       images: [
         {
           url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
@@ -322,7 +322,7 @@ export const gallery = {
     {
       url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
       route: "Dom5",
-      title: "Tytuł 225m2",
+      title: "Tytuł2 225m2",
       images: [
         {
           url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
@@ -369,7 +369,7 @@ export const gallery = {
     {
       url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
       route: "Dom6",
-      title: "Tytuł 225m2",
+      title: "Tytuł3 225m2",
       images: [
         {
           url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
@@ -559,7 +559,7 @@ export const gallery = {
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
       route: "Wntrze4",
-      title: "Tytuł 225m2",
+      title: "Tytuł4 225m2",
       images: [
         {
           url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
@@ -606,7 +606,7 @@ export const gallery = {
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
       route: "Wntrze5",
-      title: "Tytuł 225m2",
+      title: "Tytuł5 225m2",
       images: [
         {
           url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
@@ -653,7 +653,7 @@ export const gallery = {
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
       route: "Wntrze6",
-      title: "Tytuł 225m2",
+      title: "Tytuł6 225m2",
       images: [
         {
           url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
@@ -843,7 +843,7 @@ export const gallery = {
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
       route: "Biuro4",
-      title: "Tytuł 225m2",
+      title: "Tytuł7 225m2",
       images: [
         {
           url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
@@ -890,7 +890,7 @@ export const gallery = {
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
       route: "Biuro5",
-      title: "Tytuł 225m2",
+      title: "Tytuł8 225m2",
       images: [
         {
           url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
@@ -937,7 +937,7 @@ export const gallery = {
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
       route: "Biuro6",
-      title: "Tytuł 225m2",
+      title: "Tytuł9 225m2",
       images: [
         {
           url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
@@ -1022,18 +1022,18 @@ export const approach = {
     title: "Nasze podejście",
     subtitle: "Wnętrza",
     description: [
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratiodne cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsumdd, dolor sit amet consectetur adipisicidng elit. Quam sapiednte omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Lorem ipsum, dolor sit amet consecdtetur adipisicing elit. Quam sdapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
     ],
   },
   offices: {
     title: "Nasze podejście",
     subtitle: "Budynki usługowe",
     description: [
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Loraem ipsum, dolor sit amet consectetur adipisaicing elit. Quam sapiente omnias ratione cum doloremque caumque provident iure minima aliquid voluptas.",
+      "Lorem ipasum, dolor sit aamet consectetur adipisicing elit. Quam sapientaae omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
+      "Loraem ipsum, dolor sit amet consectetur adipisiacing elit. Quam sapiente omnis ratione cuma doloremque cumque proviaadent iure minima aliquid voluptas.",
     ],
   },
 };

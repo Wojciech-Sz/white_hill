@@ -22,7 +22,7 @@ export default function Home() {
         className="hero h-[83vh]"
       >
         <div className="hero-text">
-          <h2>Architektura / Wnętrza</h2>
+          <h1>Architektura / Wnętrza</h1>
           <p className="ml-[-4.4px]  max-w-[30ch] text-balance">
             Pomożemy Wam stworzyć Waszą niepowtarzalną
             przestrzeń

@@ -37,7 +37,7 @@ const GalleryComponent = ({
               />
               <div className="projects-img_filter" />
               <figcaption className="projects-img_title">
-                <h3>{project.title}</h3>
+                <h4>{project.title}</h4>
               </figcaption>
               <Link
                 href={`/projects/${type || project.type}/${project.route}?title=${project.title}`}

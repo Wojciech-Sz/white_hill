@@ -10,7 +10,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 export const metadata: Metadata = {
   title: {
     default: "WhiteHill Architecture | Budynki & Wnętrza",
-    template: "%s | WhiteHill Architecture",
+    template: "WhiteHill Architecture | %s",
   },
   description:
     "Oferujemy kompleksowe usługi architektoniczne obejmujące projektowanie całych obiektów oraz aranżację wnętrz. Stawiamy na funkcjonalność i estetykę.",
@@ -27,10 +27,9 @@ export const metadata: Metadata = {
     "architekt",
     "architekt wnętrz",
   ],
-  generator: "Next.js",
 
   openGraph: {
-    title: "WhiteHill Architecture | Budynki i Wnętrza",
+    title: "WhiteHill Architecture | Budynki & Wnętrza",
     description:
       "Kompleksowe usługi architektoniczne dla budynków i wnętrz dostosowane do Twoich potrzeb.",
     url: "https://white-hill-two.vercel.app/",
@@ -38,7 +37,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://utfs.io/f/5b304e99-9833-4093-9c2a-78ece5c5c6aa-rcqaza.png",
-        alt: "WhiteHill Architecture | Budynki i Wnętrza",
+        alt: "WhiteHill Architecture | Budynki & Wnętrza",
       },
     ],
     type: "website",
@@ -46,14 +45,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-
-    title: "WhiteHill Architecture | Budynki i Wnętrza",
+    title: "WhiteHill Architecture | Budynki & Wnętrza",
     description:
       "Kompleksowe usługi architektoniczne dla budynów i wnętrz dostosowane do Twoich potrzeb.",
     images: [
       {
         url: "https://utfs.io/f/5b304e99-9833-4093-9c2a-78ece5c5c6aa-rcqaza.png",
-        alt: "WhiteHill Architecture | Budynki i Wnętrza",
+        alt: "WhiteHill Architecture | Budynki & Wnętrza",
       },
     ],
   },

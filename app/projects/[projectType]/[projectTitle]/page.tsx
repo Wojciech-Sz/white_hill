@@ -1,9 +1,9 @@
 import React from "react";
 import { gallery } from "@/constans";
 import ProjectGallery from "@/components/shared/ProjectGallery";
-import SectionTitle from "@/components/shared/SectionTitle";
 import Section from "@/components/shared/Section";
 import { Metadata, ResolvingMetadata } from "next";
+import { Separator } from "@radix-ui/react-separator";
 
 export async function generateMetadata({
   searchParams,
@@ -15,6 +15,7 @@ export async function generateMetadata({
 
   return {
     title: title ? `${title}` : "Projekty",
+    description: `${title} - Kompleksowa galeria zdjęć.`,
   };
 }
 const Project = ({
@@ -31,7 +32,12 @@ const Project = ({
     <>
       <Section className="wrapper section-start section-gap">
         <div id="hero" className="absolute -top-16" />
-        <SectionTitle title={title} />
+        <div className="flex flex-col">
+          <h1 className="section-title projects-title">
+            {title}
+          </h1>
+          <Separator className="separator" />
+        </div>
         <ProjectGallery
           title={title}
           type={projectType}

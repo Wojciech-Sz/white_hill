@@ -17,8 +17,10 @@ export async function generateMetadata({
 
   return {
     title: title ? `${title}` : "Projekty",
+    description: `Galeria naszych najlepszych projektów: ${title}.`,
   };
 }
+
 const ProjectGallery = ({
   params: { projectType },
   searchParams: { type },

@@ -104,9 +104,9 @@ export default function Header() {
           scroll
           title="Powrót na góre"
         >
-          <h1 className="text-2xl font-black">
+          <div className="text-2xl font-black">
             White Hill
-          </h1>
+          </div>
         </Link>
         <div className="absolute right-0 flex items-center gap-5">
           <div className="hidden gap-2 sm:flex">

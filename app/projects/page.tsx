@@ -9,6 +9,8 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "Galeria",
+  description:
+    "Galeria naszych najlepszych projektów: Wnętrza, Budynki Mieszkalne i Usługowe.",
 };
 
 const Gallery = () => {

@@ -1,9 +1,14 @@
 import AppointmentForm from "@/components/shared/AppointmentForm";
 import Appointments from "@/components/shared/Appointments";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Konsultacje",
+  description:
+    "Umów się na konsultacje. Wypełnij prosty formularz i zarezerwuj termin spotkania w naszym biurze. ",
+};
 
 const Appointment = () => {
-  // Appointment logic
-
   return (
     <section
       className="wrapper appointment-container box-content"
