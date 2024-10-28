@@ -39,7 +39,7 @@
     "react-datepicker": "^7.3.0",
     "react-dom": "19.0.0-rc-69d4b800-20241021",
     "react-element-to-jsx-string": "^15.0.0",
-    "react-email": "2.1.5",
+    "react-email": "^1.10.1",
     "react-hook-form": "^7.52.1",
     "resend": "^3.4.0",
     "tailwind-merge": "^2.3.0",
