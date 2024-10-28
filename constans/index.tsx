@@ -1,7 +1,4 @@
-import {
-  FacebookIcon,
-  InstagramIcon,
-} from "@/components/icons";
+import { FacebookIcon, InstagramIcon } from "@/components/icons";
 
 export const headerLinks = [
   {
@@ -81,8 +78,7 @@ export const office = [
           "Zajmujemy się kompleksową realizacją projektów, co oznacza, że możesz liczyć na naszą pomoc i wsparcie na każdym etapie, od wstępnych koncepcji po finalne wykończenie. Jesteśmy z Tobą przez cały czas, zapewniając płynność realizacji i spełnienie Twoich oczekiwań.",
       },
       {
-        title:
-          "Tworzenie przestrzeni dla emocji i marzeń: ",
+        title: "Tworzenie przestrzeni dla emocji i marzeń: ",
         description:
           "Nasze projekty to nie tylko funkcjonalne rozwiązania, ale także miejsca, gdzie rodzą się emocje, a marzenia stają się rzeczywistością. Z nami zyskujesz przestrzeń, która inspiruje i wzbogaca życie codzienne.",
       },
@@ -139,8 +135,7 @@ export const gallery = {
   mieszkalne: [
     {
       url: "https://utfs.io/f/5f4d8953-0271-4260-8cc5-cd0e8d4603c2-wtxq5.jpg",
-      route: "Dom1",
-      title: "Kierszek Wnętrze - 1920 x 1440",
+      route: "Kierszek Wnętrze - 1920 x 1440",
       images: [
         {
           url: "https://utfs.io/f/5f4d8953-0271-4260-8cc5-cd0e8d4603c2-wtxq5.jpg",
@@ -186,8 +181,7 @@ export const gallery = {
     },
     {
       url: "https://utfs.io/f/91cbc4d3-41f5-454c-a23f-e9afc29700d3-wtxq6.jpg",
-      route: "Dom2",
-      title: "Kierszek Wnętrze - 1920 x 1920",
+      route: "Kierszek Wnętrze - 1920 x 1920",
       images: [
         {
           url: "https://utfs.io/f/91cbc4d3-41f5-454c-a23f-e9afc29700d3-wtxq6.jpg",
@@ -233,8 +227,7 @@ export const gallery = {
     },
     {
       url: "https://utfs.io/f/9c2d2230-c8a7-4ee8-93eb-558fce74894e-acedim.jpg",
-      route: "Dom3",
-      title: "Bobrowiec Wnętrze - 1920 x 2400",
+      route: "Bobrowiec Wnętrze - 1920 x 2400",
       images: [
         {
           url: "https://utfs.io/f/9c2d2230-c8a7-4ee8-93eb-558fce74894e-acedim.jpg",
@@ -280,8 +273,7 @@ export const gallery = {
     },
     {
       url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-      route: "Dom4",
-      title: "Tytuł1 225m2",
+      route: "Tytuł1 225m2",
       images: [
         {
           url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
@@ -327,8 +319,7 @@ export const gallery = {
     },
     {
       url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-      route: "Dom5",
-      title: "Tytuł2 225m2",
+      route: "Tytuł2 225m2",
       images: [
         {
           url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
@@ -374,8 +365,7 @@ export const gallery = {
     },
     {
       url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
-      route: "Dom6",
-      title: "Tytuł3 225m2",
+      route: "Tytuł3 225m2",
       images: [
         {
           url: "https://utfs.io/f/b3539e4d-f5e8-4148-b3da-bd713c00f4a2-4155sb.jpg",
@@ -423,8 +413,7 @@ export const gallery = {
   wnętrza: [
     {
       url: "https://utfs.io/f/806171d0-eb69-4aeb-9c1d-84c46da0b9bf-wtxq2.jpg",
-      route: "Wntrze1",
-      title: "Kierszek Wnętrze - 1350 x 1080",
+      route: "Kierszek Wnętrze - 1350 x 1080",
       images: [
         {
           url: "https://utfs.io/f/806171d0-eb69-4aeb-9c1d-84c46da0b9bf-wtxq2.jpg",
@@ -470,8 +459,7 @@ export const gallery = {
     },
     {
       url: "https://utfs.io/f/083f755b-6c7b-49d4-aa15-73a7fb51fd1b-1136kr.jpg",
-      route: "Wntrze2",
-      title: "Kierszek Wnętrze - 1920 x 1080",
+      route: "Kierszek Wnętrze - 1920 x 1080",
       images: [
         {
           url: "https://utfs.io/f/083f755b-6c7b-49d4-aa15-73a7fb51fd1b-1136kr.jpg",
@@ -517,8 +505,7 @@ export const gallery = {
     },
     {
       url: "https://utfs.io/f/75d5ca1d-c16f-4420-bc4d-bab709caa661-1136ks.jpg",
-      route: "Wntrze3",
-      title: "Kierszek Wnętrze - 1920 x 1536",
+      route: "Kierszek Wnętrze - 1920 x 1536",
       images: [
         {
           url: "https://utfs.io/f/75d5ca1d-c16f-4420-bc4d-bab709caa661-1136ks.jpg",
@@ -564,8 +551,7 @@ export const gallery = {
     },
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-      route: "Wntrze4",
-      title: "Tytuł4 225m2",
+      route: "Tytuł4 225m2",
       images: [
         {
           url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
@@ -611,8 +597,7 @@ export const gallery = {
     },
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-      route: "Wntrze5",
-      title: "Tytuł5 225m2",
+      route: "Tytuł5 225m2",
       images: [
         {
           url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
@@ -658,8 +643,7 @@ export const gallery = {
     },
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-      route: "Wntrze6",
-      title: "Tytuł6 225m2",
+      route: "Tytuł6 225m2",
       images: [
         {
           url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
@@ -707,8 +691,7 @@ export const gallery = {
   usługowe: [
     {
       url: "https://utfs.io/f/5f2c73fc-fd72-49c0-8569-05282ae17c31-3hupj8.jpg",
-      route: "Biuro1",
-      title: "Bobrowiec Wnętrze 1920 x 1920",
+      route: "Bobrowiec Wnętrze 1920 x 1920",
       images: [
         {
           url: "https://utfs.io/f/5f2c73fc-fd72-49c0-8569-05282ae17c31-3hupj8.jpg",
@@ -754,8 +737,7 @@ export const gallery = {
     },
     {
       url: "https://utfs.io/f/01777386-e84c-4d13-be9d-adf32d117c8f-3hupj9.jpg",
-      route: "Biuro2",
-      title: "Bobrowiec Wnętrze 1920 x 1080",
+      route: "Bobrowiec Wnętrze 1920 x 1080",
       images: [
         {
           url: "https://utfs.io/f/01777386-e84c-4d13-be9d-adf32d117c8f-3hupj9.jpg",
@@ -801,8 +783,7 @@ export const gallery = {
     },
     {
       url: "https://utfs.io/f/db0123bb-fd3e-42bb-8f90-144ee8d8091d-a854nx.jpg",
-      route: "Biuro3",
-      title: "Bobrowiec Wnętrze 1000 x 563",
+      route: "Bobrowiec Wnętrze 1000 x 563",
       images: [
         {
           url: "https://utfs.io/f/db0123bb-fd3e-42bb-8f90-144ee8d8091d-a854nx.jpg",
@@ -848,8 +829,7 @@ export const gallery = {
     },
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-      route: "Biuro4",
-      title: "Tytuł7 225m2",
+      route: "Tytuł7 225m2",
       images: [
         {
           url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
@@ -895,8 +875,7 @@ export const gallery = {
     },
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-      route: "Biuro5",
-      title: "Tytuł8 225m2",
+      route: "Tytuł8 225m2",
       images: [
         {
           url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
@@ -942,8 +921,7 @@ export const gallery = {
     },
     {
       url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
-      route: "Biuro6",
-      title: "Tytuł9 225m2",
+      route: "Tytuł9 225m2",
       images: [
         {
           url: "https://utfs.io/f/1e3a505d-f20e-4694-ab48-a18b8c834fba-4opm1z.jpg",
@@ -1046,22 +1024,19 @@ export const approach = {
 
 export const about = [
   {
-    image:
-      "https://utfs.io/f/05dcd7ce-6483-44df-a481-d46c1a527dd4-mv8qnj.jpg",
+    image: "https://utfs.io/f/05dcd7ce-6483-44df-a481-d46c1a527dd4-mv8qnj.jpg",
     degree: "mgr inż. arch.",
     name: "Piotr Domanowski",
     position: "Architekt",
   },
   {
-    image:
-      "https://utfs.io/f/2e186a62-ad97-4ec3-a4b8-c8835204b807-mv8qnk.jpg",
+    image: "https://utfs.io/f/2e186a62-ad97-4ec3-a4b8-c8835204b807-mv8qnk.jpg",
     degree: "inż. arch.",
     name: "Justyna Domanowska",
     position: "Architekt wnętrz",
   },
   {
-    image:
-      "https://utfs.io/f/92ff00ed-c586-4f9a-9bce-1d183664d176-24vw.jpg",
+    image: "https://utfs.io/f/92ff00ed-c586-4f9a-9bce-1d183664d176-24vw.jpg",
     degree: "",
     name: "Dola",
     position: "Specjalista ds. interakcji społecznych",

@@ -30,22 +30,22 @@ const GalleryComponent = ({
               <Image
                 className="projects-img"
                 src={project.url}
-                title={project.title}
-                alt={project.title}
+                title={project.route}
+                alt={project.route}
                 width={1920}
                 height={1080}
               />
               <div className="projects-img_filter" />
               <figcaption className="projects-img_title">
-                <h3>{project.title}</h3>
+                <h3>{project.route}</h3>
               </figcaption>
               <Link
                 href={`/galeria/${type || project.type}/${project.route}`}
                 className="absolute inset-0 z-[3]"
-                title={project.title}
+                title={project.route}
               />
             </figure>
-          )
+          ),
         )}
       </div>
     </>

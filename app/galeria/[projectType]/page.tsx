@@ -11,12 +11,16 @@ import Hero from "@/components/sections/Hero";
 import Section from "@/components/shared/Section";
 import { Metadata, ResolvingMetadata } from "next";
 
-export async function generateMetadata({
-  params: { projectType },
-}: {
-  params: { projectType: keyof typeof projectTitles };
+export async function generateMetadata(props: {
+  params: Promise<{
+    projectType: keyof typeof projectTitles;
+  }>;
   parent: ResolvingMetadata;
 }): Promise<Metadata> {
+  const params = await props.params;
+
+  const { projectType } = params;
+
   const type = decodeURIComponent(
     projectType
   ) as keyof typeof projectTitles;
@@ -28,11 +32,13 @@ export async function generateMetadata({
   };
 }
 
-const ProjectGallery = ({
-  params: { projectType },
-}: {
-  params: { projectType: keyof typeof gallery };
+const ProjectGallery = async (props: {
+  params: Promise<{ projectType: keyof typeof gallery }>;
 }) => {
+  const params = await props.params;
+
+  const { projectType } = params;
+
   const type = decodeURIComponent(
     projectType
   ) as keyof typeof gallery;

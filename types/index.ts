@@ -10,9 +10,9 @@ export type IconProps = {
 
 export type MenuIconProps = {
   className: string;
-  topLine: React.LegacyRef<SVGLineElement>;
-  middleLine: React.LegacyRef<SVGLineElement>;
-  bottomLine: React.LegacyRef<SVGLineElement>;
+  topLine: React.Ref<SVGLineElement>;
+  middleLine: React.Ref<SVGLineElement>;
+  bottomLine: React.Ref<SVGLineElement>;
 };
 
 export type ContactFormProps = {
@@ -27,7 +27,6 @@ export type ContactFormProps = {
 export interface IProject {
   url: string;
   route: string;
-  title: string;
   type?: keyof typeof gallery;
 }
 

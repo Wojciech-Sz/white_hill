@@ -11,9 +11,10 @@ const ProjectGallery = ({
   route: string;
   title: string;
 }) => {
-  const projectGallery = gallery[type].find(
+  const projectGallery = gallery[type]?.find(
     (project) => project.route === route
   );
+  console.log(type);
   return (
     <div className="section-gap grid w-full grid-cols-1 md:grid-flow-row-dense md:grid-cols-2 2xl:grid-cols-3">
       {projectGallery?.images.map((image, i) => (
