@@ -111,25 +111,30 @@ export default function Header() {
         <div className="absolute right-0 flex items-center gap-5">
           <div className="hidden gap-2 sm:flex">
             {footerLinks.map((link, i) => (
-              <Link
+              <a
                 key={link.name + i}
                 href={link.href}
                 className="nav-social"
-                prefetch={false}
                 target="_blank"
                 rel="noreferrer"
                 title={link.name}
               >
                 {link.icon}
                 <span className="sr-only">{link.name}</span>
-              </Link>
+              </a>
             ))}
           </div>
-          <Button variant="default" className="btn">
-            <Link scroll href="/#contact" title="Kontakt">
+          <Link
+            scroll
+            href="/#contact"
+            prefetch={false}
+            className="flex items-center"
+            title="Kontakt"
+          >
+            <Button variant="default" className="btn">
               Kontakt
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         </div>
       </div>
       <div

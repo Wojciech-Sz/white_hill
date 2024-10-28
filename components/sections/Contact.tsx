@@ -28,7 +28,7 @@ const Contact = () => {
           </h3>
           <address className="contact-info not-italic">
             <a
-              aria-label="Zadzwoń"
+              aria-label="Zadzwoń 501-458-229"
               href={`tel:${process.env.NEXT_PUBLIC_PHONE}`}
               title="501-458-229"
             >
@@ -38,7 +38,7 @@ const Contact = () => {
               </div>
             </a>
             <a
-              aria-label="Napisz do nas"
+              aria-label="Napisz do nas biuro@wharchitecture.pl"
               href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
               title="biuro@wharchitecture.pl"
             >

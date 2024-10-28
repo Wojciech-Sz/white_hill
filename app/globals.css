@@ -99,7 +99,7 @@
   }
 
   .section-start {
-    @apply pt-5 md:pt-7;
+    @apply pt-5 lg:pt-7;
   }
 
   .section-gap {

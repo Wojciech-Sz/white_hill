@@ -6,40 +6,39 @@ import { Metadata, ResolvingMetadata } from "next";
 import { Separator } from "@radix-ui/react-separator";
 
 export async function generateMetadata({
-  searchParams,
+  params: { projectTitle },
 }: {
-  searchParams: { title: string };
+  params: {
+    projectTitle: string;
+  };
   parent: ResolvingMetadata;
 }): Promise<Metadata> {
-  const title = searchParams.title;
-
   return {
-    title: title ? `${title}` : "Projekty",
-    description: `${title} - Kompleksowa galeria zdjęć.`,
+    title: projectTitle,
+    description: `${projectTitle} - Kompleksowa galeria zdjęć.`,
   };
 }
 const Project = ({
   params: { projectType, projectTitle },
-  searchParams: { title },
 }: {
   params: {
     projectType: keyof typeof gallery;
     projectTitle: string;
   };
-  searchParams: { title: string };
 }) => {
+  console.log(projectType, projectTitle);
   return (
     <>
       <Section className="wrapper section-start section-gap">
         <div id="hero" className="absolute -top-16" />
         <div className="flex flex-col">
           <h1 className="section-title projects-title">
-            {title}
+            {projectTitle}
           </h1>
           <Separator className="separator" />
         </div>
         <ProjectGallery
-          title={title}
+          title={projectTitle}
           type={projectType}
           route={projectTitle}
         />

@@ -8,9 +8,10 @@ const Footer = () => {
       <div className="wrapper box-content flex w-full items-center gap-3 max-sm:flex-col sm:justify-between">
         <Link
           href="/"
-          className="flex-center"
           prefetch={false}
+          className="flex-center"
           title="White Hill"
+          scroll
         >
           <span className="text-2xl/none  font-bold">
             White Hill
@@ -28,16 +29,15 @@ const Footer = () => {
               key={link.name + i}
               className="flex size-full text-white hover:text-primary"
             >
-              <Link
+              <a
                 href={link.href}
-                prefetch={false}
                 target="_blank"
                 rel="noreferrer"
                 title={link.name}
               >
                 {link.icon}
                 <span className="sr-only">{link.name}</span>
-              </Link>
+              </a>
             </li>
           ))}
         </ul>

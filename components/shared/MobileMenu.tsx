@@ -93,6 +93,7 @@ const MobileMenu = () => {
           <Link
             scroll
             href="#hero"
+            prefetch={false}
             className="relative text-3xl"
             title="White Hill"
           >
@@ -110,8 +111,8 @@ const MobileMenu = () => {
                 >
                   <Link
                     href={link.route}
-                    className="mobile-link group"
                     prefetch={false}
+                    className="mobile-link group"
                     scroll
                     title={link.label}
                   >
@@ -144,8 +145,8 @@ const MobileMenu = () => {
                 >
                   <Link
                     href={link.route}
-                    prefetch={false}
                     scroll
+                    prefetch={false}
                     title={link.label}
                   >
                     {link.label}
@@ -159,8 +160,8 @@ const MobileMenu = () => {
             <li className="mobile-link group">
               <Link
                 href="/#contact"
-                scroll
                 prefetch={false}
+                scroll
                 title="Kontakt"
               >
                 Kontakt
@@ -171,8 +172,7 @@ const MobileMenu = () => {
 
             <li className="mobile-link group">
               <Link
-                href="/appointment"
-                prefetch={false}
+                href="/konsultacje"
                 title="Umów spotkanie"
               >
                 Umów spotkanie
@@ -185,9 +185,8 @@ const MobileMenu = () => {
           <ul className="flex gap-2 self-center md:hidden">
             {footerLinks.map((link, i) => (
               <li className="nav-social" key={link.name}>
-                <Link
+                <a
                   href={link.href}
-                  prefetch={false}
                   target="_blank"
                   rel="noreferrer"
                   title={link.name}
@@ -196,7 +195,7 @@ const MobileMenu = () => {
                   <span className="sr-only">
                     {link.name}
                   </span>
-                </Link>
+                </a>
               </li>
             ))}
           </ul>

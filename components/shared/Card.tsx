@@ -23,12 +23,12 @@ const Card = ({
       <CardBody className="group/card relative flex size-full flex-col gap-6 bg-background p-6 hover:shadow-2xl ">
         <div className="flex h-full flex-col gap-4 overflow-hidden">
           <div className="flex flex-col gap-2">
-            <h2 className="approach_title">
+            <h3 className="approach_title">
               {approach[type].title}
-            </h2>
-            <h3 className="approach_subtitle">
-              {approach[type].subtitle}
             </h3>
+            <h4 className="approach_subtitle">
+              {approach[type].subtitle}
+            </h4>
           </div>
           <div className="flex max-h-[90%] flex-col gap-2 overflow-auto">
             {approach[type].description.map(

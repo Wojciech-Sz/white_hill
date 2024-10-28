@@ -44,7 +44,6 @@ const NavItems = ({
                       onClick={closeMenu}
                     >
                       {link.label}
-
                       <div className="border-bottom" />
                     </Link>
                   </li>
@@ -58,8 +57,8 @@ const NavItems = ({
             >
               <Link
                 href={link.route}
-                prefetch={false}
                 scroll
+                prefetch={false}
                 title={link.label}
                 onClick={closeMenu}
               >
@@ -86,8 +85,7 @@ const NavItems = ({
 
         <li className="mobile-link group">
           <Link
-            href="/appointment"
-            prefetch={false}
+            href="/konsultacje"
             title="Umów spotkanie"
             onClick={closeMenu}
           >
@@ -100,16 +98,15 @@ const NavItems = ({
       <ul className="flex gap-2 sm:hidden">
         {footerLinks.map((link, i) => (
           <li className="nav-social" key={link.name}>
-            <Link
+            <a
               href={link.href}
-              prefetch={false}
               target="_blank"
               rel="noreferrer"
               title={link.name}
             >
               {link.icon}
               <span className="sr-only">{link.name}</span>
-            </Link>
+            </a>
           </li>
         ))}
       </ul>

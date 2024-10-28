@@ -112,25 +112,31 @@ export const office = [
 
 export const projectLinks = [
   {
-    href: "/projects/?type=Galeria",
+    href: "/galeria",
     label: "Galeria",
   },
   {
-    href: "/projects/interiors/?type=Wnętrza",
+    href: "/galeria/wnętrza",
     label: "Wnętrza",
   },
   {
-    href: "/projects/offices/?type=Budynki usługowe",
+    href: "/galeria/usługowe",
     label: "Usługowe",
   },
   {
-    href: "/projects/houses/?type=Budynki mieszkalne",
+    href: "/galeria/mieszkalne",
     label: "Mieszkalne",
   },
 ];
 
+export const projectTitles = {
+  usługowe: "Budynki Usługowe",
+  mieszkalne: "Budynki Mieszkalne",
+  wnętrza: "Wnętrza",
+};
+
 export const gallery = {
-  houses: [
+  mieszkalne: [
     {
       url: "https://utfs.io/f/5f4d8953-0271-4260-8cc5-cd0e8d4603c2-wtxq5.jpg",
       route: "Dom1",
@@ -414,7 +420,7 @@ export const gallery = {
       ],
     },
   ],
-  interiors: [
+  wnętrza: [
     {
       url: "https://utfs.io/f/806171d0-eb69-4aeb-9c1d-84c46da0b9bf-wtxq2.jpg",
       route: "Wntrze1",
@@ -698,7 +704,7 @@ export const gallery = {
       ],
     },
   ],
-  offices: [
+  usługowe: [
     {
       url: "https://utfs.io/f/5f2c73fc-fd72-49c0-8569-05282ae17c31-3hupj8.jpg",
       route: "Biuro1",
@@ -985,17 +991,17 @@ export const gallery = {
 };
 
 export const galleryHero = {
-  houses: [
+  mieszkalne: [
     "https://utfs.io/f/WoM0wck7FkdgfWxeV0YmOdx9Mj548kAfLSaHPFoEVnYKTgZh",
     "https://utfs.io/f/WoM0wck7FkdgQ5kGzA6zXj5FEVkLNe2ZpcS4lT3HhuwMasGm",
     "https://utfs.io/f/WoM0wck7FkdgMKihDz9Gtb10wrHQje8ocpNWSmgvYLF6Ry5E",
   ],
-  interiors: [
+  wnętrza: [
     "https://utfs.io/f/WoM0wck7FkdgJw1NNUnLWhgQVmbjnozBfywP2tAeKsTD5EuO",
     "https://utfs.io/f/WoM0wck7Fkdgy1hYs6ukgfzO2GZM3Ublhp9Aa68QNveiTjno",
     "https://utfs.io/f/WoM0wck7FkdgD2dwCyfUfJyvnQlos0AP6eMGDp4VTXj3bHgF",
   ],
-  offices: [
+  usługowe: [
     "https://utfs.io/f/WoM0wck7FkdgZWddaPWjCWfhw03KDXu4esYgOdLEbAIaMo8P",
     "https://utfs.io/f/WoM0wck7FkdgYDMRdS82S6FCatOlpmcUIueWjA4zKbLG8rTX",
     "https://utfs.io/f/WoM0wck7FkdgGvACBi2BZzn7pdb1kjsoEFPM0QUVWgyKO46u",
@@ -1003,7 +1009,7 @@ export const galleryHero = {
 };
 
 export const approach = {
-  houses: {
+  mieszkalne: {
     title: "Nasze podejście",
     subtitle: "Budynki mieszkalne",
     description: [
@@ -1018,7 +1024,7 @@ export const approach = {
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
     ],
   },
-  interiors: {
+  wnętrza: {
     title: "Nasze podejście",
     subtitle: "Wnętrza",
     description: [
@@ -1027,7 +1033,7 @@ export const approach = {
       "Lorem ipsum, dolor sit amet consecdtetur adipisicing elit. Quam sdapiente omnis ratione cum doloremque cumque provident iure minima aliquid voluptas.",
     ],
   },
-  offices: {
+  usługowe: {
     title: "Nasze podejście",
     subtitle: "Budynki usługowe",
     description: [

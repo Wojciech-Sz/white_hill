@@ -13,7 +13,7 @@ const Appointment = () => {
           backgroundImage:
             "url(https://utfs.io/f/e9343b39-5585-4828-a56e-c5b26f5fbc83-oe69nl.jpg)",
         }}
-        className="fixed inset-0 -z-20 min-h-screen bg-gray-400 bg-cover bg-center bg-no-repeat bg-blend-multiply"
+        className="fixed inset-0 -z-20 min-h-screen bg-gray-500/80 bg-cover bg-center bg-no-repeat bg-blend-multiply"
       />
       <p className="appointment-text">
         Odrobinę nas poznaliście. Jeśli chcecie zaprosić nas
@@ -21,15 +21,15 @@ const Appointment = () => {
         gotowi.
       </p>
 
-      <Button variant="default" className="btn-contact">
-        <Link
-          href="/appointment"
-          title="Umów spotkanie"
-          prefetch={false}
-        >
+      <Link
+        href="/konsultacje"
+        title="Umów spotkanie"
+        className="flex items-center"
+      >
+        <Button variant="default" className="btn-contact">
           SKONTAKUJ SIĘ Z NAMI
-        </Link>
-      </Button>
+        </Button>
+      </Link>
     </section>
   );
 };

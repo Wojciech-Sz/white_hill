@@ -1,5 +1,9 @@
 import GalleryComponent from "@/components/shared/GalleryComponent";
-import { gallery, galleryHero } from "@/constans";
+import {
+  gallery,
+  galleryHero,
+  projectTitles,
+} from "@/constans";
 import React from "react";
 import GalleryHeroTitle from "@/components/shared/GalleryHeroTitle";
 import { Separator } from "@radix-ui/react-separator";
@@ -8,38 +12,42 @@ import Section from "@/components/shared/Section";
 import { Metadata, ResolvingMetadata } from "next";
 
 export async function generateMetadata({
-  searchParams,
+  params: { projectType },
 }: {
-  searchParams: { type: string };
+  params: { projectType: keyof typeof projectTitles };
   parent: ResolvingMetadata;
 }): Promise<Metadata> {
-  const title = searchParams.type;
+  const type = decodeURIComponent(
+    projectType
+  ) as keyof typeof projectTitles;
+  const title = projectTitles[type];
 
   return {
-    title: title ? `${title}` : "Projekty",
+    title,
     description: `Galeria naszych najlepszych projektów: ${title}.`,
   };
 }
 
 const ProjectGallery = ({
   params: { projectType },
-  searchParams: { type },
 }: {
   params: { projectType: keyof typeof gallery };
-  searchParams: { type: string };
 }) => {
+  const type = decodeURIComponent(
+    projectType
+  ) as keyof typeof gallery;
   const heroImages = [
     {
-      url: galleryHero[projectType][0],
-      id: projectType + "-img-1",
+      url: galleryHero[type][0],
+      id: type + "-img-1",
     },
     {
-      url: galleryHero[projectType][1],
-      id: projectType + "-img-2",
+      url: galleryHero[type][1],
+      id: type + "-img-2",
     },
     {
-      url: galleryHero[projectType][2],
-      id: projectType + "-img-3",
+      url: galleryHero[type][2],
+      id: type + "-img-3",
     },
   ];
 
@@ -54,9 +62,9 @@ const ProjectGallery = ({
       <Section className="wrapper section-gap section-start">
         <Separator className="separator" />
         <GalleryComponent
-          type={projectType}
+          type={type}
           card
-          images={gallery[projectType]}
+          images={gallery[type]}
         />
       </Section>
     </>

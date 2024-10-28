@@ -44,16 +44,16 @@ const Gallery = () => {
       <Section className="wrapper section-start section-gap">
         <Separator className="separator" />
         <GalleryComponent
-          type={"houses"}
-          images={gallery.houses}
+          type={"mieszkalne"}
+          images={gallery.mieszkalne}
         />
         <GalleryComponent
-          type={"interiors"}
-          images={gallery.interiors}
+          type={"wnętrza"}
+          images={gallery.wnętrza}
         />
         <GalleryComponent
-          type={"offices"}
-          images={gallery.offices}
+          type={"usługowe"}
+          images={gallery.usługowe}
         />
       </Section>
     </>

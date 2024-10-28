@@ -37,10 +37,10 @@ const GalleryComponent = ({
               />
               <div className="projects-img_filter" />
               <figcaption className="projects-img_title">
-                <h4>{project.title}</h4>
+                <h3>{project.title}</h3>
               </figcaption>
               <Link
-                href={`/projects/${type || project.type}/${project.route}?title=${project.title}`}
+                href={`/galeria/${type || project.type}/${project.route}`}
                 className="absolute inset-0 z-[3]"
                 title={project.title}
               />
